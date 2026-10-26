@@ -130,17 +130,23 @@
   /* ===== 开场加载动画 ===== */
   #loader{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;transition:opacity .6s ease}
   #loader.hide{opacity:0;pointer-events:none}
-  .ld-orb{position:relative;width:80px;height:80px;margin-bottom:28px}
-  .ld-drop{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:42px;animation:ldBounce 1.4s ease-in-out infinite}
-  .ld-ring{position:absolute;inset:0;border:3px solid transparent;border-top-color:var(--accent);border-radius:50%;animation:ldSpin 1s linear infinite}
-  .ld-ring2{position:absolute;inset:8px;border:2px solid transparent;border-bottom-color:var(--accent2);border-radius:50%;animation:ldSpinR .8s linear infinite}
-  .ld-ripple{position:absolute;inset:0;border:2px solid var(--accent);border-radius:50%;opacity:0;animation:ldRipple 1.6s ease-out infinite}
-  .ld-ripple.r2{animation-delay:.5s}
-  .ld-ripple.r3{animation-delay:1s}
+  .ld-orb{position:relative;width:120px;height:120px;margin-bottom:28px}
+  /* 齿轮：半虚化旋转，彰显波箱齿轮转动原理 */
+  .ld-gear{position:absolute;inset:0;animation:ldSpin 4s linear infinite;filter:blur(1.8px);opacity:.4}
+  /* 磨砂质感水弹：中央旋转球体 */
+  .ld-bead{position:absolute;width:44px;height:44px;top:50%;left:50%;margin:-22px 0 0 -22px;border-radius:50%;
+    background:radial-gradient(circle at 34% 26%, #e2ecf4 0%, #b0c8dc 28%, #7698b6 55%, #476f8d 82%, #2d5070 100%);
+    box-shadow:inset -5px -5px 12px rgba(0,10,30,.35), inset 3px 3px 8px rgba(255,255,255,.1), 0 0 16px rgba(80,130,180,.35);
+    animation:ldSpinBead 2.2s linear infinite}
+  /* 磨砂表面纹理叠加 */
+  .ld-bead::before{content:'';position:absolute;inset:0;border-radius:50%;
+    background:radial-gradient(circle at 68% 74%, rgba(20,40,60,.25) 0%, transparent 45%);
+    mix-blend-mode:multiply}
+  .ld-bead::after{content:'';position:absolute;inset:2px;border-radius:50%;
+    background:repeating-conic-gradient(from 0deg, rgba(255,255,255,.03) 0deg 3deg, transparent 3deg 6deg);
+    mix-blend-mode:overlay}
   @keyframes ldSpin{to{transform:rotate(360deg)}}
-  @keyframes ldSpinR{to{transform:rotate(-360deg)}}
-  @keyframes ldBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-  @keyframes ldRipple{0%{transform:scale(.7);opacity:.8}100%{transform:scale(1.8);opacity:0}}
+  @keyframes ldSpinBead{to{transform:rotate(-360deg)}}
   .ld-title{font-size:24px;font-weight:700;color:var(--accent);letter-spacing:2px;opacity:0;animation:ldFade .8s ease .3s forwards}
   .ld-sub{font-size:13px;color:var(--tx2);letter-spacing:1px;margin-top:6px;opacity:0;animation:ldFade .8s ease .6s forwards}
   .ld-bar{width:160px;height:3px;background:var(--line);border-radius:2px;margin-top:24px;overflow:hidden;opacity:0;animation:ldFade .4s ease .8s forwards}
@@ -153,12 +159,33 @@
 <!-- 开场加载动画 -->
 <div id="loader">
   <div class="ld-orb">
-    <div class="ld-ripple"></div>
-    <div class="ld-ripple r2"></div>
-    <div class="ld-ripple r3"></div>
-    <div class="ld-ring"></div>
-    <div class="ld-ring2"></div>
-    <div class="ld-drop">💧</div>
+    <!-- 半虚化齿轮（SVG），缓慢旋转 -->
+    <div class="ld-gear">
+      <svg viewBox="0 0 120 120" width="120" height="120">
+        <g fill="none" stroke="#ffcc4d" stroke-width="2.5">
+          <circle cx="60" cy="60" r="42"/>
+          <circle cx="60" cy="60" r="28"/>
+        </g>
+        <g fill="#ffcc4d">
+          <rect x="55" y="4" width="10" height="10" rx="2" transform="rotate(0 60 60)"/>
+          <rect x="55" y="4" width="10" height="10" rx="2" transform="rotate(30 60 60)"/>
+          <rect x="55" y="4" width="10" height="10" rx="2" transform="rotate(60 60 60)"/>
+          <rect x="55" y="4" width="10" height="10" rx="2" transform="rotate(90 60 60)"/>
+          <rect x="55" y="4" width="10" height="10" rx="2" transform="rotate(120 60 60)"/>
+          <rect x="55" y="4" width="10" height="10" rx="2" transform="rotate(150 60 60)"/>
+          <rect x="55" y="4" width="10" height="10" rx="2" transform="rotate(180 60 60)"/>
+          <rect x="55" y="4" width="10" height="10" rx="2" transform="rotate(210 60 60)"/>
+          <rect x="55" y="4" width="10" height="10" rx="2" transform="rotate(240 60 60)"/>
+          <rect x="55" y="4" width="10" height="10" rx="2" transform="rotate(270 60 60)"/>
+          <rect x="55" y="4" width="10" height="10" rx="2" transform="rotate(300 60 60)"/>
+          <rect x="55" y="4" width="10" height="10" rx="2" transform="rotate(330 60 60)"/>
+        </g>
+        <!-- 齿轮中心孔 -->
+        <circle cx="60" cy="60" r="14" fill="none" stroke="#ffcc4d" stroke-width="2"/>
+      </svg>
+    </div>
+    <!-- 磨砂质感水弹，反向旋转 -->
+    <div class="ld-bead"></div>
   </div>
   <div class="ld-title">水弹的魔法</div>
   <div class="ld-sub">Magic of Water Bead</div>
