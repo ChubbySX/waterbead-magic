@@ -268,22 +268,22 @@ window.PARTS_DB = {
           "note": "创研原厂 铝波壳"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "尼龙波壳",
           "price": "—",
-          "note": "加盛原厂 尼龙波壳"
+          "note": "锋加盛原厂 尼龙波壳"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "锌合金波壳（白蓝波）",
           "price": "—",
-          "note": "加盛原厂 锌合金波壳"
+          "note": "锋加盛原厂 锌合金波壳"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "铝合金波壳",
           "price": "—",
-          "note": "加盛原厂 铝波壳"
+          "note": "锋加盛原厂 铝波壳"
         },
         {
           "brand": "博涵原厂",
@@ -798,10 +798,10 @@ window.PARTS_DB = {
           "material": "PEI"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "推嘴",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "PEI"
         },
         {
@@ -1011,10 +1011,10 @@ window.PARTS_DB = {
           "material": "铝"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "缸头",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "铝"
         },
         {
@@ -1243,10 +1243,10 @@ window.PARTS_DB = {
           "material": "铝"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "气缸",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "铝"
         },
         {
@@ -1462,10 +1462,10 @@ window.PARTS_DB = {
           "material": "尼龙"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "拉桥",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "尼龙"
         },
         {
@@ -1711,10 +1711,10 @@ window.PARTS_DB = {
           "material": "尼龙"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "天梯（活塞）",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "尼龙"
         },
         {
@@ -1861,6 +1861,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "DS AK线原厂配件",
           "material": "尼龙"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "金天梯",
+          "price": "—",
+          "note": "锋加盛金齿版",
+          "material": "金天梯"
         }
       ],
       "scope": "brand"
@@ -1931,10 +1938,10 @@ window.PARTS_DB = {
           "material": "尼龙"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "拍头",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "尼龙"
         },
         {
@@ -2148,10 +2155,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "尾顶",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -2366,10 +2373,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "弹簧",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -2610,10 +2617,10 @@ window.PARTS_DB = {
           "material": "粉末钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "齿轮组（整组）",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "粉末钢"
         },
         {
@@ -2777,6 +2784,20 @@ window.PARTS_DB = {
           "price": "—",
           "note": "DS AR线原厂",
           "material": "金齿"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "尼龙齿轮组",
+          "price": "—",
+          "note": "锋加盛M4基础版",
+          "material": "尼龙"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "金齿金天梯齿轮组",
+          "price": "—",
+          "note": "锋加盛金齿版",
+          "material": "金齿"
         }
       ],
       "scope": "brand"
@@ -2833,10 +2854,10 @@ window.PARTS_DB = {
           "note": "创研 原厂件"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "蛋糕齿（伞齿轮）",
           "price": "—",
-          "note": "加盛 原厂件"
+          "note": "锋加盛 原厂件"
         },
         {
           "brand": "博涵原厂",
@@ -3007,10 +3028,10 @@ window.PARTS_DB = {
           "note": "创研 原厂件"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "中齿（spur）",
           "price": "—",
-          "note": "加盛 原厂件"
+          "note": "锋加盛 原厂件"
         },
         {
           "brand": "博涵原厂",
@@ -3181,10 +3202,10 @@ window.PARTS_DB = {
           "note": "创研 原厂件"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "天梯齿（sector）",
           "price": "—",
-          "note": "加盛 原厂件"
+          "note": "锋加盛 原厂件"
         },
         {
           "brand": "博涵原厂",
@@ -3394,10 +3415,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "止逆（止逆齿）",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -3664,10 +3685,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "调齿垫片",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -3876,10 +3897,10 @@ window.PARTS_DB = {
           "material": "钢珠"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "8mm 轴承",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢珠"
         },
         {
@@ -4088,10 +4109,10 @@ window.PARTS_DB = {
           "material": "钢珠"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "9mm 轴承",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢珠"
         },
         {
@@ -4310,10 +4331,10 @@ window.PARTS_DB = {
           "material": "黄铜"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "轴套",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "黄铜"
         },
         {
@@ -4490,7 +4511,8 @@ window.PARTS_DB = {
             "多模式",
             "单发/连发",
             "可编程",
-            "连发/单发/二连发"
+            "连发/单发/二连发",
+            "编程"
           ]
         },
         "类型": {
@@ -4762,6 +4784,20 @@ window.PARTS_DB = {
           "price": "—",
           "note": "DS AR线微动火控",
           "material": null
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "火控芯片",
+          "price": "—",
+          "note": "锋加盛F4火控版",
+          "material": null
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "火控",
+          "price": "—",
+          "note": "锋加盛BLP",
+          "material": null
         }
       ],
       "scope": "brand"
@@ -4990,7 +5026,8 @@ window.PARTS_DB = {
           "label": "材质",
           "values": [
             "钢",
-            "铝"
+            "铝",
+            "锌合金"
           ]
         }
       },
@@ -5048,10 +5085,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "扳机",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -5282,10 +5319,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "扳机簧",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -5973,38 +6010,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂保险模块",
           "price": "—",
-          "note": "加盛F4 原厂保险模块",
+          "note": "锋加盛F4 原厂保险模块",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂保险模块",
           "price": "—",
-          "note": "加盛M4 原厂保险模块",
+          "note": "锋加盛M4 原厂保险模块",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂保险模块",
           "price": "—",
-          "note": "加盛BLP 原厂保险模块",
+          "note": "锋加盛BLP 原厂保险模块",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂保险模块",
           "price": "—",
-          "note": "加盛HK416 原厂保险模块",
+          "note": "锋加盛HK416 原厂保险模块",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂保险模块",
           "price": "—",
-          "note": "加盛TTI M2 原厂保险模块",
+          "note": "锋加盛TTI M2 原厂保险模块",
           "material": "塑料"
         },
         {
@@ -6924,38 +6961,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂快慢机拨片",
           "price": "—",
-          "note": "加盛F4 原厂快慢机拨片",
+          "note": "锋加盛F4 原厂快慢机拨片",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂快慢机拨片",
           "price": "—",
-          "note": "加盛M4 原厂快慢机拨片",
+          "note": "锋加盛M4 原厂快慢机拨片",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂快慢机拨片",
           "price": "—",
-          "note": "加盛BLP 原厂快慢机拨片",
+          "note": "锋加盛BLP 原厂快慢机拨片",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂快慢机拨片",
           "price": "—",
-          "note": "加盛HK416 原厂快慢机拨片",
+          "note": "锋加盛HK416 原厂快慢机拨片",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂快慢机拨片",
           "price": "—",
-          "note": "加盛TTI M2 原厂快慢机拨片",
+          "note": "锋加盛TTI M2 原厂快慢机拨片",
           "material": "塑料"
         },
         {
@@ -7877,38 +7914,38 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂双边快慢机齿轮连杆",
           "price": "—",
-          "note": "加盛F4 原厂双边快慢机齿轮连杆",
+          "note": "锋加盛F4 原厂双边快慢机齿轮连杆",
           "material": "钢"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂双边快慢机齿轮连杆",
           "price": "—",
-          "note": "加盛M4 原厂双边快慢机齿轮连杆",
+          "note": "锋加盛M4 原厂双边快慢机齿轮连杆",
           "material": "钢"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂双边快慢机齿轮连杆",
           "price": "—",
-          "note": "加盛BLP 原厂双边快慢机齿轮连杆",
+          "note": "锋加盛BLP 原厂双边快慢机齿轮连杆",
           "material": "钢"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂双边快慢机齿轮连杆",
           "price": "—",
-          "note": "加盛HK416 原厂双边快慢机齿轮连杆",
+          "note": "锋加盛HK416 原厂双边快慢机齿轮连杆",
           "material": "钢"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂双边快慢机齿轮连杆",
           "price": "—",
-          "note": "加盛TTI M2 原厂双边快慢机齿轮连杆",
+          "note": "锋加盛TTI M2 原厂双边快慢机齿轮连杆",
           "material": "钢"
         },
         {
@@ -8358,10 +8395,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "空挂斧",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -8579,10 +8616,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "空挂簧",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -8800,10 +8837,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "连杆（空挂·内构）",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -9021,10 +9058,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "连杆簧",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -9243,10 +9280,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "机片",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -9465,10 +9502,10 @@ window.PARTS_DB = {
           "material": "尼龙"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "滑块（回膛滑块）",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "尼龙"
         },
         {
@@ -9686,10 +9723,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "限位",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -10390,38 +10427,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂蛋道（hop-up 座）",
           "price": "—",
-          "note": "加盛F4 原厂蛋道（hop-up 座）",
+          "note": "锋加盛F4 原厂蛋道（hop-up 座）",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂蛋道（hop-up 座）",
           "price": "—",
-          "note": "加盛M4 原厂蛋道（hop-up 座）",
+          "note": "锋加盛M4 原厂蛋道（hop-up 座）",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂蛋道（hop-up 座）",
           "price": "—",
-          "note": "加盛BLP 原厂蛋道（hop-up 座）",
+          "note": "锋加盛BLP 原厂蛋道（hop-up 座）",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂蛋道（hop-up 座）",
           "price": "—",
-          "note": "加盛HK416 原厂蛋道（hop-up 座）",
+          "note": "锋加盛HK416 原厂蛋道（hop-up 座）",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂蛋道（hop-up 座）",
           "price": "—",
-          "note": "加盛TTI M2 原厂蛋道（hop-up 座）",
+          "note": "锋加盛TTI M2 原厂蛋道（hop-up 座）",
           "material": "塑料"
         },
         {
@@ -11378,38 +11415,38 @@ window.PARTS_DB = {
           "material": "黄铜"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂内管",
           "price": "—",
-          "note": "加盛F4 原厂内管",
+          "note": "锋加盛F4 原厂内管",
           "material": "黄铜"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂内管",
           "price": "—",
-          "note": "加盛M4 原厂内管",
+          "note": "锋加盛M4 原厂内管",
           "material": "黄铜"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂内管",
           "price": "—",
-          "note": "加盛BLP 原厂内管",
+          "note": "锋加盛BLP 原厂内管",
           "material": "黄铜"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂内管",
           "price": "—",
-          "note": "加盛HK416 原厂内管",
+          "note": "锋加盛HK416 原厂内管",
           "material": "黄铜"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂内管",
           "price": "—",
-          "note": "加盛TTI M2 原厂内管",
+          "note": "锋加盛TTI M2 原厂内管",
           "material": "黄铜"
         },
         {
@@ -11786,6 +11823,27 @@ window.PARTS_DB = {
         },
         {
           "brand": "DS原厂",
+          "product": "内管",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "铝"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "铝合金内管",
+          "price": "—",
+          "note": "锋加盛M4CQB",
+          "material": "铝"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "金内管",
+          "price": "—",
+          "note": "锋加盛F4",
+          "material": "铝"
+        },
+        {
+          "brand": "锋加盛原厂",
           "product": "内管",
           "price": "—",
           "note": "保留预设原厂条目；产品身份与适配待核实",
@@ -12327,38 +12385,38 @@ window.PARTS_DB = {
           "material": "橡胶"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂内管簧",
           "price": "—",
-          "note": "加盛F4 原厂内管簧",
+          "note": "锋加盛F4 原厂内管簧",
           "material": "橡胶"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂内管簧",
           "price": "—",
-          "note": "加盛M4 原厂内管簧",
+          "note": "锋加盛M4 原厂内管簧",
           "material": "橡胶"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂内管簧",
           "price": "—",
-          "note": "加盛BLP 原厂内管簧",
+          "note": "锋加盛BLP 原厂内管簧",
           "material": "橡胶"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂内管簧",
           "price": "—",
-          "note": "加盛HK416 原厂内管簧",
+          "note": "锋加盛HK416 原厂内管簧",
           "material": "橡胶"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂内管簧",
           "price": "—",
-          "note": "加盛TTI M2 原厂内管簧",
+          "note": "锋加盛TTI M2 原厂内管簧",
           "material": "橡胶"
         },
         {
@@ -13262,38 +13320,38 @@ window.PARTS_DB = {
           "material": "橡胶"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂阻蛋器（hop 胶）",
           "price": "—",
-          "note": "加盛F4 原厂阻蛋器（hop 胶）",
+          "note": "锋加盛F4 原厂阻蛋器（hop 胶）",
           "material": "橡胶"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂阻蛋器（hop 胶）",
           "price": "—",
-          "note": "加盛M4 原厂阻蛋器（hop 胶）",
+          "note": "锋加盛M4 原厂阻蛋器（hop 胶）",
           "material": "橡胶"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂阻蛋器（hop 胶）",
           "price": "—",
-          "note": "加盛BLP 原厂阻蛋器（hop 胶）",
+          "note": "锋加盛BLP 原厂阻蛋器（hop 胶）",
           "material": "橡胶"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂阻蛋器（hop 胶）",
           "price": "—",
-          "note": "加盛HK416 原厂阻蛋器（hop 胶）",
+          "note": "锋加盛HK416 原厂阻蛋器（hop 胶）",
           "material": "橡胶"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂阻蛋器（hop 胶）",
           "price": "—",
-          "note": "加盛TTI M2 原厂阻蛋器（hop 胶）",
+          "note": "锋加盛TTI M2 原厂阻蛋器（hop 胶）",
           "material": "橡胶"
         },
         {
@@ -13609,10 +13667,10 @@ window.PARTS_DB = {
           "material": "橡胶"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "O-ring（缸头/拍头）",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "橡胶"
         },
         {
@@ -13974,16 +14032,16 @@ window.PARTS_DB = {
           "note": "创研 原厂有刷电机"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "原厂有刷电机（长轴）",
           "price": "—",
-          "note": "加盛 原厂有刷电机"
+          "note": "锋加盛 原厂有刷电机"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "原厂有刷电机（短轴）",
           "price": "—",
-          "note": "加盛 原厂有刷电机"
+          "note": "锋加盛 原厂有刷电机"
         },
         {
           "brand": "博涵原厂",
@@ -14275,6 +14333,12 @@ window.PARTS_DB = {
           "product": "电机",
           "price": "—",
           "note": "DS AK线原厂配件"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "电机",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实"
         }
       ],
       "scope": "brand"
@@ -14298,7 +14362,8 @@ window.PARTS_DB = {
           "label": "材质",
           "values": [
             "塑料",
-            "金属"
+            "金属",
+            "锌合金"
           ]
         }
       },
@@ -14821,38 +14886,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂快慢机（功能钮）",
           "price": "—",
-          "note": "加盛F4 原厂快慢机（功能钮）",
+          "note": "锋加盛F4 原厂快慢机（功能钮）",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂快慢机（功能钮）",
           "price": "—",
-          "note": "加盛M4 原厂快慢机（功能钮）",
+          "note": "锋加盛M4 原厂快慢机（功能钮）",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂快慢机（功能钮）",
           "price": "—",
-          "note": "加盛BLP 原厂快慢机（功能钮）",
+          "note": "锋加盛BLP 原厂快慢机（功能钮）",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂快慢机（功能钮）",
           "price": "—",
-          "note": "加盛HK416 原厂快慢机（功能钮）",
+          "note": "锋加盛HK416 原厂快慢机（功能钮）",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂快慢机（功能钮）",
           "price": "—",
-          "note": "加盛TTI M2 原厂快慢机（功能钮）",
+          "note": "锋加盛TTI M2 原厂快慢机（功能钮）",
           "material": "塑料"
         },
         {
@@ -15226,6 +15291,13 @@ window.PARTS_DB = {
           "product": "原厂快慢机（功能钮）",
           "price": "—",
           "note": "森伯龙 MK18火控版 原厂快慢机（功能钮）"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "快慢机",
+          "price": "—",
+          "note": "锋加盛M4",
+          "material": "锌合金"
         }
       ],
       "scope": "model"
@@ -15773,38 +15845,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂空挂释放钮",
           "price": "—",
-          "note": "加盛F4 原厂空挂释放钮",
+          "note": "锋加盛F4 原厂空挂释放钮",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂空挂释放钮",
           "price": "—",
-          "note": "加盛M4 原厂空挂释放钮",
+          "note": "锋加盛M4 原厂空挂释放钮",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂空挂释放钮",
           "price": "—",
-          "note": "加盛BLP 原厂空挂释放钮",
+          "note": "锋加盛BLP 原厂空挂释放钮",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂空挂释放钮",
           "price": "—",
-          "note": "加盛HK416 原厂空挂释放钮",
+          "note": "锋加盛HK416 原厂空挂释放钮",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂空挂释放钮",
           "price": "—",
-          "note": "加盛TTI M2 原厂空挂释放钮",
+          "note": "锋加盛TTI M2 原厂空挂释放钮",
           "material": "塑料"
         },
         {
@@ -16178,6 +16250,13 @@ window.PARTS_DB = {
           "product": "原厂空挂释放钮",
           "price": "—",
           "note": "森伯龙 MK18火控版 原厂空挂释放钮"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "回膛片",
+          "price": "—",
+          "note": "锋加盛M4",
+          "material": "锌合金"
         }
       ],
       "scope": "model"
@@ -16201,7 +16280,8 @@ window.PARTS_DB = {
           "label": "材质",
           "values": [
             "塑料",
-            "金属"
+            "金属",
+            "锌合金"
           ]
         },
         "特点": {
@@ -16729,38 +16809,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂弹匣释放钮",
           "price": "—",
-          "note": "加盛F4 原厂弹匣释放钮",
+          "note": "锋加盛F4 原厂弹匣释放钮",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂弹匣释放钮",
           "price": "—",
-          "note": "加盛M4 原厂弹匣释放钮",
+          "note": "锋加盛M4 原厂弹匣释放钮",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂弹匣释放钮",
           "price": "—",
-          "note": "加盛BLP 原厂弹匣释放钮",
+          "note": "锋加盛BLP 原厂弹匣释放钮",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂弹匣释放钮",
           "price": "—",
-          "note": "加盛HK416 原厂弹匣释放钮",
+          "note": "锋加盛HK416 原厂弹匣释放钮",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂弹匣释放钮",
           "price": "—",
-          "note": "加盛TTI M2 原厂弹匣释放钮",
+          "note": "锋加盛TTI M2 原厂弹匣释放钮",
           "material": "塑料"
         },
         {
@@ -17134,6 +17214,13 @@ window.PARTS_DB = {
           "product": "原厂弹匣释放钮",
           "price": "—",
           "note": "森伯龙 MK18火控版 原厂弹匣释放钮"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "弹匣释放",
+          "price": "—",
+          "note": "锋加盛M4",
+          "material": "锌合金"
         }
       ],
       "scope": "model"
@@ -17158,7 +17245,8 @@ window.PARTS_DB = {
           "values": [
             "塑料",
             "金属",
-            "尼龙"
+            "尼龙",
+            "锌合金"
           ]
         },
         "特点": {
@@ -17687,38 +17775,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂拉机柄",
           "price": "—",
-          "note": "加盛F4 原厂拉机柄",
+          "note": "锋加盛F4 原厂拉机柄",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂拉机柄",
           "price": "—",
-          "note": "加盛M4 原厂拉机柄",
+          "note": "锋加盛M4 原厂拉机柄",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂拉机柄",
           "price": "—",
-          "note": "加盛BLP 原厂拉机柄",
+          "note": "锋加盛BLP 原厂拉机柄",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂拉机柄",
           "price": "—",
-          "note": "加盛HK416 原厂拉机柄",
+          "note": "锋加盛HK416 原厂拉机柄",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂拉机柄",
           "price": "—",
-          "note": "加盛TTI M2 原厂拉机柄",
+          "note": "锋加盛TTI M2 原厂拉机柄",
           "material": "塑料"
         },
         {
@@ -18092,6 +18180,13 @@ window.PARTS_DB = {
           "product": "原厂拉机柄",
           "price": "—",
           "note": "森伯龙 MK18火控版 原厂拉机柄"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "拉机柄",
+          "price": "—",
+          "note": "锋加盛M4",
+          "material": "锌合金"
         }
       ],
       "scope": "model"
@@ -18645,38 +18740,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂弹匣",
           "price": "—",
-          "note": "加盛F4 原厂弹匣",
+          "note": "锋加盛F4 原厂弹匣",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂弹匣",
           "price": "—",
-          "note": "加盛M4 原厂弹匣",
+          "note": "锋加盛M4 原厂弹匣",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂弹匣",
           "price": "—",
-          "note": "加盛BLP 原厂弹匣",
+          "note": "锋加盛BLP 原厂弹匣",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂弹匣",
           "price": "—",
-          "note": "加盛HK416 原厂弹匣",
+          "note": "锋加盛HK416 原厂弹匣",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂弹匣",
           "price": "—",
-          "note": "加盛TTI M2 原厂弹匣",
+          "note": "锋加盛TTI M2 原厂弹匣",
           "material": "塑料"
         },
         {
@@ -19596,38 +19691,38 @@ window.PARTS_DB = {
           "material": "金属"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂供蛋电机",
           "price": "—",
-          "note": "加盛F4 原厂供蛋电机",
+          "note": "锋加盛F4 原厂供蛋电机",
           "material": "金属"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂供蛋电机",
           "price": "—",
-          "note": "加盛M4 原厂供蛋电机",
+          "note": "锋加盛M4 原厂供蛋电机",
           "material": "金属"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂供蛋电机",
           "price": "—",
-          "note": "加盛BLP 原厂供蛋电机",
+          "note": "锋加盛BLP 原厂供蛋电机",
           "material": "金属"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂供蛋电机",
           "price": "—",
-          "note": "加盛HK416 原厂供蛋电机",
+          "note": "锋加盛HK416 原厂供蛋电机",
           "material": "金属"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂供蛋电机",
           "price": "—",
-          "note": "加盛TTI M2 原厂供蛋电机",
+          "note": "锋加盛TTI M2 原厂供蛋电机",
           "material": "金属"
         },
         {
@@ -20022,7 +20117,8 @@ window.PARTS_DB = {
             "7075铝",
             "铸铝",
             "钢",
-            "铝"
+            "铝",
+            "塑料"
           ]
         },
         "特点": {
@@ -20558,38 +20654,38 @@ window.PARTS_DB = {
           "material": "尼龙"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂机匣",
           "price": "—",
-          "note": "加盛F4 原厂机匣",
+          "note": "锋加盛F4 原厂机匣",
           "material": "尼龙"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂机匣",
           "price": "—",
-          "note": "加盛M4 原厂机匣",
+          "note": "锋加盛M4 原厂机匣",
           "material": "尼龙"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂机匣",
           "price": "—",
-          "note": "加盛BLP 原厂机匣",
+          "note": "锋加盛BLP 原厂机匣",
           "material": "尼龙"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂机匣",
           "price": "—",
-          "note": "加盛HK416 原厂机匣",
+          "note": "锋加盛HK416 原厂机匣",
           "material": "尼龙"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂机匣",
           "price": "—",
-          "note": "加盛TTI M2 原厂机匣",
+          "note": "锋加盛TTI M2 原厂机匣",
           "material": "尼龙"
         },
         {
@@ -21019,6 +21115,41 @@ window.PARTS_DB = {
           "price": "—",
           "note": "保留预设原厂条目；产品身份与适配待核实",
           "material": "尼龙"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "M4机匣",
+          "price": "—",
+          "note": "锋加盛M4线",
+          "material": "塑料"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "F4机匣",
+          "price": "—",
+          "note": "锋加盛F4",
+          "material": "塑料"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "MK8机匣",
+          "price": "—",
+          "note": "锋加盛MK8",
+          "material": "塑料"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "HK416机匣",
+          "price": "—",
+          "note": "锋加盛HK416",
+          "material": "塑料"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "BLP机匣",
+          "price": "—",
+          "note": "锋加盛BLP",
+          "material": "塑料"
         }
       ],
       "scope": "model"
@@ -21578,38 +21709,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂鱼骨（护木）",
           "price": "—",
-          "note": "加盛F4 原厂鱼骨（护木）",
+          "note": "锋加盛F4 原厂鱼骨（护木）",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂鱼骨（护木）",
           "price": "—",
-          "note": "加盛M4 原厂鱼骨（护木）",
+          "note": "锋加盛M4 原厂鱼骨（护木）",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂鱼骨（护木）",
           "price": "—",
-          "note": "加盛BLP 原厂鱼骨（护木）",
+          "note": "锋加盛BLP 原厂鱼骨（护木）",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂鱼骨（护木）",
           "price": "—",
-          "note": "加盛HK416 原厂鱼骨（护木）",
+          "note": "锋加盛HK416 原厂鱼骨（护木）",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂鱼骨（护木）",
           "price": "—",
-          "note": "加盛TTI M2 原厂鱼骨（护木）",
+          "note": "锋加盛TTI M2 原厂鱼骨（护木）",
           "material": "塑料"
         },
         {
@@ -22032,6 +22163,34 @@ window.PARTS_DB = {
           "price": "—",
           "note": "保留预设原厂条目；产品身份与适配待核实",
           "material": "尼龙"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "尼龙鱼骨",
+          "price": "—",
+          "note": "锋加盛M4",
+          "material": "尼龙"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "竞技鱼骨",
+          "price": "—",
+          "note": "锋加盛F4",
+          "material": "尼龙"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "金属鱼骨",
+          "price": "—",
+          "note": "锋加盛MK8",
+          "material": "金属"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "鱼骨",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "尼龙"
         }
       ],
       "scope": "model"
@@ -22051,7 +22210,8 @@ window.PARTS_DB = {
             "三叉",
             "消音器接口",
             "14mm逆牙",
-            "消音器"
+            "消音器",
+            "14逆牙"
           ]
         },
         "材质": {
@@ -22588,38 +22748,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂火冒（消焰器）",
           "price": "—",
-          "note": "加盛F4 原厂火冒（消焰器）",
+          "note": "锋加盛F4 原厂火冒（消焰器）",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂火冒（消焰器）",
           "price": "—",
-          "note": "加盛M4 原厂火冒（消焰器）",
+          "note": "锋加盛M4 原厂火冒（消焰器）",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂火冒（消焰器）",
           "price": "—",
-          "note": "加盛BLP 原厂火冒（消焰器）",
+          "note": "锋加盛BLP 原厂火冒（消焰器）",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂火冒（消焰器）",
           "price": "—",
-          "note": "加盛HK416 原厂火冒（消焰器）",
+          "note": "锋加盛HK416 原厂火冒（消焰器）",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂火冒（消焰器）",
           "price": "—",
-          "note": "加盛TTI M2 原厂火冒（消焰器）",
+          "note": "锋加盛TTI M2 原厂火冒（消焰器）",
           "material": "塑料"
         },
         {
@@ -23007,6 +23167,20 @@ window.PARTS_DB = {
           "price": "—",
           "note": "保留预设原厂条目；产品身份与适配待核实",
           "material": "尼龙"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "14逆牙火帽",
+          "price": "—",
+          "note": "锋加盛BLP",
+          "material": "金属"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "消音器",
+          "price": "—",
+          "note": "锋加盛MK8",
+          "material": "金属"
         }
       ],
       "scope": "model"
@@ -23557,38 +23731,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂外管",
           "price": "—",
-          "note": "加盛F4 原厂外管",
+          "note": "锋加盛F4 原厂外管",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂外管",
           "price": "—",
-          "note": "加盛M4 原厂外管",
+          "note": "锋加盛M4 原厂外管",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂外管",
           "price": "—",
-          "note": "加盛BLP 原厂外管",
+          "note": "锋加盛BLP 原厂外管",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂外管",
           "price": "—",
-          "note": "加盛HK416 原厂外管",
+          "note": "锋加盛HK416 原厂外管",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂外管",
           "price": "—",
-          "note": "加盛TTI M2 原厂外管",
+          "note": "锋加盛TTI M2 原厂外管",
           "material": "塑料"
         },
         {
@@ -23969,6 +24143,27 @@ window.PARTS_DB = {
           "price": "—",
           "note": "保留预设原厂条目；产品身份与适配待核实",
           "material": "钢"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "金外管",
+          "price": "—",
+          "note": "锋加盛F4",
+          "material": "金属"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "外管",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "金属"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "金属外管",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "金属"
         }
       ],
       "scope": "model"
@@ -24523,38 +24718,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂托芯",
           "price": "—",
-          "note": "加盛F4 原厂托芯",
+          "note": "锋加盛F4 原厂托芯",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂托芯",
           "price": "—",
-          "note": "加盛M4 原厂托芯",
+          "note": "锋加盛M4 原厂托芯",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂托芯",
           "price": "—",
-          "note": "加盛BLP 原厂托芯",
+          "note": "锋加盛BLP 原厂托芯",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂托芯",
           "price": "—",
-          "note": "加盛HK416 原厂托芯",
+          "note": "锋加盛HK416 原厂托芯",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂托芯",
           "price": "—",
-          "note": "加盛TTI M2 原厂托芯",
+          "note": "锋加盛TTI M2 原厂托芯",
           "material": "塑料"
         },
         {
@@ -25484,38 +25679,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂后托",
           "price": "—",
-          "note": "加盛F4 原厂后托",
+          "note": "锋加盛F4 原厂后托",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂后托",
           "price": "—",
-          "note": "加盛M4 原厂后托",
+          "note": "锋加盛M4 原厂后托",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂后托",
           "price": "—",
-          "note": "加盛BLP 原厂后托",
+          "note": "锋加盛BLP 原厂后托",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂后托",
           "price": "—",
-          "note": "加盛HK416 原厂后托",
+          "note": "锋加盛HK416 原厂后托",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂后托",
           "price": "—",
-          "note": "加盛TTI M2 原厂后托",
+          "note": "锋加盛TTI M2 原厂后托",
           "material": "塑料"
         },
         {
@@ -25910,6 +26105,27 @@ window.PARTS_DB = {
           "price": "—",
           "note": "保留预设原厂条目；产品身份与适配待核实",
           "material": "钢"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "金托芯",
+          "price": "—",
+          "note": "锋加盛F4",
+          "material": "钢"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "海军托",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "尼龙"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "后托",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "尼龙"
         }
       ],
       "scope": "model"
@@ -26461,38 +26677,38 @@ window.PARTS_DB = {
           "material": "尼龙"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "机械瞄具",
           "price": "—",
-          "note": "加盛F4 原厂瞄具",
+          "note": "锋加盛F4 原厂瞄具",
           "material": "尼龙"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "机械瞄具",
           "price": "—",
-          "note": "加盛M4 原厂瞄具",
+          "note": "锋加盛M4 原厂瞄具",
           "material": "尼龙"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "机械瞄具",
           "price": "—",
-          "note": "加盛BLP 原厂瞄具",
+          "note": "锋加盛BLP 原厂瞄具",
           "material": "尼龙"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "机械瞄具",
           "price": "—",
-          "note": "加盛HK416 原厂瞄具",
+          "note": "锋加盛HK416 原厂瞄具",
           "material": "尼龙"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "机械瞄具",
           "price": "—",
-          "note": "加盛TTI M2 原厂瞄具",
+          "note": "锋加盛TTI M2 原厂瞄具",
           "material": "尼龙"
         },
         {
@@ -27231,6 +27447,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "保留预设原厂条目；产品身份与适配待核实",
           "material": "尼龙"
+        },
+        {
+          "brand": "锋加盛原厂",
+          "product": "尼龙机瞄",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "尼龙"
         }
       ],
       "scope": "model"
@@ -27781,38 +28004,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂握把（通用/前握把）",
           "price": "—",
-          "note": "加盛F4 原厂握把（通用/前握把）",
+          "note": "锋加盛F4 原厂握把（通用/前握把）",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂握把（通用/前握把）",
           "price": "—",
-          "note": "加盛M4 原厂握把（通用/前握把）",
+          "note": "锋加盛M4 原厂握把（通用/前握把）",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂握把（通用/前握把）",
           "price": "—",
-          "note": "加盛BLP 原厂握把（通用/前握把）",
+          "note": "锋加盛BLP 原厂握把（通用/前握把）",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂握把（通用/前握把）",
           "price": "—",
-          "note": "加盛HK416 原厂握把（通用/前握把）",
+          "note": "锋加盛HK416 原厂握把（通用/前握把）",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂握把（通用/前握把）",
           "price": "—",
-          "note": "加盛TTI M2 原厂握把（通用/前握把）",
+          "note": "锋加盛TTI M2 原厂握把（通用/前握把）",
           "material": "塑料"
         },
         {
@@ -28739,38 +28962,38 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛F4原厂",
+          "brand": "锋加盛F4原厂",
           "product": "原厂手枪式握把",
           "price": "—",
-          "note": "加盛F4 原厂手枪式握把",
+          "note": "锋加盛F4 原厂手枪式握把",
           "material": "塑料"
         },
         {
-          "brand": "加盛M4原厂",
+          "brand": "锋加盛M4原厂",
           "product": "原厂手枪式握把",
           "price": "—",
-          "note": "加盛M4 原厂手枪式握把",
+          "note": "锋加盛M4 原厂手枪式握把",
           "material": "塑料"
         },
         {
-          "brand": "加盛BLP原厂",
+          "brand": "锋加盛BLP原厂",
           "product": "原厂手枪式握把",
           "price": "—",
-          "note": "加盛BLP 原厂手枪式握把",
+          "note": "锋加盛BLP 原厂手枪式握把",
           "material": "塑料"
         },
         {
-          "brand": "加盛HK416原厂",
+          "brand": "锋加盛HK416原厂",
           "product": "原厂手枪式握把",
           "price": "—",
-          "note": "加盛HK416 原厂手枪式握把",
+          "note": "锋加盛HK416 原厂手枪式握把",
           "material": "塑料"
         },
         {
-          "brand": "加盛TTI M2原厂",
+          "brand": "锋加盛TTI M2原厂",
           "product": "原厂手枪式握把",
           "price": "—",
-          "note": "加盛TTI M2 原厂手枪式握把",
+          "note": "锋加盛TTI M2 原厂手枪式握把",
           "material": "塑料"
         },
         {
@@ -29248,10 +29471,10 @@ window.PARTS_DB = {
           "material": "塑料"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "空挂回趟套件",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "塑料"
         },
         {
@@ -29475,10 +29698,10 @@ window.PARTS_DB = {
           "material": "钢"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "止逆齿簧",
           "price": "—",
-          "note": "加盛 原厂件",
+          "note": "锋加盛 原厂件",
           "material": "钢"
         },
         {
@@ -29690,10 +29913,10 @@ window.PARTS_DB = {
           "note": "创研 原厂件"
         },
         {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "蝴蝶环",
           "price": "—",
-          "note": "加盛 原厂件"
+          "note": "锋加盛 原厂件"
         },
         {
           "brand": "博涵原厂",
@@ -30957,14 +31180,14 @@ window.PARTS_DB = {
       "note": "博涵 原厂配件",
       "category": "原厂"
     },
-    "加盛": {
-      "verified": "known",
-      "note": "加盛 发射器品牌（OCR整理）",
+    "锋加盛": {
+      "verified": "user_reported",
+      "note": "锋加盛 发射器品牌，标准2号波入门AR",
       "category": "原厂"
     },
-    "加盛原厂": {
-      "verified": "known",
-      "note": "加盛 原厂配件",
+    "锋加盛原厂": {
+      "verified": "user_reported",
+      "note": "锋加盛 原厂配件",
       "category": "原厂"
     },
     "天弓": {
@@ -31417,29 +31640,29 @@ window.PARTS_DB = {
       "note": "博涵MPX 原厂配件（型号专属）",
       "category": "原厂"
     },
-    "加盛F4原厂": {
+    "锋加盛F4原厂": {
       "verified": "known",
-      "note": "加盛F4 原厂配件（型号专属）",
+      "note": "锋加盛F4 原厂配件（型号专属）",
       "category": "原厂"
     },
-    "加盛M4原厂": {
+    "锋加盛M4原厂": {
       "verified": "known",
-      "note": "加盛M4 原厂配件（型号专属）",
+      "note": "锋加盛M4 原厂配件（型号专属）",
       "category": "原厂"
     },
-    "加盛BLP原厂": {
+    "锋加盛BLP原厂": {
       "verified": "known",
-      "note": "加盛BLP 原厂配件（型号专属）",
+      "note": "锋加盛BLP 原厂配件（型号专属）",
       "category": "原厂"
     },
-    "加盛HK416原厂": {
+    "锋加盛HK416原厂": {
       "verified": "known",
-      "note": "加盛HK416 原厂配件（型号专属）",
+      "note": "锋加盛HK416 原厂配件（型号专属）",
       "category": "原厂"
     },
-    "加盛TTI M2原厂": {
+    "锋加盛TTI M2原厂": {
       "verified": "known",
-      "note": "加盛TTI M2 原厂配件（型号专属）",
+      "note": "锋加盛TTI M2 原厂配件（型号专属）",
       "category": "原厂"
     },
     "天弓ARP9原厂": {
@@ -57765,29 +57988,33 @@ window.PARTS_DB = {
     },
     {
       "id": "bg_fjs",
-      "brand": "加盛",
+      "brand": "锋加盛",
       "gearboxType": "2号波",
-      "tier": 5,
+      "tier": 4,
       "products": [
-        "F4",
-        "M4",
-        "BLP",
-        "HK416",
-        "TTI M2"
+        "M4基础版",
+        "M4CQB金齿版",
+        "F4火控版",
+        "战斗之光BLP",
+        "MK8",
+        "HK416"
       ],
       "priceRange": "",
-      "desc": "全波普及，波箱耐用不易裂，回膛强，火控便宜，入门AR性价比",
+      "desc": "标准2号波入门AR，金齿金天梯+火控+预供，低价堆小件策略，气缸偏移是已知短板",
       "notes": [
-        "原厂数据默认带回膛空挂回趟套件（2号波）。",
-        "换第三方（LDX数据）空挂回趟套件时可选带回膛/不回膛。",
-        "原厂多为8mm轴套+微动触片火控（火控件为可选升级项）。",
-        "一体波换弹簧需开波；分体波可用快拆尾顶免开波。",
-        "改13:1前先看兼容检查（火控/轴承/电机）。",
-        "以上为OCR整理的加盛品牌资料，具体批次配置以实物为准。"
+        "M4基础版约200元档，尼龙齿轮，锌合金小件，无火控无空挂。",
+        "M4CQB金齿版约268元，金齿金天梯，回膛清脆，无空挂。",
+        "F4火控版约628元，金齿金天梯+编程火控+空挂，但空挂/回膛到位率有问题。",
+        "战斗之光BLP约388元，尼龙波+火控，气缸偏移是经典毛病。",
+        "MK8扫齿风险明确，金属鱼骨与尼龙后托色差大，建议动手能力强入手。",
+        "HK416外观向，配件不通用，下场不建议。",
+        "标准2号波基础，部分型号原厂通用LDX数据波（未系统验证）。",
+        "气缸固定缺陷多型号出现（BLP/F4），需垫胶布或粘死。",
+        "以上为用户提供锋加盛品牌资料，具体批次配置以实物为准。"
       ],
       "preset": {
         "p_shell": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "尼龙波壳",
           "attrs": {
             "走线": "内走",
@@ -57796,21 +58023,21 @@ window.PARTS_DB = {
           }
         },
         "p_nozzle": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "推嘴",
           "attrs": {
             "材质": "PEI"
           }
         },
         "p_cyl_head": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "缸头",
           "attrs": {
             "材质": "铝"
           }
         },
         "p_cylinder": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "气缸",
           "attrs": {
             "回膛": "是",
@@ -57819,14 +58046,14 @@ window.PARTS_DB = {
           }
         },
         "p_tappet": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "拉桥",
           "attrs": {
             "材质": "尼龙"
           }
         },
         "p_piston": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "天梯（活塞）",
           "attrs": {
             "回膛": "是",
@@ -57835,21 +58062,21 @@ window.PARTS_DB = {
           }
         },
         "p_piston_head": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "拍头",
           "attrs": {
             "材质": "尼龙"
           }
         },
         "p_spring_guide": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "尾顶",
           "attrs": {
             "材质": "钢"
           }
         },
         "p_spring": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "弹簧",
           "attrs": {
             "力级": "M100",
@@ -57857,119 +58084,107 @@ window.PARTS_DB = {
           }
         },
         "p_gearset": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "齿轮组（整组）",
           "attrs": {
             "减速比": "18:1",
-            "材质": "粉末钢"
+            "材质": "尼龙"
           }
         },
         "p_ar_latch": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "止逆（止逆齿）",
           "attrs": {
             "材质": "钢"
           }
         },
         "p_ar_latch_spring": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "止逆齿簧",
           "attrs": {
             "材质": "钢"
           }
         },
         "p_shims": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "调齿垫片",
           "attrs": {
             "材质": "钢"
           }
         },
         "p_bushing": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "轴套",
           "attrs": {
-            "口径": "8mm",
-            "材质": "黄铜"
+            "材质": "铜",
+            "规格": "8mm"
           }
         },
         "p_trigger": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "扳机",
           "attrs": {
-            "材质": "钢"
+            "材质": "锌合金"
           }
         },
         "p_trigger_spring": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "扳机簧",
           "attrs": {
             "材质": "钢"
           }
         },
         "p_bolt_kit": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "空挂回趟套件",
           "attrs": {
             "回膛": "是",
-            "材质": "塑料"
+            "空挂": "无",
+            "材质": "锌合金"
+          }
+        },
+        "p_bolt_slider": {
+          "brand": "锋加盛原厂",
+          "product": "滑块（回膛滑块）",
+          "attrs": {
+            "回膛配套": "是",
+            "材质": "铝"
+          }
+        },
+        "p_bolt_plate": {
+          "brand": "锋加盛原厂",
+          "product": "机片",
+          "attrs": {
+            "回膛配套": "是",
+            "材质": "钢"
+          }
+        },
+        "p_bolt_limit": {
+          "brand": "锋加盛原厂",
+          "product": "限位",
+          "attrs": {
+            "回膛配套": "是",
+            "材质": "钢"
           }
         },
         "p_rod": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "连杆（空挂·内构）",
           "attrs": {
+            "回膛配套": "是",
             "材质": "钢"
           }
         },
         "p_rod_spring": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "连杆簧",
           "attrs": {
+            "回膛配套": "是",
             "材质": "钢"
-          }
-        },
-        "p_bolt_plate": {
-          "brand": "加盛原厂",
-          "product": "机片",
-          "attrs": {
-            "材质": "钢"
-          }
-        },
-        "p_bolt_slider": {
-          "brand": "加盛原厂",
-          "product": "滑块（回膛滑块）",
-          "attrs": {
-            "材质": "尼龙"
-          }
-        },
-        "p_bolt_limit": {
-          "brand": "加盛原厂",
-          "product": "限位",
-          "attrs": {
-            "材质": "钢"
-          }
-        },
-        "p_orings": {
-          "brand": "加盛原厂",
-          "product": "O-ring（缸头/拍头）",
-          "attrs": {
-            "材质": "橡胶"
-          }
-        },
-        "p_motor": {
-          "brand": "加盛原厂",
-          "product": "原厂有刷电机（长轴）",
-          "attrs": {
-            "电机类型": "有刷",
-            "轴型": "长轴(480)",
-            "转速": "—",
-            "材质": "金属",
-            "波箱": "2号波"
           }
         },
         "p_catch_axe": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "空挂斧",
           "attrs": {
             "类型": "标准",
@@ -57977,847 +58192,384 @@ window.PARTS_DB = {
           }
         },
         "p_catch_spring": {
-          "brand": "加盛原厂",
+          "brand": "锋加盛原厂",
           "product": "空挂簧",
           "attrs": {
             "类型": "标准",
             "材质": "钢"
           }
+        },
+        "p_orings": {
+          "brand": "锋加盛原厂",
+          "product": "O-ring（缸头/拍头）",
+          "attrs": {
+            "材质": "橡胶"
+          }
+        },
+        "p_motor": {
+          "brand": "锋加盛原厂",
+          "product": "电机",
+          "attrs": {
+            "电机类型": "有刷",
+            "材质": "金属"
+          }
         }
       },
       "productPresets": {
-        "F4": {
-          "p_hop": {
-            "brand": "加盛F4原厂",
-            "product": "原厂蛋道（hop-up 座）",
+        "M4基础版": {
+          "p_shell": {
+            "brand": "锋加盛原厂",
+            "product": "尼龙波壳",
             "attrs": {
-              "材质": "塑料"
-            }
-          },
-          "p_inner_barrel": {
-            "brand": "加盛F4原厂",
-            "product": "原厂内管",
-            "attrs": {
-              "内径": "6.05mm",
-              "长度段": "250-450mm",
-              "材质": "黄铜"
-            }
-          },
-          "p_barrel_spacer": {
-            "brand": "加盛F4原厂",
-            "product": "原厂内管簧",
-            "attrs": {
-              "材质": "橡胶"
-            }
-          },
-          "p_receiver": {
-            "brand": "加盛F4原厂",
-            "product": "原厂机匣",
-            "attrs": {
+              "走线": "内走",
+              "结构": "一体",
               "材质": "尼龙"
             }
           },
-          "p_grip_pistol": {
-            "brand": "加盛F4原厂",
-            "product": "原厂手枪式握把",
+          "p_gearset": {
+            "brand": "锋加盛原厂",
+            "product": "尼龙齿轮组",
+            "attrs": {
+              "减速比": "18:1",
+              "材质": "尼龙"
+            }
+          },
+          "p_bolt_kit": {
+            "brand": "锋加盛原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "无",
+              "材质": "锌合金"
+            }
+          },
+          "p_receiver": {
+            "brand": "锋加盛原厂",
+            "product": "M4机匣",
             "attrs": {
               "材质": "塑料"
             }
           },
           "p_handguard": {
-            "brand": "加盛F4原厂",
-            "product": "原厂鱼骨（护木）",
+            "brand": "锋加盛原厂",
+            "product": "尼龙鱼骨",
             "attrs": {
-              "类型": "M-LOK",
-              "材质": "塑料"
-            }
-          },
-          "p_flashhider": {
-            "brand": "加盛F4原厂",
-            "product": "原厂火冒（消焰器）",
-            "attrs": {
-              "类型": "鸟笼",
-              "材质": "塑料"
-            }
-          },
-          "p_outer_barrel": {
-            "brand": "加盛F4原厂",
-            "product": "原厂外管",
-            "attrs": {
-              "长度段": "275-400mm",
-              "材质": "塑料"
-            }
-          },
-          "p_buffer_tube": {
-            "brand": "加盛F4原厂",
-            "product": "原厂托芯",
-            "attrs": {
-              "规格": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_stock": {
-            "brand": "加盛F4原厂",
-            "product": "原厂后托",
-            "attrs": {
-              "类型": "伸缩托",
-              "材质": "塑料"
-            }
-          },
-          "p_optics": {
-            "brand": "加盛F4原厂",
-            "product": "机械瞄具",
-            "attrs": {
-              "类型": "红点",
               "材质": "尼龙"
             }
           },
-          "p_grip_std": {
-            "brand": "加盛F4原厂",
-            "product": "原厂握把（通用/前握把）",
+          "p_trigger": {
+            "brand": "锋加盛原厂",
+            "product": "扳机",
             "attrs": {
-              "类型": "通用",
-              "材质": "塑料"
-            }
-          },
-          "p_selector_switch": {
-            "brand": "加盛F4原厂",
-            "product": "原厂快慢机（功能钮）",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_bolt_release": {
-            "brand": "加盛F4原厂",
-            "product": "原厂空挂释放钮",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
+              "材质": "锌合金"
             }
           },
           "p_mag_release": {
-            "brand": "加盛F4原厂",
-            "product": "原厂弹匣释放钮",
+            "brand": "锋加盛原厂",
+            "product": "弹匣释放",
             "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
+              "材质": "锌合金"
             }
           },
           "p_charging": {
-            "brand": "加盛F4原厂",
-            "product": "原厂拉机柄",
+            "brand": "锋加盛原厂",
+            "product": "拉机柄",
             "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
+              "材质": "锌合金"
             }
           },
-          "p_mag": {
-            "brand": "加盛F4原厂",
-            "product": "原厂弹匣",
+          "p_selector_switch": {
+            "brand": "锋加盛原厂",
+            "product": "快慢机",
             "attrs": {
-              "容量": "标准",
-              "材质": "塑料"
+              "材质": "锌合金"
             }
           },
-          "p_feed_motor": {
-            "brand": "加盛F4原厂",
-            "product": "原厂供蛋电机",
+          "p_stock": {
+            "brand": "锋加盛原厂",
+            "product": "海军托",
             "attrs": {
-              "规格": "标准",
+              "材质": "尼龙"
+            }
+          },
+          "p_bolt_release": {
+            "brand": "锋加盛原厂",
+            "product": "回膛片",
+            "attrs": {
+              "材质": "锌合金"
+            }
+          },
+          "p_outer_barrel": {
+            "brand": "锋加盛原厂",
+            "product": "外管",
+            "attrs": {
               "材质": "金属"
             }
           },
-          "p_selector_safe": {
-            "brand": "加盛F4原厂",
-            "product": "原厂保险模块",
+          "p_inner_barrel": {
+            "brand": "锋加盛原厂",
+            "product": "内管",
             "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_selector_plate": {
-            "brand": "加盛F4原厂",
-            "product": "原厂快慢机拨片",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_selector_link": {
-            "brand": "加盛F4原厂",
-            "product": "原厂双边快慢机齿轮连杆",
-            "attrs": {
-              "类型": "标准",
-              "材质": "钢"
+              "材质": "铝",
+              "内径": "6mm"
             }
           }
         },
-        "M4": {
-          "p_hop": {
-            "brand": "加盛M4原厂",
-            "product": "原厂蛋道（hop-up 座）",
+        "M4CQB金齿版": {
+          "p_gearset": {
+            "brand": "锋加盛原厂",
+            "product": "金齿金天梯齿轮组",
             "attrs": {
-              "材质": "塑料"
+              "减速比": "18:1",
+              "材质": "金齿"
             }
           },
-          "p_inner_barrel": {
-            "brand": "加盛M4原厂",
-            "product": "原厂内管",
+          "p_piston": {
+            "brand": "锋加盛原厂",
+            "product": "金天梯",
             "attrs": {
-              "内径": "6.05mm",
-              "长度段": "250-450mm",
-              "材质": "黄铜"
+              "回膛": "是",
+              "齿式": "全齿",
+              "材质": "金天梯"
             }
           },
-          "p_barrel_spacer": {
-            "brand": "加盛M4原厂",
-            "product": "原厂内管簧",
+          "p_bolt_kit": {
+            "brand": "锋加盛原厂",
+            "product": "空挂回趟套件",
             "attrs": {
-              "材质": "橡胶"
+              "回膛": "是",
+              "空挂": "无",
+              "材质": "锌合金"
+            }
+          },
+          "p_bolt_plate": {
+            "brand": "锋加盛原厂",
+            "product": "机片",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
             }
           },
           "p_receiver": {
-            "brand": "加盛M4原厂",
-            "product": "原厂机匣",
-            "attrs": {
-              "材质": "尼龙"
-            }
-          },
-          "p_grip_pistol": {
-            "brand": "加盛M4原厂",
-            "product": "原厂手枪式握把",
+            "brand": "锋加盛原厂",
+            "product": "M4机匣",
             "attrs": {
               "材质": "塑料"
             }
           },
           "p_handguard": {
-            "brand": "加盛M4原厂",
-            "product": "原厂鱼骨（护木）",
+            "brand": "锋加盛原厂",
+            "product": "尼龙鱼骨",
             "attrs": {
-              "类型": "M-LOK",
-              "材质": "塑料"
-            }
-          },
-          "p_flashhider": {
-            "brand": "加盛M4原厂",
-            "product": "原厂火冒（消焰器）",
-            "attrs": {
-              "类型": "鸟笼",
-              "材质": "塑料"
-            }
-          },
-          "p_outer_barrel": {
-            "brand": "加盛M4原厂",
-            "product": "原厂外管",
-            "attrs": {
-              "长度段": "275-400mm",
-              "材质": "塑料"
-            }
-          },
-          "p_buffer_tube": {
-            "brand": "加盛M4原厂",
-            "product": "原厂托芯",
-            "attrs": {
-              "规格": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_stock": {
-            "brand": "加盛M4原厂",
-            "product": "原厂后托",
-            "attrs": {
-              "类型": "伸缩托",
-              "材质": "塑料"
-            }
-          },
-          "p_optics": {
-            "brand": "加盛M4原厂",
-            "product": "机械瞄具",
-            "attrs": {
-              "类型": "红点",
               "材质": "尼龙"
             }
           },
-          "p_grip_std": {
-            "brand": "加盛M4原厂",
-            "product": "原厂握把（通用/前握把）",
+          "p_inner_barrel": {
+            "brand": "锋加盛原厂",
+            "product": "铝合金内管",
             "attrs": {
-              "类型": "通用",
-              "材质": "塑料"
+              "材质": "铝",
+              "内径": "6mm"
             }
           },
-          "p_selector_switch": {
-            "brand": "加盛M4原厂",
-            "product": "原厂快慢机（功能钮）",
+          "p_stock": {
+            "brand": "锋加盛原厂",
+            "product": "海军托",
             "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_bolt_release": {
-            "brand": "加盛M4原厂",
-            "product": "原厂空挂释放钮",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_mag_release": {
-            "brand": "加盛M4原厂",
-            "product": "原厂弹匣释放钮",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_charging": {
-            "brand": "加盛M4原厂",
-            "product": "原厂拉机柄",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_mag": {
-            "brand": "加盛M4原厂",
-            "product": "原厂弹匣",
-            "attrs": {
-              "容量": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_feed_motor": {
-            "brand": "加盛M4原厂",
-            "product": "原厂供蛋电机",
-            "attrs": {
-              "规格": "标准",
-              "材质": "金属"
-            }
-          },
-          "p_selector_safe": {
-            "brand": "加盛M4原厂",
-            "product": "原厂保险模块",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_selector_plate": {
-            "brand": "加盛M4原厂",
-            "product": "原厂快慢机拨片",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_selector_link": {
-            "brand": "加盛M4原厂",
-            "product": "原厂双边快慢机齿轮连杆",
-            "attrs": {
-              "类型": "标准",
-              "材质": "钢"
+              "材质": "尼龙"
             }
           }
         },
-        "BLP": {
-          "p_hop": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂蛋道（hop-up 座）",
+        "F4火控版": {
+          "p_shell": {
+            "brand": "锋加盛原厂",
+            "product": "尼龙波壳",
             "attrs": {
-              "材质": "塑料"
-            }
-          },
-          "p_inner_barrel": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂内管",
-            "attrs": {
-              "内径": "6.05mm",
-              "长度段": "250-450mm",
-              "材质": "黄铜"
-            }
-          },
-          "p_barrel_spacer": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂内管簧",
-            "attrs": {
-              "材质": "橡胶"
-            }
-          },
-          "p_receiver": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂机匣",
-            "attrs": {
+              "走线": "内走",
+              "结构": "一体",
               "材质": "尼龙"
             }
           },
-          "p_grip_pistol": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂手枪式握把",
+          "p_gearset": {
+            "brand": "锋加盛原厂",
+            "product": "金齿金天梯齿轮组",
+            "attrs": {
+              "减速比": "18:1",
+              "材质": "金齿"
+            }
+          },
+          "p_piston": {
+            "brand": "锋加盛原厂",
+            "product": "金天梯",
+            "attrs": {
+              "回膛": "是",
+              "齿式": "全齿",
+              "材质": "金天梯"
+            }
+          },
+          "p_bolt_kit": {
+            "brand": "锋加盛原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "有",
+              "材质": "锌合金"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "锋加盛原厂",
+            "product": "火控芯片",
+            "attrs": {
+              "类型": "微动",
+              "功能": "编程"
+            }
+          },
+          "p_receiver": {
+            "brand": "锋加盛原厂",
+            "product": "F4机匣",
             "attrs": {
               "材质": "塑料"
             }
           },
           "p_handguard": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂鱼骨（护木）",
+            "brand": "锋加盛原厂",
+            "product": "竞技鱼骨",
             "attrs": {
-              "类型": "M-LOK",
-              "材质": "塑料"
-            }
-          },
-          "p_flashhider": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂火冒（消焰器）",
-            "attrs": {
-              "类型": "鸟笼",
-              "材质": "塑料"
-            }
-          },
-          "p_outer_barrel": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂外管",
-            "attrs": {
-              "长度段": "275-400mm",
-              "材质": "塑料"
-            }
-          },
-          "p_buffer_tube": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂托芯",
-            "attrs": {
-              "规格": "标准",
-              "材质": "塑料"
+              "材质": "尼龙"
             }
           },
           "p_stock": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂后托",
+            "brand": "锋加盛原厂",
+            "product": "金托芯",
             "attrs": {
-              "类型": "伸缩托",
+              "材质": "钢"
+            }
+          },
+          "p_inner_barrel": {
+            "brand": "锋加盛原厂",
+            "product": "金内管",
+            "attrs": {
+              "材质": "铝",
+              "内径": "6mm"
+            }
+          },
+          "p_outer_barrel": {
+            "brand": "锋加盛原厂",
+            "product": "金外管",
+            "attrs": {
+              "材质": "金属"
+            }
+          }
+        },
+        "战斗之光BLP": {
+          "p_shell": {
+            "brand": "锋加盛原厂",
+            "product": "尼龙波壳",
+            "attrs": {
+              "走线": "内走",
+              "结构": "一体",
+              "材质": "尼龙"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "锋加盛原厂",
+            "product": "火控",
+            "attrs": {
+              "类型": "微动"
+            }
+          },
+          "p_bolt_kit": {
+            "brand": "锋加盛原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "无",
+              "材质": "锌合金"
+            }
+          },
+          "p_receiver": {
+            "brand": "锋加盛原厂",
+            "product": "BLP机匣",
+            "attrs": {
               "材质": "塑料"
             }
           },
           "p_optics": {
-            "brand": "加盛BLP原厂",
-            "product": "机械瞄具",
+            "brand": "锋加盛原厂",
+            "product": "尼龙机瞄",
             "attrs": {
-              "类型": "红点",
-              "材质": "尼龙"
+              "材质": "尼龙",
+              "类型": "机械"
             }
           },
-          "p_grip_std": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂握把（通用/前握把）",
+          "p_flashhider": {
+            "brand": "锋加盛原厂",
+            "product": "14逆牙火帽",
             "attrs": {
-              "类型": "通用",
+              "材质": "金属",
+              "类型": "14逆牙"
+            }
+          },
+          "p_outer_barrel": {
+            "brand": "锋加盛原厂",
+            "product": "金属外管",
+            "attrs": {
+              "材质": "金属"
+            }
+          }
+        },
+        "MK8": {
+          "p_receiver": {
+            "brand": "锋加盛原厂",
+            "product": "MK8机匣",
+            "attrs": {
               "材质": "塑料"
             }
           },
-          "p_selector_switch": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂快慢机（功能钮）",
+          "p_handguard": {
+            "brand": "锋加盛原厂",
+            "product": "金属鱼骨",
             "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_bolt_release": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂空挂释放钮",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_mag_release": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂弹匣释放钮",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_charging": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂拉机柄",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_mag": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂弹匣",
-            "attrs": {
-              "容量": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_feed_motor": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂供蛋电机",
-            "attrs": {
-              "规格": "标准",
               "材质": "金属"
             }
           },
-          "p_selector_safe": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂保险模块",
+          "p_flashhider": {
+            "brand": "锋加盛原厂",
+            "product": "消音器",
             "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
+              "材质": "金属"
             }
           },
-          "p_selector_plate": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂快慢机拨片",
+          "p_stock": {
+            "brand": "锋加盛原厂",
+            "product": "后托",
             "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_selector_link": {
-            "brand": "加盛BLP原厂",
-            "product": "原厂双边快慢机齿轮连杆",
-            "attrs": {
-              "类型": "标准",
-              "材质": "钢"
+              "材质": "尼龙"
             }
           }
         },
         "HK416": {
-          "p_hop": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂蛋道（hop-up 座）",
+          "p_shell": {
+            "brand": "锋加盛原厂",
+            "product": "尼龙波壳",
             "attrs": {
-              "材质": "塑料"
-            }
-          },
-          "p_inner_barrel": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂内管",
-            "attrs": {
-              "内径": "6.05mm",
-              "长度段": "250-450mm",
-              "材质": "黄铜"
-            }
-          },
-          "p_barrel_spacer": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂内管簧",
-            "attrs": {
-              "材质": "橡胶"
-            }
-          },
-          "p_receiver": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂机匣",
-            "attrs": {
+              "走线": "内走",
+              "结构": "一体",
               "材质": "尼龙"
             }
           },
-          "p_grip_pistol": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂手枪式握把",
+          "p_receiver": {
+            "brand": "锋加盛原厂",
+            "product": "HK416机匣",
             "attrs": {
               "材质": "塑料"
             }
           },
           "p_handguard": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂鱼骨（护木）",
-            "attrs": {
-              "类型": "M-LOK",
-              "材质": "塑料"
-            }
-          },
-          "p_flashhider": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂火冒（消焰器）",
-            "attrs": {
-              "类型": "鸟笼",
-              "材质": "塑料"
-            }
-          },
-          "p_outer_barrel": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂外管",
-            "attrs": {
-              "长度段": "275-400mm",
-              "材质": "塑料"
-            }
-          },
-          "p_buffer_tube": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂托芯",
-            "attrs": {
-              "规格": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_stock": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂后托",
-            "attrs": {
-              "类型": "伸缩托",
-              "材质": "塑料"
-            }
-          },
-          "p_optics": {
-            "brand": "加盛HK416原厂",
-            "product": "机械瞄具",
-            "attrs": {
-              "类型": "红点",
-              "材质": "尼龙"
-            }
-          },
-          "p_grip_std": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂握把（通用/前握把）",
-            "attrs": {
-              "类型": "通用",
-              "材质": "塑料"
-            }
-          },
-          "p_selector_switch": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂快慢机（功能钮）",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_bolt_release": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂空挂释放钮",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_mag_release": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂弹匣释放钮",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_charging": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂拉机柄",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_mag": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂弹匣",
-            "attrs": {
-              "容量": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_feed_motor": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂供蛋电机",
-            "attrs": {
-              "规格": "标准",
-              "材质": "金属"
-            }
-          },
-          "p_selector_safe": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂保险模块",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_selector_plate": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂快慢机拨片",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_selector_link": {
-            "brand": "加盛HK416原厂",
-            "product": "原厂双边快慢机齿轮连杆",
-            "attrs": {
-              "类型": "标准",
-              "材质": "钢"
-            }
-          }
-        },
-        "TTI M2": {
-          "p_hop": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂蛋道（hop-up 座）",
-            "attrs": {
-              "材质": "塑料"
-            }
-          },
-          "p_inner_barrel": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂内管",
-            "attrs": {
-              "内径": "6.05mm",
-              "长度段": "250-450mm",
-              "材质": "黄铜"
-            }
-          },
-          "p_barrel_spacer": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂内管簧",
-            "attrs": {
-              "材质": "橡胶"
-            }
-          },
-          "p_receiver": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂机匣",
+            "brand": "锋加盛原厂",
+            "product": "鱼骨",
             "attrs": {
               "材质": "尼龙"
-            }
-          },
-          "p_grip_pistol": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂手枪式握把",
-            "attrs": {
-              "材质": "塑料"
-            }
-          },
-          "p_handguard": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂鱼骨（护木）",
-            "attrs": {
-              "类型": "M-LOK",
-              "材质": "塑料"
-            }
-          },
-          "p_flashhider": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂火冒（消焰器）",
-            "attrs": {
-              "类型": "鸟笼",
-              "材质": "塑料"
-            }
-          },
-          "p_outer_barrel": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂外管",
-            "attrs": {
-              "长度段": "275-400mm",
-              "材质": "塑料"
-            }
-          },
-          "p_buffer_tube": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂托芯",
-            "attrs": {
-              "规格": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_stock": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂后托",
-            "attrs": {
-              "类型": "伸缩托",
-              "材质": "塑料"
-            }
-          },
-          "p_optics": {
-            "brand": "加盛TTI M2原厂",
-            "product": "机械瞄具",
-            "attrs": {
-              "类型": "红点",
-              "材质": "尼龙"
-            }
-          },
-          "p_grip_std": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂握把（通用/前握把）",
-            "attrs": {
-              "类型": "通用",
-              "材质": "塑料"
-            }
-          },
-          "p_selector_switch": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂快慢机（功能钮）",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_bolt_release": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂空挂释放钮",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_mag_release": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂弹匣释放钮",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_charging": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂拉机柄",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_mag": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂弹匣",
-            "attrs": {
-              "容量": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_feed_motor": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂供蛋电机",
-            "attrs": {
-              "规格": "标准",
-              "材质": "金属"
-            }
-          },
-          "p_selector_safe": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂保险模块",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_selector_plate": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂快慢机拨片",
-            "attrs": {
-              "类型": "标准",
-              "材质": "塑料"
-            }
-          },
-          "p_selector_link": {
-            "brand": "加盛TTI M2原厂",
-            "product": "原厂双边快慢机齿轮连杆",
-            "attrs": {
-              "类型": "标准",
-              "材质": "钢"
             }
           }
         }
