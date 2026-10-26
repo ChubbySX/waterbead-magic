@@ -130,14 +130,28 @@
   /* ===== 开场加载动画 ===== */
   #loader{position:fixed;inset:0;z-index:9999;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;transition:opacity .6s ease}
   #loader.hide{opacity:0;pointer-events:none}
-  .ld-orb{position:relative;width:120px;height:120px;margin-bottom:28px}
-  /* 齿轮：半虚化旋转，彰显波箱齿轮转动原理 */
+  .ld-orb{position:relative;width:240px;height:240px;margin-bottom:28px}
+  /* 齿轮：放大两倍，半虚化旋转 */
   .ld-gear{position:absolute;inset:0;animation:ldSpin 4s linear infinite;filter:blur(1.8px);opacity:.4}
-  /* 磨砂质感水弹：中央旋转球体 */
-  .ld-bead{position:absolute;width:44px;height:44px;top:50%;left:50%;margin:-22px 0 0 -22px;border-radius:50%;
+  .ld-gear svg{width:240px;height:240px;display:block}
+  /* 涟漪：水弹落地泛起三道涟漪 */
+  .ld-ripple-wrap{position:absolute;left:50%;top:calc(50% + 20px)}
+  .ld-ripple{position:absolute;width:36px;height:12px;margin:-6px 0 0 -18px;
+    border:2px solid rgba(255,204,77,.55);border-radius:50%;opacity:0;
+    animation:ldRipple 1.6s ease-out infinite}
+  .ld-ripple.r2{animation-delay:.15s}
+  .ld-ripple.r3{animation-delay:.3s}
+  @keyframes ldRipple{
+    0%{transform:scale(.3);opacity:.9}
+    50%{transform:scale(1.8);opacity:.3}
+    80%{transform:scale(3.5);opacity:0}
+    100%{transform:scale(.3);opacity:0}
+  }
+  /* 磨砂质感水弹：Q弹上下跳动 */
+  .ld-bead{position:absolute;width:36px;height:36px;left:50%;top:calc(50% + 20px);margin:-18px 0 0 -18px;border-radius:50%;
     background:radial-gradient(circle at 34% 26%, #e2ecf4 0%, #b0c8dc 28%, #7698b6 55%, #476f8d 82%, #2d5070 100%);
     box-shadow:inset -5px -5px 12px rgba(0,10,30,.35), inset 3px 3px 8px rgba(255,255,255,.1), 0 0 16px rgba(80,130,180,.35);
-    animation:ldSpinBead 2.2s linear infinite}
+    animation:ldBounce 1.6s cubic-bezier(.36,.07,.19,.97) infinite}
   /* 磨砂表面纹理叠加 */
   .ld-bead::before{content:'';position:absolute;inset:0;border-radius:50%;
     background:radial-gradient(circle at 68% 74%, rgba(20,40,60,.25) 0%, transparent 45%);
@@ -145,8 +159,14 @@
   .ld-bead::after{content:'';position:absolute;inset:2px;border-radius:50%;
     background:repeating-conic-gradient(from 0deg, rgba(255,255,255,.03) 0deg 3deg, transparent 3deg 6deg);
     mix-blend-mode:overlay}
+  @keyframes ldBounce{
+    0%,100%{transform:translateY(0) scaleY(.7) scaleX(1.15)}
+    10%{transform:translateY(-5px) scaleY(1) scaleX(1)}
+    45%{transform:translateY(-55px) scaleY(1.12) scaleX(.92)}
+    75%{transform:translateY(-3px) scaleY(1) scaleX(1)}
+    82%{transform:translateY(0) scaleY(.72) scaleX(1.13)}
+  }
   @keyframes ldSpin{to{transform:rotate(360deg)}}
-  @keyframes ldSpinBead{to{transform:rotate(-360deg)}}
   .ld-title{font-size:24px;font-weight:700;color:var(--accent);letter-spacing:2px;opacity:0;animation:ldFade .8s ease .3s forwards}
   .ld-sub{font-size:13px;color:var(--tx2);letter-spacing:1px;margin-top:6px;opacity:0;animation:ldFade .8s ease .6s forwards}
   .ld-bar{width:160px;height:3px;background:var(--line);border-radius:2px;margin-top:24px;overflow:hidden;opacity:0;animation:ldFade .4s ease .8s forwards}
@@ -159,9 +179,9 @@
 <!-- 开场加载动画 -->
 <div id="loader">
   <div class="ld-orb">
-    <!-- 半虚化齿轮（SVG），缓慢旋转 -->
+    <!-- 半虚化齿轮（SVG），放大两倍，缓慢旋转 -->
     <div class="ld-gear">
-      <svg viewBox="0 0 120 120" width="120" height="120">
+      <svg viewBox="0 0 120 120" width="240" height="240">
         <g fill="none" stroke="#ffcc4d" stroke-width="2.5">
           <circle cx="60" cy="60" r="42"/>
           <circle cx="60" cy="60" r="28"/>
@@ -184,7 +204,13 @@
         <circle cx="60" cy="60" r="14" fill="none" stroke="#ffcc4d" stroke-width="2"/>
       </svg>
     </div>
-    <!-- 磨砂质感水弹，反向旋转 -->
+    <!-- 三道涟漪 -->
+    <div class="ld-ripple-wrap">
+      <div class="ld-ripple"></div>
+      <div class="ld-ripple r2"></div>
+      <div class="ld-ripple r3"></div>
+    </div>
+    <!-- 磨砂质感水弹，Q弹跳动 -->
     <div class="ld-bead"></div>
   </div>
   <div class="ld-title">水弹的魔法</div>
