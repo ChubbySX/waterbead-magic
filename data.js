@@ -162,7 +162,10 @@ window.PARTS_DB = {
         "特点": {
           "values": [
             "非标2号波",
-            "通用标准2号波"
+            "通用标准2号波",
+            "金波",
+            "冰波",
+            "AK专用"
           ]
         }
       },
@@ -654,6 +657,55 @@ window.PARTS_DB = {
           "price": "—",
           "note": "保留预设原厂条目；产品身份与适配待核实",
           "material": "锌合金"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "AK专用波箱",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "锌合金"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "2号波箱",
+          "price": "—",
+          "note": "DS AR线原厂配件",
+          "material": "锌合金"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "金属波箱",
+          "price": "—",
+          "note": "DS AR-15金属波版",
+          "material": "锌合金"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "尼龙波箱",
+          "price": "—",
+          "note": "DS AR-15尼龙波版",
+          "material": "尼龙"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "尼龙齿轮箱壳",
+          "price": "—",
+          "note": "DS 幽灵M4",
+          "material": "尼龙"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "AK专用冰波",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "锌合金"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "2号金波+火控",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "锌合金"
         }
       ],
       "scope": "brand"
@@ -884,6 +936,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "PEI"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "推嘴",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "PEI"
         }
       ],
       "scope": "brand"
@@ -1089,6 +1148,13 @@ window.PARTS_DB = {
           "product": "缸头",
           "price": "—",
           "note": "顽客 原厂件",
+          "material": "铝"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "缸头",
+          "price": "—",
+          "note": "DS AK线原厂配件",
           "material": "铝"
         }
       ],
@@ -1320,6 +1386,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "铝"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "气缸",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "铝"
         }
       ],
       "scope": "brand"
@@ -1527,6 +1600,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "尼龙"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "拉桥",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "尼龙"
         }
       ],
       "scope": "brand"
@@ -1554,7 +1634,8 @@ window.PARTS_DB = {
             "刚切齿窄齿",
             "金属齿",
             "全钢齿",
-            "金属齿条"
+            "金属齿条",
+            "钢切齿"
           ]
         },
         "齿数": {
@@ -1571,7 +1652,8 @@ window.PARTS_DB = {
             "铝",
             "钢",
             "钛合金",
-            "MIM金属"
+            "MIM金属",
+            "金天梯"
           ]
         },
         "特点": {
@@ -1771,6 +1853,13 @@ window.PARTS_DB = {
           "product": "天梯（活塞）",
           "price": "—",
           "note": "顽客 原厂件",
+          "material": "尼龙"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "天梯（活塞）",
+          "price": "—",
+          "note": "DS AK线原厂配件",
           "material": "尼龙"
         }
       ],
@@ -1983,6 +2072,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "尼龙"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "拍头",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "尼龙"
         }
       ],
       "scope": "brand"
@@ -2189,6 +2285,13 @@ window.PARTS_DB = {
           "product": "尾顶",
           "price": "—",
           "note": "顽客 原厂件",
+          "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "尾顶",
+          "price": "—",
+          "note": "DS AK线原厂配件",
           "material": "钢"
         }
       ],
@@ -2401,6 +2504,12 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "弹簧",
+          "price": "—",
+          "note": "DS AK线原厂配件"
         }
       ],
       "scope": "brand"
@@ -2429,7 +2538,9 @@ window.PARTS_DB = {
             "CNC",
             "尼龙",
             "钢",
-            "MIM金属"
+            "MIM金属",
+            "金齿",
+            "钢切齿"
           ]
         },
         "颜色": {
@@ -2652,6 +2763,20 @@ window.PARTS_DB = {
             "材质": "尼龙",
             "减速比": "18:1"
           }
+        },
+        {
+          "brand": "DS原厂",
+          "product": "齿轮组（整组）",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "金齿"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "金齿金天梯齿轮组",
+          "price": "—",
+          "note": "DS AR线原厂",
+          "material": "金齿"
         }
       ],
       "scope": "brand"
@@ -3407,6 +3532,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "止逆（止逆齿）",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "钢"
         }
       ],
       "scope": "brand"
@@ -3670,6 +3802,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "调齿垫片",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "钢"
         }
       ],
       "scope": "brand"
@@ -3686,7 +3825,8 @@ window.PARTS_DB = {
           "label": "材质",
           "values": [
             "钢珠",
-            "陶瓷"
+            "陶瓷",
+            "钢"
           ]
         }
       },
@@ -3874,6 +4014,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "钢珠"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "8mm轴承",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "钢"
         }
       ],
       "scope": "brand"
@@ -3890,7 +4037,8 @@ window.PARTS_DB = {
           "label": "材质",
           "values": [
             "钢珠",
-            "陶瓷"
+            "陶瓷",
+            "钢"
           ]
         }
       },
@@ -4078,6 +4226,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "钢珠"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "9mm轴承",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "钢"
         }
       ],
       "scope": "brand"
@@ -4101,7 +4256,16 @@ window.PARTS_DB = {
           "label": "材质",
           "values": [
             "黄铜",
-            "钢"
+            "钢",
+            "铜"
+          ]
+        },
+        "规格": {
+          "label": "规格",
+          "values": [
+            "7mm",
+            "8mm",
+            "9mm"
           ]
         }
       },
@@ -4291,6 +4455,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "推荐组合中的历史条目，具体产品/报价待核实",
           "verified": "user_reported"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "轴套",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "铜"
         }
       ],
       "scope": "brand"
@@ -4320,6 +4491,13 @@ window.PARTS_DB = {
             "单发/连发",
             "可编程",
             "连发/单发/二连发"
+          ]
+        },
+        "类型": {
+          "type": "enum",
+          "values": [
+            "光控",
+            "微动"
           ]
         }
       },
@@ -4570,6 +4748,20 @@ window.PARTS_DB = {
           "product": "原厂火控",
           "price": "—",
           "note": "保留预设原厂条目；产品身份与适配待核实"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "光控火控",
+          "price": "—",
+          "note": "DS AK线光控火控",
+          "material": null
+        },
+        {
+          "brand": "DS原厂",
+          "product": "火控",
+          "price": "—",
+          "note": "DS AR线微动火控",
+          "material": null
         }
       ],
       "scope": "brand"
@@ -4994,6 +5186,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "扳机",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "钢"
         }
       ],
       "scope": "brand"
@@ -5220,6 +5419,13 @@ window.PARTS_DB = {
           "product": "扳机簧",
           "price": "—",
           "note": "顽客 原厂件",
+          "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "扳机簧",
+          "price": "—",
+          "note": "DS AK线原厂配件",
           "material": "钢"
         }
       ],
@@ -8290,6 +8496,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "空挂斧",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "钢"
         }
       ],
       "scope": "brand"
@@ -8503,6 +8716,13 @@ window.PARTS_DB = {
           "product": "空挂簧",
           "price": "—",
           "note": "顽客 原厂件",
+          "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "空挂簧",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
           "material": "钢"
         }
       ],
@@ -8718,6 +8938,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "连杆",
+          "price": "—",
+          "note": "DS原厂回膛配套件",
+          "material": "钢"
         }
       ],
       "scope": "brand"
@@ -8931,6 +9158,13 @@ window.PARTS_DB = {
           "product": "连杆簧",
           "price": "—",
           "note": "顽客 原厂件",
+          "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "连杆簧",
+          "price": "—",
+          "note": "DS原厂回膛配套件",
           "material": "钢"
         }
       ],
@@ -9147,6 +9381,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "机片",
+          "price": "—",
+          "note": "DS原厂回膛配套件",
+          "material": "钢"
         }
       ],
       "scope": "brand"
@@ -9362,6 +9603,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "尼龙"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "回膛滑块",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "钢"
         }
       ],
       "scope": "brand"
@@ -9575,6 +9823,20 @@ window.PARTS_DB = {
           "product": "限位",
           "price": "—",
           "note": "顽客 原厂件",
+          "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "回膛限位",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "限位",
+          "price": "—",
+          "note": "DS原厂回膛配套件",
           "material": "钢"
         }
       ],
@@ -10553,7 +10815,8 @@ window.PARTS_DB = {
             "6.08mm",
             "6.13mm",
             "7.3mm",
-            "7.45mm"
+            "7.45mm",
+            "6mm"
           ]
         },
         "长度段": {
@@ -10579,6 +10842,10 @@ window.PARTS_DB = {
           "values": [
             "红色"
           ]
+        },
+        "特点": {
+          "type": "text",
+          "values": []
         }
       },
       "defaults": {
@@ -11516,6 +11783,13 @@ window.PARTS_DB = {
           "product": "原厂内管",
           "price": "—",
           "note": "森伯龙 MK18火控版 原厂内管"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "内管",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "铝"
         }
       ],
       "scope": "model"
@@ -13473,6 +13747,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "橡胶"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "O圈",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "橡胶"
         }
       ],
       "scope": "brand"
@@ -13530,7 +13811,8 @@ window.PARTS_DB = {
         },
         "特点": {
           "values": [
-            "短轴"
+            "短轴",
+            "轴长非标"
           ]
         }
       },
@@ -13987,6 +14269,12 @@ window.PARTS_DB = {
           "price": "—",
           "note": "保留预设原厂条目；产品身份与适配待核实",
           "material": "金属"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "电机",
+          "price": "—",
+          "note": "DS AK线原厂配件"
         }
       ],
       "scope": "brand"
@@ -19733,7 +20021,8 @@ window.PARTS_DB = {
             "金属",
             "7075铝",
             "铸铝",
-            "钢"
+            "钢",
+            "铝"
           ]
         },
         "特点": {
@@ -20674,6 +20963,62 @@ window.PARTS_DB = {
           "product": "原厂机匣",
           "price": "—",
           "note": "森伯龙 MK18火控版 原厂机匣"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "AK机匣",
+          "price": "—",
+          "note": "DS AK线原厂",
+          "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "CNC铝合金机匣",
+          "price": "—",
+          "note": "DS MK47",
+          "material": "铝"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "AR机匣",
+          "price": "—",
+          "note": "DS AR-15",
+          "material": "尼龙"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "泽宁特机匣",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "马盖普机匣",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "铸铝"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "AKMS机匣",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "德拉科机匣",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "幽灵M4机匣",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "尼龙"
         }
       ],
       "scope": "model"
@@ -20703,8 +21048,15 @@ window.PARTS_DB = {
             "金属",
             "尼龙",
             "ABS",
-            "铝合金"
+            "铝合金",
+            "红花梨实木",
+            "实木",
+            "铝"
           ]
+        },
+        "特点": {
+          "type": "text",
+          "values": []
         }
       },
       "defaults": {
@@ -21631,6 +21983,55 @@ window.PARTS_DB = {
           "product": "原厂鱼骨（护木）",
           "price": "—",
           "note": "森伯龙 MK18火控版 原厂鱼骨（护木）"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "红花梨实木护木",
+          "price": "—",
+          "note": "DS AK线",
+          "material": "红花梨实木"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "12.5英寸鱼骨",
+          "price": "—",
+          "note": "DS MK47",
+          "material": "铝"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "实木护木",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "实木"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "泽宁特护木",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "尼龙"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "马盖普护木",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "尼龙"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "实木前护木",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "实木"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "鱼骨",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "尼龙"
         }
       ],
       "scope": "model"
@@ -22592,6 +22993,20 @@ window.PARTS_DB = {
           "product": "原厂火冒（消焰器）",
           "price": "—",
           "note": "森伯龙 MK18火控版 原厂火冒（消焰器）"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "CNC机瞄导轨",
+          "price": "—",
+          "note": "DS 德拉科",
+          "material": "CNC金属"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "泽宁特导气",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "尼龙"
         }
       ],
       "scope": "model"
@@ -23547,6 +23962,13 @@ window.PARTS_DB = {
           "product": "原厂外管",
           "price": "—",
           "note": "森伯龙 MK18火控版 原厂外管"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "金属外管",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "钢"
         }
       ],
       "scope": "model"
@@ -24534,8 +24956,13 @@ window.PARTS_DB = {
             "金属",
             "尼龙",
             "ABS",
-            "铝合金"
+            "铝合金",
+            "钢"
           ]
+        },
+        "特点": {
+          "type": "text",
+          "values": []
         }
       },
       "defaults": {
@@ -25462,6 +25889,27 @@ window.PARTS_DB = {
           "product": "原厂后托",
           "price": "—",
           "note": "森伯龙 MK18火控版 原厂后托"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "折叠钢托",
+          "price": "—",
+          "note": "DS AKMS 2.0",
+          "material": "钢"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "折叠托",
+          "price": "—",
+          "note": "DS 幽灵M4",
+          "material": "尼龙"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "后托",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "钢"
         }
       ],
       "scope": "model"
@@ -25483,7 +25931,8 @@ window.PARTS_DB = {
             "机械",
             "战术倍镜",
             "可调机瞄",
-            "机瞄"
+            "机瞄",
+            "CNC机械"
           ]
         },
         "材质": {
@@ -25491,7 +25940,8 @@ window.PARTS_DB = {
           "values": [
             "金属",
             "塑料",
-            "尼龙"
+            "尼龙",
+            "CNC金属"
           ]
         },
         "特点": {
@@ -26767,6 +27217,20 @@ window.PARTS_DB = {
           "price": "—",
           "note": "保留预设原厂条目；产品身份与适配待核实",
           "material": "塑料"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "CNC机瞄",
+          "price": "—",
+          "note": "DS 德拉科",
+          "material": "CNC金属"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "机瞄",
+          "price": "—",
+          "note": "保留预设原厂条目；产品身份与适配待核实",
+          "material": "尼龙"
         }
       ],
       "scope": "model"
@@ -28696,7 +29160,9 @@ window.PARTS_DB = {
           "label": "回膛",
           "values": [
             "是",
-            "否"
+            "否",
+            "非全行程",
+            "全行程"
           ]
         },
         "材质": {
@@ -28923,6 +29389,12 @@ window.PARTS_DB = {
           "price": "—",
           "note": "顽客 原厂件",
           "material": "塑料"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "空挂回趟套件",
+          "price": "—",
+          "note": "DS AK线原厂配件"
         }
       ],
       "scope": "brand"
@@ -29148,6 +29620,13 @@ window.PARTS_DB = {
           "price": "—",
           "note": "推荐组合中的历史条目，具体产品/报价待核实",
           "verified": "user_reported"
+        },
+        {
+          "brand": "DS原厂",
+          "product": "止逆齿簧",
+          "price": "—",
+          "note": "DS AK线原厂配件",
+          "material": "钢"
         }
       ],
       "scope": "brand"
@@ -31316,6 +31795,16 @@ window.PARTS_DB = {
     "森伯龙MK18火控版原厂": {
       "verified": "known",
       "note": "森伯龙 MK18火控版 原厂配件（型号专属）",
+      "category": "原厂"
+    },
+    "DS原厂": {
+      "verified": "user_reported",
+      "note": "用户提供线索；DS品牌原厂配件（随枪/原厂规格）",
+      "category": "原厂"
+    },
+    "DS": {
+      "verified": "user_reported",
+      "note": "用户提供DS品牌发射器数据；AK线(3号波)+AR线(2号波)",
       "category": "原厂"
     }
   },
@@ -64230,6 +64719,1568 @@ window.PARTS_DB = {
       },
       "tier": 2,
       "note": "司俊 AUG 系列（异形波）"
+    },
+    {
+      "id": "bg_dsak",
+      "brand": "DS",
+      "gearboxType": "3号波",
+      "tier": 2,
+      "products": [
+        "DS AKM",
+        "DS 74M",
+        "DS 74U",
+        "DS 泽宁特74U",
+        "DS 马盖普AK",
+        "DS AKMS 2.0",
+        "DS 德拉科"
+      ],
+      "priceRange": "",
+      "desc": "DS AK线，3号波，锌合金波箱+光控火控，实木护木是核心卖点，用料扎实",
+      "notes": [
+        "DS AK线普遍无空挂功能。",
+        "回膛多为非全行程（泽宁特74U和德拉科为全行程）。",
+        "火控确认为光控类型（74U为唯一有明确光控线索的型号）。",
+        "电机轴长非标，换电机易扫齿。",
+        "外观只适配DS自家泽宁特套件，第三方件几乎都要打磨。",
+        "以上为用户提供DS品牌资料，具体批次配置以实物为准。"
+      ],
+      "preset": {
+        "p_shell": {
+          "brand": "DS原厂",
+          "product": "AK专用波箱",
+          "attrs": {
+            "走线": "内走",
+            "结构": "一体",
+            "材质": "锌合金"
+          }
+        },
+        "p_nozzle": {
+          "brand": "DS原厂",
+          "product": "推嘴",
+          "attrs": {
+            "材质": "PEI"
+          }
+        },
+        "p_cyl_head": {
+          "brand": "DS原厂",
+          "product": "缸头",
+          "attrs": {
+            "材质": "铝"
+          }
+        },
+        "p_cylinder": {
+          "brand": "DS原厂",
+          "product": "气缸",
+          "attrs": {
+            "回膛": "是",
+            "气量": "全长",
+            "材质": "铝"
+          }
+        },
+        "p_tappet": {
+          "brand": "DS原厂",
+          "product": "拉桥",
+          "attrs": {
+            "材质": "尼龙"
+          }
+        },
+        "p_piston": {
+          "brand": "DS原厂",
+          "product": "天梯（活塞）",
+          "attrs": {
+            "回膛": "是",
+            "齿式": "全齿",
+            "材质": "尼龙"
+          }
+        },
+        "p_piston_head": {
+          "brand": "DS原厂",
+          "product": "拍头",
+          "attrs": {
+            "材质": "尼龙"
+          }
+        },
+        "p_spring_guide": {
+          "brand": "DS原厂",
+          "product": "尾顶",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_spring": {
+          "brand": "DS原厂",
+          "product": "弹簧",
+          "attrs": {
+            "力级": "M100",
+            "尾端": "封闭式"
+          }
+        },
+        "p_gearset": {
+          "brand": "DS原厂",
+          "product": "齿轮组（整组）",
+          "attrs": {
+            "减速比": "18:1",
+            "材质": "金齿"
+          }
+        },
+        "p_ar_latch": {
+          "brand": "DS原厂",
+          "product": "止逆（止逆齿）",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_ar_latch_spring": {
+          "brand": "DS原厂",
+          "product": "止逆齿簧",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_shims": {
+          "brand": "DS原厂",
+          "product": "调齿垫片",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_bushing": {
+          "brand": "DS原厂",
+          "product": "轴套",
+          "attrs": {
+            "材质": "铜"
+          }
+        },
+        "p_trigger": {
+          "brand": "DS原厂",
+          "product": "扳机",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_trigger_spring": {
+          "brand": "DS原厂",
+          "product": "扳机簧",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_bolt_kit": {
+          "brand": "DS原厂",
+          "product": "空挂回趟套件",
+          "attrs": {
+            "回膛": "是",
+            "空挂": "无",
+            "材质": "塑料"
+          }
+        },
+        "p_orings": {
+          "brand": "DS原厂",
+          "product": "O圈",
+          "attrs": {
+            "材质": "橡胶"
+          }
+        },
+        "p_motor": {
+          "brand": "DS原厂",
+          "product": "电机",
+          "attrs": {
+            "电机类型": "有刷",
+            "材质": "金属"
+          }
+        },
+        "p_bolt_slider": {
+          "brand": "DS原厂",
+          "product": "回膛滑块",
+          "attrs": {
+            "材质": "铝"
+          }
+        },
+        "p_bolt_limit": {
+          "brand": "DS原厂",
+          "product": "回膛限位",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_catch_axe": {
+          "brand": "DS原厂",
+          "product": "空挂斧",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_catch_spring": {
+          "brand": "DS原厂",
+          "product": "空挂簧",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_bolt_plate": {
+          "brand": "DS原厂",
+          "product": "机片",
+          "attrs": {
+            "回膛配套": "是",
+            "材质": "钢"
+          }
+        },
+        "p_rod": {
+          "brand": "DS原厂",
+          "product": "连杆",
+          "attrs": {
+            "回膛配套": "是",
+            "材质": "钢"
+          }
+        },
+        "p_rod_spring": {
+          "brand": "DS原厂",
+          "product": "连杆簧",
+          "attrs": {
+            "回膛配套": "是",
+            "材质": "钢"
+          }
+        }
+      },
+      "productPresets": {
+        "DS AKM": {
+          "p_shell": {
+            "brand": "DS原厂",
+            "product": "AK专用波箱",
+            "attrs": {
+              "走线": "内走",
+              "结构": "一体",
+              "材质": "锌合金"
+            }
+          },
+          "p_gearset": {
+            "brand": "DS原厂",
+            "product": "金齿金天梯齿轮组",
+            "attrs": {
+              "减速比": "18:1",
+              "材质": "金齿"
+            }
+          },
+          "p_bolt_kit": {
+            "brand": "DS原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "无",
+              "材质": "塑料"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "DS原厂",
+            "product": "光控火控",
+            "attrs": {
+              "类型": "光控"
+            }
+          },
+          "p_receiver": {
+            "brand": "DS原厂",
+            "product": "AK机匣",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_handguard": {
+            "brand": "DS原厂",
+            "product": "红花梨实木护木",
+            "attrs": {
+              "材质": "红花梨实木"
+            }
+          },
+          "p_motor": {
+            "brand": "DS原厂",
+            "product": "电机",
+            "attrs": {
+              "电机类型": "有刷",
+              "材质": "金属"
+            }
+          },
+          "p_bolt_slider": {
+            "brand": "DS原厂",
+            "product": "回膛滑块",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_bolt_limit": {
+            "brand": "DS原厂",
+            "product": "回膛限位",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_axe": {
+            "brand": "DS原厂",
+            "product": "空挂斧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_spring": {
+            "brand": "DS原厂",
+            "product": "空挂簧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_bolt_plate": {
+            "brand": "DS原厂",
+            "product": "机片",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod": {
+            "brand": "DS原厂",
+            "product": "连杆",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod_spring": {
+            "brand": "DS原厂",
+            "product": "连杆簧",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          }
+        },
+        "DS 74M": {
+          "p_gearset": {
+            "brand": "DS原厂",
+            "product": "齿轮组（整组）",
+            "attrs": {
+              "减速比": "18:1",
+              "材质": "钢切齿"
+            }
+          },
+          "p_piston": {
+            "brand": "DS原厂",
+            "product": "天梯（活塞）",
+            "attrs": {
+              "回膛": "是",
+              "齿式": "全齿",
+              "材质": "金天梯"
+            }
+          },
+          "p_bolt_kit": {
+            "brand": "DS原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "无",
+              "材质": "塑料"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "DS原厂",
+            "product": "光控火控",
+            "attrs": {
+              "类型": "光控"
+            }
+          },
+          "p_receiver": {
+            "brand": "DS原厂",
+            "product": "AK机匣",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_handguard": {
+            "brand": "DS原厂",
+            "product": "实木护木",
+            "attrs": {
+              "材质": "实木"
+            }
+          },
+          "p_bolt_slider": {
+            "brand": "DS原厂",
+            "product": "回膛滑块",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_bolt_limit": {
+            "brand": "DS原厂",
+            "product": "回膛限位",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_axe": {
+            "brand": "DS原厂",
+            "product": "空挂斧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_spring": {
+            "brand": "DS原厂",
+            "product": "空挂簧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_bolt_plate": {
+            "brand": "DS原厂",
+            "product": "机片",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod": {
+            "brand": "DS原厂",
+            "product": "连杆",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod_spring": {
+            "brand": "DS原厂",
+            "product": "连杆簧",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          }
+        },
+        "DS 74U": {
+          "p_shell": {
+            "brand": "DS原厂",
+            "product": "AK专用冰波",
+            "attrs": {
+              "走线": "内走",
+              "结构": "一体",
+              "材质": "锌合金"
+            }
+          },
+          "p_gearset": {
+            "brand": "DS原厂",
+            "product": "齿轮组（整组）",
+            "attrs": {
+              "减速比": "18:1",
+              "材质": "金齿"
+            }
+          },
+          "p_bolt_kit": {
+            "brand": "DS原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "无",
+              "材质": "塑料"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "DS原厂",
+            "product": "光控火控",
+            "attrs": {
+              "类型": "光控"
+            }
+          },
+          "p_receiver": {
+            "brand": "DS原厂",
+            "product": "AK机匣",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_handguard": {
+            "brand": "DS原厂",
+            "product": "红花梨实木护木",
+            "attrs": {
+              "材质": "红花梨实木"
+            }
+          },
+          "p_bolt_slider": {
+            "brand": "DS原厂",
+            "product": "回膛滑块",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_bolt_limit": {
+            "brand": "DS原厂",
+            "product": "回膛限位",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_axe": {
+            "brand": "DS原厂",
+            "product": "空挂斧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_spring": {
+            "brand": "DS原厂",
+            "product": "空挂簧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_bolt_plate": {
+            "brand": "DS原厂",
+            "product": "机片",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod": {
+            "brand": "DS原厂",
+            "product": "连杆",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod_spring": {
+            "brand": "DS原厂",
+            "product": "连杆簧",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          }
+        },
+        "DS 泽宁特74U": {
+          "p_bolt_kit": {
+            "brand": "DS原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "无",
+              "材质": "塑料"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "DS原厂",
+            "product": "光控火控",
+            "attrs": {
+              "类型": "光控"
+            }
+          },
+          "p_receiver": {
+            "brand": "DS原厂",
+            "product": "泽宁特机匣",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_handguard": {
+            "brand": "DS原厂",
+            "product": "泽宁特护木",
+            "attrs": {
+              "材质": "尼龙"
+            }
+          },
+          "p_flashhider": {
+            "brand": "DS原厂",
+            "product": "泽宁特导气",
+            "attrs": {
+              "材质": "尼龙"
+            }
+          },
+          "p_optics": {
+            "brand": "DS原厂",
+            "product": "机瞄",
+            "attrs": {
+              "材质": "尼龙",
+              "类型": "机械"
+            }
+          },
+          "p_stock": {
+            "brand": "DS原厂",
+            "product": "后托",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_bolt_slider": {
+            "brand": "DS原厂",
+            "product": "回膛滑块",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_bolt_limit": {
+            "brand": "DS原厂",
+            "product": "回膛限位",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_axe": {
+            "brand": "DS原厂",
+            "product": "空挂斧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_spring": {
+            "brand": "DS原厂",
+            "product": "空挂簧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_bolt_plate": {
+            "brand": "DS原厂",
+            "product": "机片",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod": {
+            "brand": "DS原厂",
+            "product": "连杆",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod_spring": {
+            "brand": "DS原厂",
+            "product": "连杆簧",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          }
+        },
+        "DS 马盖普AK": {
+          "p_bolt_kit": {
+            "brand": "DS原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "无",
+              "材质": "塑料"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "DS原厂",
+            "product": "光控火控",
+            "attrs": {
+              "类型": "光控"
+            }
+          },
+          "p_receiver": {
+            "brand": "DS原厂",
+            "product": "马盖普机匣",
+            "attrs": {
+              "材质": "铸铝"
+            }
+          },
+          "p_handguard": {
+            "brand": "DS原厂",
+            "product": "马盖普护木",
+            "attrs": {
+              "材质": "尼龙"
+            }
+          },
+          "p_inner_barrel": {
+            "brand": "DS原厂",
+            "product": "内管",
+            "attrs": {
+              "材质": "铝",
+              "内径": "6mm"
+            }
+          },
+          "p_bolt_slider": {
+            "brand": "DS原厂",
+            "product": "回膛滑块",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_bolt_limit": {
+            "brand": "DS原厂",
+            "product": "回膛限位",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_axe": {
+            "brand": "DS原厂",
+            "product": "空挂斧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_spring": {
+            "brand": "DS原厂",
+            "product": "空挂簧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_bolt_plate": {
+            "brand": "DS原厂",
+            "product": "机片",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod": {
+            "brand": "DS原厂",
+            "product": "连杆",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod_spring": {
+            "brand": "DS原厂",
+            "product": "连杆簧",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          }
+        },
+        "DS AKMS 2.0": {
+          "p_gearset": {
+            "brand": "DS原厂",
+            "product": "齿轮组（整组）",
+            "attrs": {
+              "减速比": "18:1",
+              "材质": "钢切齿"
+            }
+          },
+          "p_bolt_kit": {
+            "brand": "DS原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "无",
+              "材质": "塑料"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "DS原厂",
+            "product": "光控火控",
+            "attrs": {
+              "类型": "光控"
+            }
+          },
+          "p_receiver": {
+            "brand": "DS原厂",
+            "product": "AKMS机匣",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_stock": {
+            "brand": "DS原厂",
+            "product": "折叠钢托",
+            "attrs": {
+              "材质": "钢",
+              "类型": "折叠托"
+            }
+          },
+          "p_bolt_slider": {
+            "brand": "DS原厂",
+            "product": "回膛滑块",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_bolt_limit": {
+            "brand": "DS原厂",
+            "product": "回膛限位",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_axe": {
+            "brand": "DS原厂",
+            "product": "空挂斧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_spring": {
+            "brand": "DS原厂",
+            "product": "空挂簧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_bolt_plate": {
+            "brand": "DS原厂",
+            "product": "机片",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod": {
+            "brand": "DS原厂",
+            "product": "连杆",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod_spring": {
+            "brand": "DS原厂",
+            "product": "连杆簧",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          }
+        },
+        "DS 德拉科": {
+          "p_shell": {
+            "brand": "DS原厂",
+            "product": "AK专用波箱",
+            "attrs": {
+              "走线": "内走",
+              "结构": "一体",
+              "材质": "锌合金"
+            }
+          },
+          "p_bolt_kit": {
+            "brand": "DS原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "无",
+              "材质": "塑料"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "DS原厂",
+            "product": "光控火控",
+            "attrs": {
+              "类型": "光控"
+            }
+          },
+          "p_receiver": {
+            "brand": "DS原厂",
+            "product": "德拉科机匣",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_handguard": {
+            "brand": "DS原厂",
+            "product": "实木前护木",
+            "attrs": {
+              "材质": "实木"
+            }
+          },
+          "p_flashhider": {
+            "brand": "DS原厂",
+            "product": "CNC机瞄导轨",
+            "attrs": {
+              "材质": "CNC金属"
+            }
+          },
+          "p_optics": {
+            "brand": "DS原厂",
+            "product": "CNC机瞄",
+            "attrs": {
+              "材质": "CNC金属",
+              "类型": "CNC机械"
+            }
+          },
+          "p_bolt_slider": {
+            "brand": "DS原厂",
+            "product": "回膛滑块",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_bolt_limit": {
+            "brand": "DS原厂",
+            "product": "回膛限位",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_axe": {
+            "brand": "DS原厂",
+            "product": "空挂斧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_spring": {
+            "brand": "DS原厂",
+            "product": "空挂簧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_bolt_plate": {
+            "brand": "DS原厂",
+            "product": "机片",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod": {
+            "brand": "DS原厂",
+            "product": "连杆",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod_spring": {
+            "brand": "DS原厂",
+            "product": "连杆簧",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "bg_dsar",
+      "brand": "DS",
+      "gearboxType": "2号波",
+      "tier": 2,
+      "products": [
+        "DS MK47 报丧女妖",
+        "DS AR-15 金属波",
+        "DS AR-15 尼龙波",
+        "DS 幽灵M4"
+      ],
+      "priceRange": "",
+      "desc": "DS AR线，2号波，MK47报丧女妖CNC全金+LDX兼容，AR-15金齿金天梯，幽灵M4小众造型",
+      "notes": [
+        "MK47无空挂功能，但内波可换LDX数据波壳直插。",
+        "AR-15金属波版398元给金齿金天梯+火控+空挂，配置密度高。",
+        "AR-15尼龙波版238元为纯入门档。",
+        "幽灵M4弹匣供弹为系统性弱点，需垫片/打胶加固。",
+        "幽灵M4气缸偏短，需做缸头缓冲防护。",
+        "以上为用户提供DS品牌资料，具体批次配置以实物为准。"
+      ],
+      "preset": {
+        "p_shell": {
+          "brand": "DS原厂",
+          "product": "2号波箱",
+          "attrs": {
+            "走线": "内走",
+            "结构": "一体",
+            "材质": "锌合金"
+          }
+        },
+        "p_nozzle": {
+          "brand": "DS原厂",
+          "product": "推嘴",
+          "attrs": {
+            "材质": "PEI"
+          }
+        },
+        "p_cyl_head": {
+          "brand": "DS原厂",
+          "product": "缸头",
+          "attrs": {
+            "材质": "铝"
+          }
+        },
+        "p_cylinder": {
+          "brand": "DS原厂",
+          "product": "气缸",
+          "attrs": {
+            "回膛": "是",
+            "气量": "全长",
+            "材质": "铝"
+          }
+        },
+        "p_tappet": {
+          "brand": "DS原厂",
+          "product": "拉桥",
+          "attrs": {
+            "材质": "尼龙"
+          }
+        },
+        "p_piston": {
+          "brand": "DS原厂",
+          "product": "天梯（活塞）",
+          "attrs": {
+            "回膛": "是",
+            "齿式": "全齿",
+            "材质": "尼龙"
+          }
+        },
+        "p_piston_head": {
+          "brand": "DS原厂",
+          "product": "拍头",
+          "attrs": {
+            "材质": "尼龙"
+          }
+        },
+        "p_spring_guide": {
+          "brand": "DS原厂",
+          "product": "尾顶",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_spring": {
+          "brand": "DS原厂",
+          "product": "弹簧",
+          "attrs": {
+            "力级": "M100",
+            "尾端": "封闭式"
+          }
+        },
+        "p_gearset": {
+          "brand": "DS原厂",
+          "product": "齿轮组（整组）",
+          "attrs": {
+            "减速比": "18:1",
+            "材质": "金齿"
+          }
+        },
+        "p_ar_latch": {
+          "brand": "DS原厂",
+          "product": "止逆（止逆齿）",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_ar_latch_spring": {
+          "brand": "DS原厂",
+          "product": "止逆齿簧",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_shims": {
+          "brand": "DS原厂",
+          "product": "调齿垫片",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_bushing": {
+          "brand": "DS原厂",
+          "product": "轴套",
+          "attrs": {
+            "材质": "铜"
+          }
+        },
+        "p_trigger": {
+          "brand": "DS原厂",
+          "product": "扳机",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_trigger_spring": {
+          "brand": "DS原厂",
+          "product": "扳机簧",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_bolt_kit": {
+          "brand": "DS原厂",
+          "product": "空挂回趟套件",
+          "attrs": {
+            "回膛": "是",
+            "空挂": "有",
+            "材质": "塑料"
+          }
+        },
+        "p_orings": {
+          "brand": "DS原厂",
+          "product": "O圈",
+          "attrs": {
+            "材质": "橡胶"
+          }
+        },
+        "p_motor": {
+          "brand": "DS原厂",
+          "product": "电机",
+          "attrs": {
+            "电机类型": "有刷",
+            "材质": "金属"
+          }
+        },
+        "p_bolt_slider": {
+          "brand": "DS原厂",
+          "product": "回膛滑块",
+          "attrs": {
+            "材质": "铝"
+          }
+        },
+        "p_bolt_limit": {
+          "brand": "DS原厂",
+          "product": "回膛限位",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_catch_axe": {
+          "brand": "DS原厂",
+          "product": "空挂斧",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_catch_spring": {
+          "brand": "DS原厂",
+          "product": "空挂簧",
+          "attrs": {
+            "材质": "钢"
+          }
+        },
+        "p_bolt_plate": {
+          "brand": "DS原厂",
+          "product": "机片",
+          "attrs": {
+            "回膛配套": "是",
+            "材质": "钢"
+          }
+        },
+        "p_rod": {
+          "brand": "DS原厂",
+          "product": "连杆",
+          "attrs": {
+            "回膛配套": "是",
+            "材质": "钢"
+          }
+        },
+        "p_rod_spring": {
+          "brand": "DS原厂",
+          "product": "连杆簧",
+          "attrs": {
+            "回膛配套": "是",
+            "材质": "钢"
+          }
+        }
+      },
+      "productPresets": {
+        "DS MK47 报丧女妖": {
+          "p_shell": {
+            "brand": "DS原厂",
+            "product": "2号金波+火控",
+            "attrs": {
+              "走线": "内走",
+              "结构": "一体",
+              "材质": "锌合金"
+            }
+          },
+          "p_bolt_kit": {
+            "brand": "DS原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "无",
+              "材质": "塑料"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "DS原厂",
+            "product": "火控",
+            "attrs": {
+              "类型": "微动"
+            }
+          },
+          "p_receiver": {
+            "brand": "DS原厂",
+            "product": "CNC铝合金机匣",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_handguard": {
+            "brand": "DS原厂",
+            "product": "12.5英寸鱼骨",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_bolt_slider": {
+            "brand": "DS原厂",
+            "product": "回膛滑块",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_bolt_limit": {
+            "brand": "DS原厂",
+            "product": "回膛限位",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_axe": {
+            "brand": "DS原厂",
+            "product": "空挂斧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_spring": {
+            "brand": "DS原厂",
+            "product": "空挂簧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_bolt_plate": {
+            "brand": "DS原厂",
+            "product": "机片",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod": {
+            "brand": "DS原厂",
+            "product": "连杆",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod_spring": {
+            "brand": "DS原厂",
+            "product": "连杆簧",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          }
+        },
+        "DS AR-15 金属波": {
+          "p_shell": {
+            "brand": "DS原厂",
+            "product": "金属波箱",
+            "attrs": {
+              "走线": "内走",
+              "结构": "一体",
+              "材质": "锌合金"
+            }
+          },
+          "p_gearset": {
+            "brand": "DS原厂",
+            "product": "金齿金天梯齿轮组",
+            "attrs": {
+              "减速比": "18:1",
+              "材质": "金齿"
+            }
+          },
+          "p_piston": {
+            "brand": "DS原厂",
+            "product": "天梯（活塞）",
+            "attrs": {
+              "回膛": "是",
+              "齿式": "全齿",
+              "材质": "金天梯"
+            }
+          },
+          "p_bolt_kit": {
+            "brand": "DS原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "有",
+              "材质": "塑料"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "DS原厂",
+            "product": "火控",
+            "attrs": {
+              "类型": "微动"
+            }
+          },
+          "p_receiver": {
+            "brand": "DS原厂",
+            "product": "AR机匣",
+            "attrs": {
+              "材质": "尼龙"
+            }
+          },
+          "p_handguard": {
+            "brand": "DS原厂",
+            "product": "鱼骨",
+            "attrs": {
+              "材质": "尼龙"
+            }
+          },
+          "p_outer_barrel": {
+            "brand": "DS原厂",
+            "product": "金属外管",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_inner_barrel": {
+            "brand": "DS原厂",
+            "product": "内管",
+            "attrs": {
+              "材质": "铝",
+              "内径": "6mm"
+            }
+          },
+          "p_bolt_slider": {
+            "brand": "DS原厂",
+            "product": "回膛滑块",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_bolt_limit": {
+            "brand": "DS原厂",
+            "product": "回膛限位",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_axe": {
+            "brand": "DS原厂",
+            "product": "空挂斧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_spring": {
+            "brand": "DS原厂",
+            "product": "空挂簧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_bolt_plate": {
+            "brand": "DS原厂",
+            "product": "机片",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod": {
+            "brand": "DS原厂",
+            "product": "连杆",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod_spring": {
+            "brand": "DS原厂",
+            "product": "连杆簧",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          }
+        },
+        "DS AR-15 尼龙波": {
+          "p_shell": {
+            "brand": "DS原厂",
+            "product": "尼龙波箱",
+            "attrs": {
+              "走线": "内走",
+              "结构": "一体",
+              "材质": "尼龙"
+            }
+          },
+          "p_bolt_kit": {
+            "brand": "DS原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "有",
+              "材质": "塑料"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "DS原厂",
+            "product": "火控",
+            "attrs": {
+              "类型": "微动"
+            }
+          },
+          "p_receiver": {
+            "brand": "DS原厂",
+            "product": "AR机匣",
+            "attrs": {
+              "材质": "尼龙"
+            }
+          },
+          "p_handguard": {
+            "brand": "DS原厂",
+            "product": "鱼骨",
+            "attrs": {
+              "材质": "尼龙"
+            }
+          },
+          "p_bolt_slider": {
+            "brand": "DS原厂",
+            "product": "回膛滑块",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_bolt_limit": {
+            "brand": "DS原厂",
+            "product": "回膛限位",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_axe": {
+            "brand": "DS原厂",
+            "product": "空挂斧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_spring": {
+            "brand": "DS原厂",
+            "product": "空挂簧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_bolt_plate": {
+            "brand": "DS原厂",
+            "product": "机片",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod": {
+            "brand": "DS原厂",
+            "product": "连杆",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod_spring": {
+            "brand": "DS原厂",
+            "product": "连杆簧",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          }
+        },
+        "DS 幽灵M4": {
+          "p_shell": {
+            "brand": "DS原厂",
+            "product": "尼龙齿轮箱壳",
+            "attrs": {
+              "走线": "内走",
+              "结构": "一体",
+              "材质": "尼龙"
+            }
+          },
+          "p_bolt_kit": {
+            "brand": "DS原厂",
+            "product": "空挂回趟套件",
+            "attrs": {
+              "回膛": "是",
+              "空挂": "有",
+              "材质": "塑料"
+            }
+          },
+          "p_fc_micro": {
+            "brand": "DS原厂",
+            "product": "火控",
+            "attrs": {
+              "类型": "微动"
+            }
+          },
+          "p_receiver": {
+            "brand": "DS原厂",
+            "product": "幽灵M4机匣",
+            "attrs": {
+              "材质": "尼龙"
+            }
+          },
+          "p_stock": {
+            "brand": "DS原厂",
+            "product": "折叠托",
+            "attrs": {
+              "材质": "尼龙",
+              "类型": "折叠托"
+            }
+          },
+          "p_bolt_slider": {
+            "brand": "DS原厂",
+            "product": "回膛滑块",
+            "attrs": {
+              "材质": "铝"
+            }
+          },
+          "p_bolt_limit": {
+            "brand": "DS原厂",
+            "product": "回膛限位",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_axe": {
+            "brand": "DS原厂",
+            "product": "空挂斧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_catch_spring": {
+            "brand": "DS原厂",
+            "product": "空挂簧",
+            "attrs": {
+              "材质": "钢"
+            }
+          },
+          "p_bolt_plate": {
+            "brand": "DS原厂",
+            "product": "机片",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod": {
+            "brand": "DS原厂",
+            "product": "连杆",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          },
+          "p_rod_spring": {
+            "brand": "DS原厂",
+            "product": "连杆簧",
+            "attrs": {
+              "回膛配套": "是",
+              "材质": "钢"
+            }
+          }
+        }
+      }
     }
   ]
 };
