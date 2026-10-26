@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>限位</title>
+<rect x="30" y="44" width="60" height="32" rx="2" fill="none" stroke="#c792ea" stroke-width="2.2"/><circle cx="60" cy="60" r="6" fill="none" stroke="#c792ea" stroke-width="1.6"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">限位</text>
+</svg>

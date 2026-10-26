@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>推嘴</title>
+<rect x="16" y="50" width="52" height="16" rx="3" fill="none" stroke="#35d0ba" stroke-width="2.4"/><line x1="21" y1="58.0" x2="63" y2="58.0" stroke="#35d0ba" stroke-width="1.6" stroke-dasharray="3 3"/><path d="M 68,42 L 88,54 L 68,66 Z" fill="none" stroke="#35d0ba" stroke-width="2.2"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">推嘴</text>
+</svg>

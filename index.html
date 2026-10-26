@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>水弹的魔法 · Magic of Water Bead</title>
+<style>
+  :root{
+    --bg:#0e1116; --panel:#161b22; --panel2:#1c232d; --line:#2a313c;
+    --tx:#e6edf3; --tx2:#9aa7b4; --tx3:#6b7785;
+    --accent:#ffcc4d; --accent2:#35d0ba;
+    --ok:#35d0ba; --warn:#ffb454; --bad:#ff6b6b;
+    --radius:10px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--tx);font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif;font-size:14px;line-height:1.6}
+  a{color:var(--accent2)}
+  .wrap{max-width:1200px;margin:0 auto;padding:16px}
+  /* header */
+  header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 18px;background:linear-gradient(135deg,#141a22,#0f1319);border:1px solid var(--line);border-radius:var(--radius)}
+  .logo{display:flex;align-items:center;gap:10px}
+  .logo .ico{font-size:26px}
+  .logo h1{font-size:18px;letter-spacing:.5px}
+  .logo .sub{color:var(--tx2);font-size:12px}
+  .stat{display:flex;gap:14px;color:var(--tx2);font-size:12px;flex-wrap:wrap}
+  .stat b{color:var(--accent);font-weight:600}
+  /* tabs */
+  nav.tabs{display:flex;gap:4px;margin:14px 0;flex-wrap:wrap}
+  .tab{padding:8px 16px;background:var(--panel);border:1px solid var(--line);border-radius:8px;cursor:pointer;color:var(--tx2);user-select:none}
+  .tab:hover{color:var(--tx)}
+  .tab.active{background:var(--accent);color:#141414;font-weight:700;border-color:var(--accent)}
+  section{display:none}
+  section.active{display:block}
+  /* generic */
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:12px}
+  .card h3{font-size:15px;margin-bottom:8px;color:var(--accent)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:900px){.grid2{grid-template-columns:1fr}}
+  .muted{color:var(--tx2)} .small{font-size:12px} .tiny{font-size:11px;color:var(--tx3)}
+  .badge{display:inline-block;padding:1px 8px;border-radius:20px;font-size:11px;font-weight:600;margin-left:6px;vertical-align:1px}
+  .b-mand{background:#3a2f14;color:var(--accent);border:1px solid #5a4a1e}
+  .b-opt{background:#22333f;color:var(--accent2);border:1px solid #2c4a54}
+  .b-ok{background:#123a33;color:var(--ok);border:1px solid #1f5c50}
+  .b-warn{background:#3a2a12;color:var(--warn);border:1px solid #5c4520}
+  .b-bad{background:#3a1414;color:var(--bad);border:1px solid #5c1f1f}
+  /* buttons */
+  .btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);color:var(--tx);cursor:pointer;font-size:13px}
+  .btn:hover{border-color:var(--accent2)}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#141414;font-weight:700}
+  .btn.primary:hover{filter:brightness(1.08)}
+  .btn.danger{border-color:#5c1f1f;color:var(--bad)}
+  .btn.ghost{background:transparent}
+  .btn:disabled{opacity:.45;cursor:not-allowed}
+  select,input,textarea{background:var(--panel2);border:1px solid var(--line);color:var(--tx);border-radius:6px;padding:5px 8px;font-size:13px}
+  input[type=search]{width:100%;max-width:360px}
+  textarea{width:100%;font-family:Consolas,monospace;font-size:12px}
+  .chiprow{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+  .chip{padding:3px 10px;border-radius:20px;border:1px solid var(--line);cursor:pointer;font-size:12px;color:var(--tx2)}
+  .chip.on{background:var(--accent2);color:#0d1512;border-color:var(--accent2);font-weight:700}
+  /* library */
+  .group-head{display:flex;align-items:center;gap:10px;cursor:pointer;padding:10px 12px;background:var(--panel2);border:1px solid var(--line);border-radius:8px;margin-bottom:6px}
+  .group-head .gh-name{font-weight:700;font-size:14px}
+  .group-head .gh-meta{color:var(--tx3);font-size:12px}
+  .group-head .arrow{margin-left:auto;transition:transform .15s}
+  .group-head.open .arrow{transform:rotate(90deg)}
+  .group-body{padding:2px 0 12px}
+  .part-card{display:flex;gap:12px;padding:10px 12px;background:var(--panel);border:1px solid var(--line);border-radius:8px;margin-bottom:8px;flex-wrap:wrap;align-items:flex-start}
+  .part-card .pc-main{flex:1 1 320px;min-width:280px}
+  .pc-name{font-weight:700;font-size:14px}
+  .pc-desc{color:var(--tx2);font-size:12px;margin-top:2px}
+  .pc-desc.det{color:var(--tx);background:var(--panel2);padding:6px 8px;border-radius:6px;margin-top:6px}
+  .pc-compat{color:var(--warn);font-size:12px;margin-top:4px}
+  .attrrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+  .attrrow label{font-size:12px;color:var(--tx3)}
+  .part-card select{padding:3px 6px;font-size:12px}
+  .pc-side{display:flex;flex-direction:column;gap:6px;align-items:flex-end;min-width:210px}
+  .pc-side .row2{display:flex;gap:6px;width:100%}
+  .pc-side .row2 select{flex:1}
+  .qty-num{width:52px;text-align:center}
+  .price{color:var(--tx3);font-size:12px}
+  .pc-img img{width:84px;height:84px;object-fit:contain;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:2px}
+  .pc-price{color:var(--accent2);font-size:13px;font-weight:700;margin-top:4px}
+  .pc-price .sub{color:var(--tx3);font-weight:400;font-size:11px}
+  .ws-thumb img{width:44px;height:44px;object-fit:contain;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:1px;display:block}
+  .numcell{color:var(--accent2);font-weight:700;white-space:nowrap}
+  .numcell .muted{color:var(--tx3);font-weight:400;font-size:11px}
+  /* workspace */
+  .sumrow{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .sumcard{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:8px 14px;min-width:110px}
+  .sumcard .num{font-size:20px;font-weight:800;color:var(--accent)}
+  .sumcard .lab{font-size:12px;color:var(--tx2)}
+  .wstable{width:100%;border-collapse:collapse}
+  .wstable th{text-align:left;color:var(--tx3);font-size:12px;padding:6px 8px;border-bottom:1px solid var(--line);font-weight:600}
+  .wstable td{padding:7px 8px;border-bottom:1px solid #1d242e;vertical-align:top}
+  .wstable tr:last-child td{border-bottom:none}
+  .wg-title{font-weight:800;color:var(--accent);padding:10px 8px 4px;font-size:14px}
+  .empty{text-align:center;padding:48px 20px;color:var(--tx3)}
+  .empty .big{font-size:34px;display:block;margin-bottom:10px}
+  /* checks */
+  .chk-item{display:flex;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;margin-bottom:8px;background:var(--panel)}
+  .chk-item .tag{font-weight:800;min-width:52px;text-align:center;padding:2px 6px;border-radius:6px;font-size:12px;align-self:flex-start}
+  .chk-item.ok .tag{background:#123a33;color:var(--ok)}
+  .chk-item.info .tag{background:#22333f;color:var(--accent2)}
+  .chk-item.warn .tag{background:#3a2a12;color:var(--warn)}
+  .chk-item .chk-name{font-weight:700}
+  .chk-item .chk-msg{color:var(--tx2);font-size:13px}
+  .chk-item .chk-fix{color:var(--warn);font-size:12px;margin-top:2px}
+  /* tuning */
+  .tools{display:flex;flex-wrap:wrap;gap:8px}
+  .tool{background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:4px 12px;font-size:12px;color:var(--tx2)}
+  .step{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:10px}
+  .step h4{font-size:14px;color:var(--accent)}
+  .step .ref{color:var(--tx3);font-size:12px;margin-top:2px}
+  .step pre{white-space:pre-wrap;font-family:inherit;font-size:13px;color:var(--tx);margin-top:6px}
+  .safety{border:1px dashed #5c4520;background:#221a0e;padding:12px;border-radius:8px;color:var(--warn);font-size:13px}
+  /* checklist */
+  .todo-item{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border:1px solid var(--line);border-radius:8px;margin-bottom:6px;background:var(--panel)}
+  .todo-item input{margin-top:4px;accent-color:var(--accent2)}
+  .todo-item.done{opacity:.55}
+  .todo-item.done .t-text{text-decoration:line-through}
+  .todo-item .t-text{font-size:13px}
+  /* banner */
+  .banner{background:linear-gradient(135deg,#1b2430,#141b24);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px;margin-bottom:14px;color:var(--tx2);font-size:13px}
+  .banner b{color:var(--accent)}
+  .hl{color:var(--accent2)}
+  .foot{color:var(--tx3);font-size:12px;text-align:center;margin:24px 0 8px}
+  .scroll-x{overflow-x:auto}
+  .pulse{animation:pulse 1.6s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">
+      <span class="ico">⚙️</span>
+      <div>
+        <h1>水弹的魔法 <span class="sub">Magic of Water Bead</span></h1>
+        <div style="margin-top:6px;padding:6px 10px;border:1px solid var(--warn);border-radius:6px;background:rgba(240,170,40,.08);color:var(--warn);font-size:12px;line-height:1.6">⚠ 本网站仅用于发射器线上虚拟组装，无任何推销和报价功能。费用方面仅提供自组时手动填写各个零件价格并进行加和计算，所有标价均已清除。</div>
+      </div>
+    </div>
+    <div class="stat">
+      <span>零件总量 <b id="stParts">-</b> 件</span>
+      <span>零件种类 <b id="stGroups">-</b> 种</span>
+      <span>装配规则 <b id="stRules">-</b> 条</span>
+      <span>原厂发射器品牌 <b id="stBgBrands">-</b> 个</span>
+      <span>原厂发射器 <b id="stBase">-</b> 款</span>
+      <span>推荐组合 <b id="stScn">-</b> 套</span>
+      <span id="stSave" class="tiny">未保存</span>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <div class="tab active" data-tab="lib">📦 零件库</div>
+    <div class="tab" data-tab="vendor">🏷️ 品牌厂商</div>
+    <div class="tab" data-tab="basegun">🎯 原厂发射器</div>
+    <div class="tab" data-tab="build">🔧 组装工作台</div>
+    <div class="tab" data-tab="check">✅ 兼容检查</div>
+    <div class="tab" data-tab="tune">🛠️ 调试指南</div>
+    <div class="tab" data-tab="data">💾 数据维护</div>
+  </nav>
+
+  <div class="banner">
+    💡 <b>怎么用：</b>既可以在「零件库」把要用的零件<b>加入装配</b>，也可以在「原厂发射器」中<b>载入原厂全套数据</b>，在「组装工作台」查看零件清单与组装完成度，系统按<b>搭配规则</b>在「兼容检查」里给出 通过/建议/警告，最后可以参照「调试指南」落地组装。所有数据存在本机浏览器，也可导出分享。
+  </div>
+
+  <!-- ============ 零件库 ============ -->
+  <section id="tab-lib" class="active">
+    <div class="card">
+      <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+        <input type="search" id="libSearch" placeholder="搜索零件名 / 品牌 / 描述…">
+        <button class="btn ghost" id="libReset">清空搜索</button>
+        <span class="tiny">品牌分类：</span>
+        <div class="chiprow" id="brandCatChips" style="margin:0">
+          <span class="chip on" data-cat="all">全部</span>
+          <span class="chip" data-cat="原厂">原厂零件</span>
+          <span class="chip" data-cat="第三方">第三方零件</span>
+        </div>
+        <span class="tiny" style="margin-left:12px">组装目标：</span>
+        <div class="chiprow" style="margin:0">
+          <span class="chip" id="btV2" data-bt="2号波">2号波</span>
+          <span class="chip" id="btV3" data-bt="3号波">3号波</span>
+        </div>
+        <span class="tiny">筛选装组：</span>
+        <div class="chiprow" id="libGroupChips" style="margin:0"></div>
+      </div>
+    </div>
+    <div id="libList"></div>
+  </section>
+
+  <!-- ============ 品牌厂商 ============ -->
+  <section id="tab-vendor">
+    <div class="card">
+      <h3>品牌厂商</h3>
+      <p class="muted small">全部发射器品牌厂商一览（不区分波箱型号），含档位、代表产品、预算与简介。仅供参考了解。</p>
+      <div id="vendorList"></div>
+    </div>
+  </section>
+
+  <!-- ============ 原厂发射器 ============ -->
+  <section id="tab-basegun">
+    <div class="card">
+      <h3>选择一支原厂发射器作为基准</h3>
+      <p class="muted small">以原厂整枪配件数据为预设载入 → 再到「零件库/组装工作台」做<b class="hl">配件替换</b> → 「兼容检查」自动校验适配性。</p>
+      <div style="margin:8px 0;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+        <input id="bgSearch" placeholder="搜索型号或品牌（如 HK416 / 司马）" value="" style="flex:1;min-width:200px;background:#1c232d;border:1px solid #2a313c;border-radius:8px;padding:6px 12px;color:#e6edf3;font-size:13px">
+        <span class="tiny">波箱筛选：</span>
+        <label style="font-size:13px;cursor:pointer"><input type="checkbox" id="bgFilterV2" checked style="vertical-align:middle"> 2号波</label>
+        <label style="font-size:13px;cursor:pointer"><input type="checkbox" id="bgFilterV3" checked style="vertical-align:middle"> 3号波</label>
+        <label style="font-size:13px;cursor:pointer"><input type="checkbox" id="bgFilterOther" checked style="vertical-align:middle"> 异形波</label>
+      </div>
+      <div id="basegunList"></div>
+    </div>
+  </section>
+
+  <!-- ============ 组装工作台 ============ -->
+  <section id="tab-build">
+    <div id="wsBaseNote" style="display:none"></div>
+    <div class="sumrow">
+      <div class="sumcard"><div class="num" id="wsCount">0</div><div class="lab">已选零件</div></div>
+      <div class="sumcard"><div class="num" id="wsMandDone">0/0</div><div class="lab">必备装组完成</div></div>
+      <div class="sumcard"><div class="num" id="wsTotal">¥0</div><div class="lab">合计</div></div>
+      <div class="sumcard" style="min-width:220px">
+        <div style="display:flex;gap:6px;flex-wrap:wrap">
+          <button class="btn primary" id="btnPreset">🎯 载入推荐组合</button>
+          <button class="btn" id="btnClearBuild">清空</button>
+        </div>
+        <div class="tiny" style="margin-top:6px">手动在装配清单中填写各零件单价，合计自动计算。</div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>装配清单</h3>
+      <div id="wsTable" class="scroll-x"></div>
+    </div>
+    <div class="card">
+      <h3>缺件检查</h3>
+      <div id="wsMissing"></div>
+    </div>
+    <div class="card">
+      <h3>组装进度（虚拟组装步骤，可勾选）</h3>
+      <div id="todoList"></div>
+    </div>
+  </section>
+
+  <!-- ============ 兼容检查 ============ -->
+  <section id="tab-check">
+    <div class="sumrow">
+      <div class="sumcard"><div class="num" id="ckOk" style="color:var(--ok)">0</div><div class="lab">通过</div></div>
+      <div class="sumcard"><div class="num" id="ckInfo" style="color:var(--accent2)">0</div><div class="lab">建议</div></div>
+      <div class="sumcard"><div class="num" id="ckWarn" style="color:var(--warn)">0</div><div class="lab">警告</div></div>
+      <div class="sumcard" style="min-width:200px"><div class="tiny" style="line-height:1.9">检查随装配变更<b class="hl">实时更新</b>。<br>警告项建议先解决再下单。</div></div>
+    </div>
+    <div id="ckList"></div>
+  </section>
+
+  <!-- ============ 调试指南 ============ -->
+  <section id="tab-tune">
+    <div class="card"><h3>🧰 工具清单</h3><div class="tools" id="tuneTools"></div></div>
+    <div class="card"><h3>📋 调试步骤（对应笔记）</h3><div id="tuneSteps"></div></div>
+    <div class="safety" id="tuneSafety"></div>
+  </section>
+
+  <!-- ============ 数据维护 ============ -->
+  <section id="tab-data">
+    <div class="grid2">
+      <div class="card">
+        <h3>导出当前数据</h3>
+        <p class="muted small">导出包含全部零件库、规则、推荐组合与你的价格/备注维护结果的 JSON。</p>
+        <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+          <button class="btn primary" id="btnExportFile">⬇️ 下载 JSON 文件</button>
+          <button class="btn" id="btnExportCopy">📋 复制到剪贴板</button>
+        </div>
+        <p class="tiny" style="margin-top:8px">分享给朋友：对方在下方「导入」粘贴即可还原整套数据。</p>
+      </div>
+      <div class="card">
+        <h3>导入数据</h3>
+        <p class="muted small">粘贴或选择 JSON（格式与导出一致，必须有 <code>parts</code> 数组）。导入后覆盖当前零件库。</p>
+        <textarea id="importArea" rows="6" placeholder='{"meta":{},"groups":[],"parts":[],"rules":[],"scenarios":[],"tuning":{}}'></textarea>
+        <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
+          <input type="file" id="importFile" accept=".json,application/json" style="max-width:240px">
+          <button class="btn primary" id="btnImport">导入</button>
+          <button class="btn ghost" id="btnResetDb">重置为内置数据</button>
+        </div>
+        <p class="tiny" style="margin-top:8px" id="importStatus"></p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>✍️ 手动添加零件（保存到本机，随导出一起携带）</h3>
+      <div class="grid2">
+        <div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px">
+            <input id="maName" placeholder="零件名（必填）" style="flex:1;min-width:120px">
+            <select id="maGroup"></select>
+            <input id="maQty" type="number" min="1" value="1" style="width:56px" title="数量">
+            <select id="maOpt"><option value="false">必备</option><option value="true">选配</option></select>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px">
+            <input id="maBrand" placeholder="品牌（如 第三方（通用））" style="flex:1;min-width:110px">
+            <input id="maProduct" placeholder="产品/型号" style="flex:1;min-width:110px">
+            <input id="maPrice" placeholder="单价(数字)" type="number" min="0" style="width:90px">
+          </div>
+          <input id="maDesc" placeholder="描述 / 搭配要点（可留空）" style="width:100%">
+          <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
+            <button class="btn primary" id="btnAddPart">添加零件</button>
+            <span class="tiny">添加到当前数据源（内置+导入+自定义合并后生效）</span>
+          </div>
+        </div>
+        <div>
+          <div class="tiny" style="margin-bottom:6px">已添加的自定义零件（<span id="maCount">0</span> 个）：</div>
+          <div id="maList" class="tiny"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>✍️ 手动添加原厂发射器</h3>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px">
+        <input id="bgBrand" placeholder="品牌名（如 司马）" style="flex:1;min-width:100px">
+        <select id="bgType"><option value="2号波">2号波</option><option value="3号波">3号波</option><option value="异形波">异形波</option></select>
+        <input id="bgProducts" placeholder="代表产品（逗号分隔，如 M4,AK74M）" style="flex:2;min-width:160px">
+        <input id="bgPrice" placeholder="预算（如 0.3-0.8K）" style="width:120px">
+      </div>
+      <input id="bgDesc" placeholder="简介（可留空）" style="width:100%;margin-bottom:6px">
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="btn primary" id="btnAddBg">添加原厂发射器</button>
+        <span class="tiny">添加后可在「原厂发射器」页载入为基准</span>
+      </div>
+      <div class="tiny" style="margin-top:8px" id="bgExtList"></div>
+    </div>
+    <div class="card">
+      <h3>如何扩充品牌 / 产品 / 价格</h3>
+      <ol class="muted small" style="padding-left:20px">
+        <li><b>在线方式：</b>在「零件库」任一零件卡片选择品牌与产品——品牌/产品列表即数据源内容，可在本页导入一份你编辑过的 JSON 来更新。</li>
+        <li><b>离线方式（推荐维护主档）：</b>编辑 <code>data/parts.json</code>（结构见 <code>docs/03-数据模型与规则.md</code>），然后用命令重新生成 <code>app/data.js</code>；或使用配套 Excel 模板 <code>data/部件数据库模板.xlsx</code> 批量整理后转换。</li>
+        <li>本站不含标价，价格需在组装工作台手动填写每个零件的单价，系统自动加和计算合计。</li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="foot">2号波组装助手 v1.0 · 仅供虚拟组装技术交流 · 无推销和报价功能 · 实际改装请遵守当地法律法规</div>
+</div>
+
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script>
+(function(){
+'use strict';
+var DB = window.PARTS_DB;
+var ENG = window.V2Engine;
+var LS_SEL = 'v2build_sel_v1', LS_DB = 'v2build_db_v1', LS_TODO = 'v2build_todo_v1', LS_EXT = 'v2build_ext_v1', LS_BASE = 'v2build_base_v1', LS_BASEPROD = 'v2build_baseprod_v1';
+var sel = loadSel();
+var todo = loadTodo();
+var baseGunId = loadBase();
+var baseGunProduct = loadBaseProduct();
+applyExtParts();
+var curFilter = { search:'', groups:[] };
+var expandedGroups = {};   // 记住各装组展开状态，防止选品牌/产品时 render() 重建导致折叠
+var brandCatFilter = 'all'; // 'all' | '原厂' | '第三方'
+var buildType = loadBuildType();
+var basegunSearch = '';
+var basegunSectionOpen = { '2号波': false, '3号波': false, '异形波': false };
+var curTab = 'lib';
+
+function loadBuildType(){ try{ return localStorage.getItem('v2build_type_v1')||'2号波'; }catch(e){ return '2号波'; } }
+function saveBuildType(){ try{ localStorage.setItem('v2build_type_v1', buildType); }catch(e){} }
+
+/* ---------- persistence ---------- */
+function loadSel(){ try{ var s=JSON.parse(localStorage.getItem(LS_SEL)||'{}'); return s||{}; }catch(e){ return {}; } }
+function saveSel(){ localStorage.setItem(LS_SEL, JSON.stringify(sel)); setSaveFlag(); }
+function loadTodo(){ try{ return JSON.parse(localStorage.getItem(LS_TODO)||'[]'); }catch(e){ return []; } }
+function saveTodo(){ localStorage.setItem(LS_TODO, JSON.stringify(todo)); }
+function setSaveFlag(){ var el=document.getElementById('stSave'); el.textContent='已自动保存 '+new Date().toLocaleTimeString(); }
+
+/* ---------- utils ---------- */
+function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+function partById(id){ return ENG.getPart(id); }
+function brandEntry(p){
+  var s=sel[p.id];
+  if(!s||!s.brand||!s.product) return null;
+  return (p.brands||[]).find(function(x){return x.brand===s.brand && x.product===s.product;})||null;
+}
+/* 单价：数字价直接返回；文本价/“—”返回 0（不计价） */
+function priceNum(p){
+  var b=brandEntry(p); if(!b) return 0;
+  var v=b.price;
+  if(typeof v==='number') return v;
+  if(typeof v==='string'&&v!=='—'){ var n=parseFloat(String(v).replace(/[^\d.]/g,'')); return isNaN(n)?0:n; }
+  return 0;
+}
+function priceLabel(p){
+  var b=brandEntry(p); if(!b) return '';
+  var v=b.price;
+  if(typeof v==='number') return '¥'+v;
+  return v==='—' ? '—' : String(b.price||'');
+}
+/* ---------- 手动单价（localStorage 持久化） ---------- */
+var LS_PRICE='v2build_price_v1';
+var manualPrices={};
+function loadManualPrices(){ try{ manualPrices=JSON.parse(localStorage.getItem(LS_PRICE)||'{}'); }catch(e){ manualPrices={}; } }
+loadManualPrices();
+function saveManualPrices(){ try{ localStorage.setItem(LS_PRICE, JSON.stringify(manualPrices)); }catch(e){} }
+function getManualPrice(id){ return manualPrices[id]||0; }
+function setManualPrice(id, v){ if(v>0){ manualPrices[id]=v; }else{ delete manualPrices[id]; } saveManualPrices(); }
+/* 图片：品牌条目可带 img 字段覆盖（真实产品图）；否则用内置示意图 */
+/* ---------- 用户上传图片（base64 存 localStorage，Canvas 压缩） ---------- */
+var LS_IMG='v2build_img_v1';      // 零件图片 {partId: dataUrl}
+var LS_BGIMG='v2build_bgimg_v1'; // 发射器图片 {bgId_product: dataUrl}
+var userPartImages={};
+var userBgImages={};
+function loadUserImages(){ try{ userPartImages=JSON.parse(localStorage.getItem(LS_IMG)||'{}'); }catch(e){ userPartImages={}; } try{ userBgImages=JSON.parse(localStorage.getItem(LS_BGIMG)||'{}'); }catch(e){ userBgImages={}; } }
+loadUserImages();
+function saveUserImages(){
+  try{ localStorage.setItem(LS_IMG, JSON.stringify(userPartImages)); }
+  catch(e){ alert('存储空间不足！请删除部分旧图片后重试。'); }
+}
+function saveUserBgImages(){
+  try{ localStorage.setItem(LS_BGIMG, JSON.stringify(userBgImages)); }
+  catch(e){ alert('存储空间不足！请删除部分旧图片后重试。'); }
+}
+/* Canvas 压缩图片 → dataUrl（最长边 maxSize，JPEG 质量 0.82） */
+function resizeImage(file, maxSize, cb){
+  var reader=new FileReader();
+  reader.onload=function(){
+    var img=new Image();
+    img.onload=function(){
+      var w=img.width, h=img.height, scale=Math.min(1, maxSize/Math.max(w,h));
+      var cw=Math.round(w*scale), ch=Math.round(h*scale);
+      var c=document.createElement('canvas'); c.width=cw; c.height=ch;
+      var ctx=c.getContext('2d'); ctx.drawImage(img,0,0,cw,ch);
+      var url=c.toDataURL('image/jpeg',0.82);
+      cb(url);
+    };
+    img.src=reader.result;
+  };
+  reader.readAsDataURL(file);
+}
+function getPartImage(key){ return userPartImages[key]||''; }
+function setPartImage(key, url){ userPartImages[key]=url; saveUserImages(); }
+function delPartImage(key){ delete userPartImages[key]; saveUserImages(); }
+function partImgKey(p){
+  var s=sel[p.id];
+  if(!s||!s.brand||!s.product) return '';
+  return p.id+'|'+s.brand+'|'+s.product;
+}
+/* 去掉产品名末尾的版本后缀（-2.0/-3.0/-4.0 等），得到基础型号 */
+function baseModelName(product){
+  return (product||'').replace(/[-–]\d+\.?\d*$/, '');
+}
+function getBgImage(bgId, product){
+  var key=bgId+'_'+baseModelName(product);
+  if(userBgImages[key]) return userBgImages[key];
+  /* 兼容旧格式（per-product） */
+  return userBgImages[bgId+'_'+product]||'';
+}
+function setBgImage(bgId, product, url){ userBgImages[bgId+'_'+baseModelName(product)]=url; saveUserBgImages(); }
+function delBgImage(bgId, product){ delete userBgImages[bgId+'_'+baseModelName(product)]; delete userBgImages[bgId+'_'+product]; saveUserBgImages(); }
+
+function resolveImg(p){
+  var key=partImgKey(p);
+  if(key){ var uploaded=getPartImage(key); if(uploaded) return uploaded; }
+  var b=brandEntry(p);
+  if(b&&b.img) return b.img;
+  return 'img/parts/'+p.id+'.svg';
+}
+function attrSummary(p){
+  var s=sel[p.id]; var out=[];
+  Object.keys(p.attrs||{}).forEach(function(k){
+    var v = s && s.attrs && s.attrs[k] ? s.attrs[k] : (p.defaults&&p.defaults[k]!==undefined?p.defaults[k]:p.attrs[k].values[0]);
+    out.push(k+'='+v);
+  });
+  return out.join(' · ');
+}
+function partName(id){ var p=partById(id); return p?p.name:id; }
+
+/* ---------- tabs ---------- */
+document.querySelectorAll('.tab').forEach(function(t){
+  t.addEventListener('click', function(){
+    document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('active');});
+    document.querySelectorAll('section').forEach(function(x){x.classList.remove('active');});
+    t.classList.add('active');
+    curTab=t.dataset.tab;
+    document.getElementById('tab-'+curTab).classList.add('active');
+    render();
+  });
+});
+
+/* ---------- library ---------- */
+function renderHeaderStats(){
+  var totalEntries=DB.parts.reduce(function(s,p){return s+((p.brands||[]).length);},0);
+  document.getElementById('stParts').textContent=totalEntries;
+  document.getElementById('stGroups').textContent=DB.parts.length;
+  document.getElementById('stRules').textContent=DB.rules.length;
+  var bgBrands=(DB.baseguns||[]);
+  var bgProducts=bgBrands.reduce(function(s,bg){return s+((bg.products||[]).length);},0);
+  document.getElementById('stBgBrands').textContent=bgBrands.length;
+  document.getElementById('stBase').textContent=bgProducts;
+  document.getElementById('stScn').textContent=DB.scenarios.length;
+}
+function renderGroupChips(){
+  var box=document.getElementById('libGroupChips'); box.innerHTML='';
+  DB.groups.slice().sort(function(a,b){return a.seq-b.seq;}).forEach(function(g){
+    var c=document.createElement('span');
+    c.className='chip'+(curFilter.groups.indexOf(g.id)>=0?' on':'');
+    c.textContent=g.name;
+    c.addEventListener('click',function(){
+      var i=curFilter.groups.indexOf(g.id);
+      if(i>=0)curFilter.groups.splice(i,1); else curFilter.groups.push(g.id);
+      render();
+    });
+    box.appendChild(c);
+  });
+}
+function renderLibrary(){
+  var box=document.getElementById('libList'); box.innerHTML='';
+  document.querySelectorAll('#brandCatChips .chip').forEach(function(c){ c.classList.toggle('on', c.dataset.cat===brandCatFilter); });
+  document.getElementById('btV2').classList.toggle('on', buildType==='2号波');
+  document.getElementById('btV3').classList.toggle('on', buildType==='3号波');
+  var q=curFilter.search.trim().toLowerCase();
+  var groups=DB.groups.slice().sort(function(a,b){return a.seq-b.seq;});
+  groups.forEach(function(g){
+    if(curFilter.groups.length && curFilter.groups.indexOf(g.id)<0) return;
+    var parts=DB.parts.filter(function(p){return p.group===g.id;});
+    if(q){
+      parts=parts.filter(function(p){
+        return p.name.toLowerCase().indexOf(q)>=0
+          || (p.desc||'').toLowerCase().indexOf(q)>=0
+          || (p.brands||[]).some(function(b){return (b.brand||'').toLowerCase().indexOf(q)>=0||(b.product||'').toLowerCase().indexOf(q)>=0;});
+      });
+    }
+    if(!parts.length) return;
+    var isOpen = !!expandedGroups[g.id] || !!q;   // 搜索时自动展开
+    var head=document.createElement('div');
+    head.className='group-head'+(isOpen?' open':'');
+    head.innerHTML='<span class="gh-name">'+esc(g.name)+'</span><span class="gh-meta">'+g.desc+'</span><span class="arrow">▶</span>';
+    var body=document.createElement('div'); body.className='group-body';
+    head.addEventListener('click',function(){
+      expandedGroups[g.id] = !expandedGroups[g.id];
+      head.classList.toggle('open');
+      body.style.display = body.style.display==='none' ? 'block' : 'none';
+    });
+    body.style.display = isOpen ? 'block' : 'none';
+    parts.forEach(function(p){ body.appendChild(partCard(p)); });
+    box.appendChild(head); box.appendChild(body);
+  });
+}
+function brandTag(brand){
+  var e=(DB.brandDirectory||{})[brand];
+  if(!e) return '';
+  if(e.verified==='thirdparty') return '（第三方）';
+  if(e.verified==='user_reported') return '（待核实）';
+  return '';
+}
+function brandCategory(brand){
+  var e=(DB.brandDirectory||{})[brand];
+  if(!e) return '';
+  return e.category || '';
+}
+function brandMatchesCatFilter(brand){
+  if(brandCatFilter==='all') return true;
+  var cat=brandCategory(brand);
+  if(brandCatFilter==='原厂') return cat==='原厂';
+  if(brandCatFilter==='第三方') return cat==='三方-有品牌' || cat==='三方-通用';
+  return true;
+}
+function brandOptions(p, s){
+  var brands=[];
+  (p.brands||[]).forEach(function(b){ if(brands.indexOf(b.brand)<0 && brandMatchesCatFilter(b.brand)) brands.push(b.brand); });
+  var html='<select class="selBrand" data-p="'+p.id+'"><option value="">— 品牌 —</option>';
+  if(s&&s.brand&&brands.indexOf(s.brand)<0){ html+='<option value="'+esc(s.brand)+'" selected>'+esc(s.brand)+brandTag(s.brand)+'</option>'; }
+  brands.forEach(function(b){ html+='<option value="'+esc(b)+'"'+(s&&s.brand===b?' selected':'')+'>'+esc(b)+brandTag(b)+'</option>'; });
+  html+='</select>';
+  var products=(p.brands||[]).filter(function(b){return (s&&s.brand&&b.brand===s.brand) && brandMatchesCatFilter(b.brand);});
+  var curProd=s&&s.brand? products.filter(function(b){return b.product===s.product;}).length?s.product:'' : '';
+  html+='<select class="selProduct" data-p="'+p.id+'"><option value="">— 产品/型号 —</option>';
+  if(s&&s.brand&&s.product&&!products.some(function(b){return b.product===s.product;})){ html+='<option value="'+esc(s.product)+'" selected>'+esc(s.product)+'（预设）</option>'; }
+  products.forEach(function(b){
+    var label=b.product + (typeof b.price==='number'||b.price==='—'?'（'+(typeof b.price==='number'?'¥'+b.price:b.price)+'）':'') + (b.thirdparty?'（第三方）':'') + (b.material?' · 材质:'+b.material:'');
+    html+='<option value="'+esc(b.product)+'"'+(s&&s.brand===b.brand&&s.product===b.product?' selected':'')+'>'+esc(label)+'</option>';
+  });
+  html+='</select>';
+  return html;
+}
+/* 图片加载：失败回退通用兜底图 */
+function attachImg(im, p){
+  im.src=resolveImg(p); im.alt=p.name;
+  var once=false;
+  im.addEventListener('error',function(){
+    if(once){ im.style.display='none'; return; }
+    once=true; im.src='img/parts/_generic.svg';
+  });
+}
+function partCard(p){
+  var s=sel[p.id];
+  var card=document.createElement('div'); card.className='part-card'; card.dataset.p=p.id;
+  var img=document.createElement('div'); img.className='pc-img';
+  var im=document.createElement('img');
+  attachImg(im, p);
+  img.appendChild(im);
+  var main=document.createElement('div'); main.className='pc-main';
+  main.innerHTML =
+    '<div class="pc-name">'+esc(p.name)+
+      (p.optional?'<span class="badge b-opt">选配</span>':'<span class="badge b-mand">必备</span>')+
+      '<span class="badge" style="background:#22333f;color:#8fa3b8">×'+p.qty+'</span>'+
+    '</div>'+
+    '<div class="pc-desc">'+esc(p.desc||'')+'</div>'+
+    (p.compat?'<div class="pc-compat">⚠ '+esc(p.compat)+'</div>':'');
+  var attrRow=document.createElement('div'); attrRow.className='attrrow';
+  Object.keys(p.attrs||{}).forEach(function(k){
+    var def=p.attrs[k];
+    var v=s&&s.attrs&&s.attrs[k]!==undefined&&s.attrs[k]!==''?s.attrs[k]:(p.defaults&&p.defaults[k]!==undefined?p.defaults[k]:def.values[0]);
+    var lab=document.createElement('label');
+    lab.innerHTML=esc(def.label||k)+' ';
+    var selEl=document.createElement('select'); selEl.dataset.p=p.id; selEl.dataset.attr=k;
+    def.values.forEach(function(vv){ var o=document.createElement('option'); o.value=vv; o.textContent=vv; if(vv===v)o.selected=true; selEl.appendChild(o); });
+    selEl.addEventListener('change',function(){ ensure(p.id); sel[p.id].attrs=sel[p.id].attrs||{}; sel[p.id].attrs[k]=selEl.value; saveSel(); render(); });
+    lab.appendChild(selEl); attrRow.appendChild(lab);
+  });
+  main.appendChild(attrRow);
+  var side=document.createElement('div'); side.className='pc-side';
+  side.innerHTML='<div class="row2">'+brandOptions(p,s)+'</div>';
+  var addRow=document.createElement('div'); addRow.className='row2';
+  var qtyInput=document.createElement('input'); qtyInput.type='number'; qtyInput.min=1; qtyInput.value=(s&&s.qty)||p.qty||1; qtyInput.className='qty-num';
+  qtyInput.addEventListener('change',function(){ ensure(p.id); sel[p.id].qty=Math.max(1,parseInt(qtyInput.value,10)||1); saveSel(); render(); });
+  var btn=document.createElement('button');
+  var inBuild = s && s.selected;
+  btn.className='btn '+(inBuild?'primary':'')+(inBuild?'':'ghost');
+  btn.textContent=inBuild?'✓ 已加入':'加入装配';
+  btn.addEventListener('click',function(){ toggleSelect(p.id); render(); });
+  addRow.appendChild(qtyInput); addRow.appendChild(btn);
+  side.appendChild(addRow);
+  var price=document.createElement('div'); price.className='price';
+  price.innerHTML='<span class="tiny" style="color:var(--tx3)">无标价 · 在工作台手动填写</span>';
+  side.appendChild(price);
+  /* 按品牌+产品粒度的产品图上传 */
+  var imgKey=partImgKey(p);
+  var imgBox=document.createElement('div'); imgBox.className='row2'; imgBox.style.cssText='display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-top:4px';
+  if(!imgKey){
+    imgBox.innerHTML='<span class="tiny" style="color:var(--tx3)">📷 选品牌+型号后可上传产品图</span>';
+  }else{
+    var curImg=getPartImage(imgKey);
+    if(curImg){
+      imgBox.innerHTML='<span class="badge b-ok" style="font-size:18px">📷已上传</span>';
+      var delImg=document.createElement('button'); delImg.className='btn danger ghost small'; delImg.style.cssText='font-size:18px;padding:2px 8px'; delImg.textContent='删除';
+      delImg.addEventListener('click',function(){ if(confirm('删除该产品图？')){ delPartImage(imgKey); render(); } });
+      imgBox.appendChild(delImg);
+    }
+    var imgLabel=document.createElement('label'); imgLabel.className='btn small'; imgLabel.style.cssText='cursor:pointer;font-size:18px;padding:2px 8px';
+    imgLabel.textContent=curImg?'🔄换图':'📷上传产品图';
+    var imgInput=document.createElement('input'); imgInput.type='file'; imgInput.accept='image/*'; imgInput.style.display='none';
+    imgInput.addEventListener('change',function(){
+      if(!imgInput.files[0])return;
+      resizeImage(imgInput.files[0], 400, function(url){ setPartImage(imgKey, url); render(); });
+      imgInput.value='';
+    });
+    imgLabel.appendChild(imgInput);
+    imgBox.appendChild(imgLabel);
+  }
+  side.appendChild(imgBox);
+  card.appendChild(img); card.appendChild(main); card.appendChild(side);
+  card.querySelectorAll('.selBrand').forEach(function(selEl){
+    selEl.addEventListener('change',function(){ ensure(p.id); sel[p.id].brand=selEl.value; sel[p.id].product=''; saveSel(); render(); });
+  });
+  card.querySelectorAll('.selProduct').forEach(function(selEl){
+    selEl.addEventListener('change',function(){ ensure(p.id); sel[p.id].product=selEl.value; saveSel(); render(); });
+  });
+  return card;
+}
+function ensure(id){ if(!sel[id]) sel[id]={selected:false,brand:'',product:'',qty:1,notes:'',attrs:{}}; }
+function toggleSelect(id){ ensure(id); sel[id].selected=!sel[id].selected; saveSel(); render(); }
+
+/* ---------- workspace ---------- */
+function renderWorkspace(){
+  var stats=ENG.groupStats(sel);
+  var count=Object.keys(sel).filter(function(id){return sel[id].selected;}).length;
+  document.getElementById('wsCount').textContent=count;
+  var mand=DB.groups.filter(function(g){return g.mandatory;});
+  var mandDone=mand.filter(function(g){return stats[g.id]&&stats[g.id].complete;}).length;
+  document.getElementById('wsMandDone').textContent=mandDone+'/'+mand.length;
+  var total=0;
+  Object.keys(sel).forEach(function(id){ if(!sel[id].selected)return; var p=partById(id); if(!p)return; var u=getManualPrice(p.id); if(u>0) total+=u*(sel[id].qty||1); });
+  document.getElementById('wsTotal').textContent='¥'+total;
+  var box=document.getElementById('wsTable');
+  if(!count){ box.innerHTML='<div class="empty"><span class="big">🔧</span>还没有选零件。<br>到「零件库」挑选并「加入装配」，或一键载入推荐组合。</div>'; return; }
+  var html='<table class="wstable"><tr><th></th><th>零件</th><th>品牌 / 产品</th><th>属性</th><th>单价</th><th>数量</th><th>总价</th><th>备注</th><th></th></tr>';
+  DB.groups.slice().sort(function(a,b){return a.seq-b.seq;}).forEach(function(g){
+    var parts=DB.parts.filter(function(p){return p.group===g.id && sel[p.id]&&sel[p.id].selected;});
+    if(!parts.length) return;
+    html+='<tr class="wg-title"><td colspan="9">'+esc(g.name)+' <span class="badge '+(stats[g.id].complete?'b-ok':'b-warn')+'">'+(stats[g.id].complete?'✓ 完成':(stats[g.id].mandatorySelected+'/'+stats[g.id].mandatoryCount+' 必备'))+'</span></td></tr>';
+    parts.forEach(function(p){
+      var s=sel[p.id];
+      var unit=getManualPrice(p.id);
+      var unitTxt='<input type="number" class="wsPrice" data-p="'+p.id+'" value="'+(unit>0?unit:'')+'" min="0" placeholder="单价" style="width:64px;text-align:center">';
+      var totalTxt=unit>0?'¥'+(unit*(s.qty||1)):'¥0';
+      html+='<tr>'+
+        '<td class="ws-thumb"><img src="'+esc(resolveImg(p))+'" alt="'+esc(p.name)+'" onerror="this.onerror=null;this.src=\'img/parts/_generic.svg\'"></td>'+
+        '<td><b>'+esc(p.name)+'</b>'+(p.optional?'<span class="badge b-opt">选配</span>':'')+'</td>'+
+        '<td class="small">'+esc(s.brand||'—')+(s.product?'<br>'+esc(s.product):'')+'</td>'+
+        '<td class="small muted">'+esc(attrSummary(p))+'</td>'+
+        '<td class="numcell">'+unitTxt+'</td>'+
+        '<td><input type="number" class="wsQty" data-p="'+p.id+'" value="'+s.qty+'" min="1" style="width:48px;text-align:center" title="数量（可直接增减）"></td>'+
+        '<td class="numcell">'+totalTxt+'</td>'+
+        '<td class="small"><input class="wsNote" data-p="'+p.id+'" value="'+esc(s.notes||'')+'" placeholder="备注…" style="width:100%;min-width:80px"></td>'+
+        '<td><button class="btn danger ghost small" data-del="'+p.id+'">移除</button></td></tr>';
+    });
+  });
+  html+='</table>';
+  box.innerHTML=html;
+  box.querySelectorAll('.wsNote').forEach(function(inp){
+    inp.addEventListener('change',function(){ sel[inp.dataset.p].notes=inp.value; saveSel(); });
+  });
+  box.querySelectorAll('.wsQty').forEach(function(inp){
+    inp.addEventListener('change',function(){
+      var q=Math.max(1,parseInt(inp.value,10)||1);
+      sel[inp.dataset.p].qty=q; saveSel();
+      var p=partById(inp.dataset.p);
+      var unit=getManualPrice(p.id);
+      inp.value=q;
+      var totalCell=inp.closest('tr').querySelector('.numcell:last-of-type');
+      var totalTxt=unit>0?'¥'+(unit*q):'¥0';
+      if(totalCell) totalCell.textContent=totalTxt;
+      var total=0;
+      Object.keys(sel).forEach(function(id){ if(!sel[id].selected)return; var pp=partById(id); if(!pp)return; var u=getManualPrice(pp.id); if(u>0) total+=u*(sel[id].qty||1); });
+      document.getElementById('wsTotal').textContent='¥'+total;
+      renderMissingCheck();
+    });
+  });
+  box.querySelectorAll('.wsPrice').forEach(function(inp){
+    inp.addEventListener('input',function(){
+      var v=parseFloat(inp.value)||0;
+      setManualPrice(inp.dataset.p, v);
+      var p=partById(inp.dataset.p);
+      var s=sel[p.id];
+      var q=s?s.qty||1:1;
+      var totalCell=inp.closest('tr').querySelector('.numcell:last-of-type');
+      if(totalCell) totalCell.textContent='¥'+(v*q);
+      var total=0;
+      Object.keys(sel).forEach(function(id){ if(!sel[id].selected)return; var pp=partById(id); if(!pp)return; var u=getManualPrice(pp.id); if(u>0) total+=u*(sel[id].qty||1); });
+      document.getElementById('wsTotal').textContent='¥'+total;
+    });
+  });
+  box.querySelectorAll('[data-del]').forEach(function(b){
+    b.addEventListener('click',function(){ ensure(b.dataset.del); sel[b.dataset.del].selected=false; baseGunId=''; baseGunProduct=''; saveBase(); saveBaseProduct(); saveSel(); render(); });
+  });
+}
+function renderTodo(){
+  var steps=(DB.tuning&&DB.tuning.steps||[]);
+  var box=document.getElementById('todoList');
+  if(!todo.length) todo=steps.map(function(s,i){return {i:i,done:false};});
+  while(todo.length<steps.length) todo.push({i:todo.length,done:false});
+  box.innerHTML='';
+  steps.forEach(function(s,i){
+    var d=document.createElement('div'); d.className='todo-item'+(todo[i]&&todo[i].done?' done':'');
+    d.innerHTML='<input type="checkbox" data-i="'+i+'"'+(todo[i]&&todo[i].done?' checked':'')+'><div class="t-text"><b>'+esc(s.title)+'</b>'+(s.ref?' <span class="tiny">'+esc(s.ref)+'</span>':'')+'</div>';
+    var cb=d.querySelector('input');
+    cb.addEventListener('change',function(){ todo[i].done=cb.checked; saveTodo(); render(); });
+    box.appendChild(d);
+  });
+}
+
+/* ---------- checks ---------- */
+function renderChecks(){
+  var items=ENG.runChecks(sel);
+  /* 自定义：波箱类型兼容检查（气缸/推嘴/电机） */
+  ['p_cylinder','p_nozzle','p_motor'].forEach(function(pid){
+    var p=partById(pid);
+    if(!p||!ENG.isSelected(sel,pid)||!p.attrs['波箱'])return;
+    var v=ENG.resolveAttr(p,sel,'波箱');
+    if(v&&v!==buildType){
+      items.push({id:'r_bt_'+pid,name:p.name+' 波箱不匹配',level:'warn',msg:p.name+'波箱='+v+'，与组装目标('+buildType+')不一致，2号波与3号波不通用。',fix:'切换零件库组装目标为'+v+'，或换'+buildType+'规格'+p.name});
+    }
+  });
+  var nOk=items.filter(function(i){return i.level==='ok';}).length;
+  var nInfo=items.filter(function(i){return i.level==='info';}).length;
+  var nWarn=items.filter(function(i){return i.level==='warn';}).length;
+  document.getElementById('ckOk').textContent=nOk;
+  document.getElementById('ckInfo').textContent=nInfo;
+  document.getElementById('ckWarn').textContent=nWarn;
+  var box=document.getElementById('ckList');
+  if(!Object.keys(sel).some(function(id){return sel[id].selected;})){
+    box.innerHTML='<div class="empty"><span class="big">✅</span>还没有装配内容。<br>去「零件库」加入零件或载入推荐组合后，这里会实时给出搭配检查。</div>';
+    return;
+  }
+  box.innerHTML='';
+  var sorted=items.slice().sort(function(a,b){ var o={warn:0,info:1,ok:2}; return (o[a.level]||3)-(o[b.level]||3); });
+  sorted.forEach(function(it){
+    var d=document.createElement('div'); d.className='chk-item '+it.level;
+    var tag={ok:'通过',info:'建议',warn:'警告'}[it.level]||it.level;
+    d.innerHTML='<div class="tag">'+tag+'</div><div><div class="chk-name">'+esc(it.name)+' <span class="tiny">'+esc(it.id)+'</span></div>'+
+      '<div class="chk-msg">'+esc(it.msg||'')+'</div>'+(it.fix?'<div class="chk-fix">💡 '+esc(it.fix)+'</div>':'')+'</div>';
+    box.appendChild(d);
+  });
+}
+
+/* ---------- tuning ---------- */
+function renderTuning(){
+  var t=DB.tuning||{};
+  document.getElementById('tuneTools').innerHTML=(t.tools||[]).map(function(x){return '<span class="tool">'+esc(x)+'</span>';}).join('');
+  var steps=document.getElementById('tuneSteps'); steps.innerHTML='';
+  (t.steps||[]).forEach(function(s){
+    var d=document.createElement('div'); d.className='step';
+    d.innerHTML='<h4>'+esc(s.title)+'</h4>'+(s.ref?'<div class="ref">对应笔记：'+esc(s.ref)+'</div>':'')+'<pre>'+esc(s.detail||'')+'</pre>';
+    steps.appendChild(d);
+  });
+  document.getElementById('tuneSafety').textContent=t.safety||'';
+}
+
+/* ---------- data maintenance ---------- */
+function currentDb(){ return DB; }
+function validateDb(o){ return o&&Array.isArray(o.parts)&&o.parts.length>0&&Array.isArray(o.groups); }
+function applyDb(o){
+  DB=o; window.PARTS_DB=o;
+  try{ localStorage.setItem(LS_DB, JSON.stringify(o)); }catch(e){}
+  render(); setImportStatus('已导入 '+o.parts.length+' 个零件、'+(o.rules||[]).length+' 条规则。');
+}
+function resetDb(){
+  var builtin=window.__BUILTIN_DB__||null;
+  if(builtin){ DB=builtin; window.PARTS_DB=builtin; localStorage.removeItem(LS_DB); render(); setImportStatus('已重置为内置数据。'); }
+}
+function exportObj(){ return JSON.stringify(currentDb(),null,2); }
+function setImportStatus(t){ document.getElementById('importStatus').textContent=t; }
+document.getElementById('btnExportFile').addEventListener('click',function(){
+  var blob=new Blob([exportObj()],{type:'application/json'});
+  var a=document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download='2号波数据_'+new Date().toISOString().slice(0,10)+'.json'; document.body.appendChild(a); a.click();
+  setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},200);
+});
+document.getElementById('btnExportCopy').addEventListener('click',function(){
+  var t=exportObj();
+  function done(){ setImportStatus('已复制 '+t.length+' 字符到剪贴板。'); }
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(t).then(done,function(){fallbackCopy(t,done);}); }
+  else fallbackCopy(t,done);
+});
+function fallbackCopy(t,cb){
+  var ta=document.createElement('textarea'); ta.value=t; document.body.appendChild(ta); ta.select();
+  try{ document.execCommand('copy'); cb(); }catch(e){ setImportStatus('复制失败，请手动全选文本。'); }
+  ta.remove();
+}
+document.getElementById('btnImport').addEventListener('click',function(){
+  var raw=document.getElementById('importArea').value.trim();
+  if(!raw){ setImportStatus('请先粘贴或选择 JSON。'); return; }
+  try{
+    var o=JSON.parse(raw);
+    if(!validateDb(o)){ setImportStatus('格式不对：缺少 parts/groups 数组。'); return; }
+    applyDb(o);
+  }catch(e){ setImportStatus('JSON 解析失败：'+e.message); }
+});
+document.getElementById('importFile').addEventListener('change',function(){
+  var f=this.files[0]; if(!f)return;
+  var r=new FileReader();
+  r.onload=function(){ document.getElementById('importArea').value=r.result; setImportStatus('已读入文件 '+f.name+'，点「导入」生效。'); };
+  r.readAsText(f);
+});
+document.getElementById('btnResetDb').addEventListener('click',resetDb);
+window.__BUILTIN_DB__=DB;
+
+/* ---------- scenarios ---------- */
+function renderPresetMenu(){
+  var btn=document.getElementById('btnPreset');
+  btn.onclick=function(){
+    var names=DB.scenarios.map(function(s,i){return (i+1)+'. '+s.name+' — '+s.desc;});
+    var pick=prompt('载入推荐组合（覆盖当前装配）：\n\n'+names.join('\n')+'\n\n输入序号 1-'+DB.scenarios.length+'：');
+    if(!pick)return;
+    var i=parseInt(pick,10)-1;
+    if(isNaN(i)||!DB.scenarios[i]){ alert('序号无效'); return; }
+    sel=ENG.applyPreset(DB.scenarios[i].id)||{};
+    baseGunId=''; baseGunProduct=''; saveBase(); saveBaseProduct(); saveSel(); render();
+    document.querySelector('.tab[data-tab="build"]').click();
+  };
+}
+document.getElementById('btnClearBuild').addEventListener('click',function(){
+  if(!confirm('确定清空整个装配清单？'))return;
+  sel={}; baseGunId=''; baseGunProduct=''; saveBase(); saveBaseProduct(); saveSel(); render();
+});
+
+/* ---------- 缺件检查 ---------- */
+function renderMissingCheck(){
+  var box=document.getElementById('wsMissing');
+  if(!box) return;
+  var count=Object.keys(sel).filter(function(id){return sel[id].selected;}).length;
+  if(!count){ box.innerHTML='<div class="empty"><span class="big">📋</span>还没有选零件。<br>载入原厂基准或推荐组合后，这里会显示缺少哪些必备件。</div>'; return; }
+  var groupsWithMissing=[];
+  DB.groups.slice().sort(function(a,b){return a.seq-b.seq;}).forEach(function(g){
+    var mandParts=DB.parts.filter(function(p){return p.group===g.id && !p.optional;});
+    var missing=mandParts.filter(function(p){return !(sel[p.id]&&sel[p.id].selected);});
+    if(missing.length) groupsWithMissing.push({g:g, parts:missing});
+  });
+  // 轴承/轴套三选一（r19）
+  var trio=['p_bearing8','p_bearing9','p_bushing'];
+  var trioAny=trio.some(function(id){return sel[id]&&sel[id].selected;});
+  var trioMissing=!trioAny;
+  var totalMissing=groupsWithMissing.reduce(function(s,x){return s+x.parts.length;},0) + (trioMissing?1:0);
+  if(!totalMissing){
+    box.innerHTML='<div style="color:var(--ok);font-size:14px;padding:6px 0">✅ 所有必备零件已齐备！</div>';
+    return;
+  }
+  var html='<div style="color:var(--warn);margin-bottom:8px">⚠ 共缺 <b>'+totalMissing+'</b> 类必备件：</div>';
+  groupsWithMissing.forEach(function(x){
+    html+='<div style="margin-bottom:6px"><b class="hl">'+esc(x.g.name)+'</b>：缺 ';
+    html+=x.parts.map(function(p){return esc(p.name);}).join('、');
+    html+='</div>';
+  });
+  if(trioMissing){
+    html+='<div style="margin-bottom:6px"><b class="hl">下波箱</b>：缺 轴承/轴套（8mm 轴承 / 9mm 轴承 / 轴套 <span class="tiny">三选一</span>）</div>';
+  }
+  html+='<div class="tiny" style="margin-top:8px;color:var(--tx3)">提示：选配件（标「选配」）不计入缺件；轴承/轴套只需三选一。</div>';
+  box.innerHTML=html;
+}
+
+/* ---------- 原厂发射器（基准） ---------- */
+function loadBase(){ try{ return localStorage.getItem(LS_BASE)||''; }catch(e){ return ''; } }
+function saveBase(){ try{ localStorage.setItem(LS_BASE, baseGunId||''); }catch(e){} }
+function loadBaseProduct(){ try{ return localStorage.getItem(LS_BASEPROD)||''; }catch(e){ return ''; } }
+function saveBaseProduct(){ try{ localStorage.setItem(LS_BASEPROD, baseGunProduct||''); }catch(e){} }
+function renderBasegun(){
+  var box=document.getElementById('basegunList'); if(!box) return;
+  var bgs=(DB.baseguns||[]);
+  if(!bgs.length){ box.innerHTML='<div class="empty"><span class="big">🎯</span>暂无原厂发射器数据。</div>'; return; }
+  var showV2=document.getElementById('bgFilterV2');
+  var showV3=document.getElementById('bgFilterV3');
+  var showOther=document.getElementById('bgFilterOther');
+  var fV2=showV2?showV2.checked:true;
+  var fV3=showV3?showV3.checked:true;
+  var fOther=showOther?showOther.checked:true;
+  var q=basegunSearch.trim().toLowerCase();
+  box.innerHTML='';
+  var types=[];
+  if(fV2) types.push('2号波');
+  if(fV3) types.push('3号波');
+  if(fOther) types.push('异形波');
+  if(!types.length){ box.innerHTML='<div class="empty">请至少勾选一种波箱类型。</div>'; return; }
+  types.forEach(function(gt){
+    var list=bgs.filter(function(b){return b.gearboxType===gt;});
+    if(!list.length) return;
+    /* 展开产品级，按搜索过滤 */
+    var items=[];
+    list.forEach(function(bg){
+      (bg.products||[]).forEach(function(prod){
+        if(q && bg.brand.toLowerCase().indexOf(q)<0 && prod.toLowerCase().indexOf(q)<0) return;
+        items.push({bg:bg, prod:prod});
+      });
+    });
+    if(!items.length) return;
+    var isOpen=basegunSectionOpen[gt] || !!q;
+    var sec=document.createElement('div'); sec.style.cssText='margin-bottom:16px';
+    var hdr=document.createElement('div'); hdr.style.cssText='color:var(--accent);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin-bottom:8px;cursor:pointer;display:flex;align-items:center;background:#161b22';
+    hdr.innerHTML='<span style="font-weight:bold;flex:1;font-size:16px">'+gt+'（'+items.length+' 款）</span><span class="tiny">'+(isOpen?'▼ 点击折叠':'▶ 点击展开')+'</span>';
+    hdr.addEventListener('click',function(){ basegunSectionOpen[gt]=!basegunSectionOpen[gt]; render(); });
+    sec.appendChild(hdr);
+    box.appendChild(sec);
+    if(!isOpen) return;
+    items.forEach(function(it){
+      var bg=it.bg, prod=it.prod;
+        var d=document.createElement('div'); d.className='part-card'; d.style.padding='8px 12px';
+        var active=baseGunId===bg.id && baseGunProduct===prod;
+        var bgImgKey=bg.id+'_'+prod;
+        var hasBgImg=getBgImage(bg.id, prod);
+        var imgHtml=hasBgImg?'<img src="'+esc(hasBgImg)+'" style="width:48px;height:48px;object-fit:cover;border-radius:6px;border:1px solid var(--line)">':'<div style="width:48px;height:48px;border-radius:6px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:24px">🔫</div>';
+        d.innerHTML='<div class="pc-main" style="min-width:auto">'+
+          '<div style="display:flex;align-items:center;gap:8px">'+
+          imgHtml+
+          '<div><div class="pc-name" style="font-size:13px">'+esc(prod)+' <span class="muted">— '+esc(bg.brand)+'</span>'+
+          '<span class="badge '+(active?'b-ok':'b-opt')+'" style="margin-left:8px">'+(active?'当前基准':'原厂')+'</span>'+
+          (bg.priceRange?'<span class="badge" style="background:#22333f;color:#8fa3b8">¥'+esc(bg.priceRange)+'</span>':'')+
+          (hasBgImg?'<span class="badge b-ok" style="font-size:18px">📷已上传</span>':'')+
+          '</div>'+
+          '<div style="display:flex;gap:4px;margin-top:4px">'+
+          '<label class="btn small ghost" style="cursor:pointer;font-size:18px;padding:2px 8px">'+(hasBgImg?'🔄换图':'📷上传')+
+          '<input type="file" accept="image/*" style="display:none" data-bg="'+esc(bg.id)+'" data-prod="'+esc(prod)+'" class="bgFileInput">'+
+          '</label>'+
+          (hasBgImg?'<button class="btn danger ghost small" style="font-size:18px;padding:2px 8px" data-bg-del="'+esc(bg.id)+'" data-prod-del="'+esc(prod)+'">删除</button>':'')+
+          '</div></div></div></div>';
+        var side=document.createElement('div'); side.className='pc-side'; side.style.minWidth='120px';
+        var btn=document.createElement('button');
+        btn.className='btn small '+(active?'primary':'');
+        btn.textContent=active?'✓ 已设为基准':'载入';
+        btn.addEventListener('click',function(){
+          sel=ENG.applyBasegun(bg.id, prod)||sel;
+          baseGunId=bg.id; baseGunProduct=prod; saveBase(); saveBaseProduct(); saveSel(); render();
+          document.querySelector('.tab[data-tab="build"]').click();
+        });
+        side.appendChild(btn);
+        d.appendChild(side);
+        box.appendChild(d);
+    });
+  });
+  /* 发射器图片上传事件 */
+  box.querySelectorAll('.bgFileInput').forEach(function(inp){
+    inp.addEventListener('change',function(){
+      if(!inp.files[0])return;
+      var bgId=inp.dataset.bg, prod=inp.dataset.prod;
+      resizeImage(inp.files[0], 400, function(url){
+        setBgImage(bgId, prod, url); render();
+      });
+      inp.value='';
+    });
+  });
+  box.querySelectorAll('[data-bg-del]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var bgId=b.dataset.bgDel, prod=b.dataset.prodDel;
+      if(confirm('删除「'+prod+'」的图片？')){ delBgImage(bgId, prod); render(); }
+    });
+  });
+}
+function renderVendor(){
+  var box=document.getElementById('vendorList'); if(!box) return;
+  var bgs=(DB.baseguns||[]);
+  if(!bgs.length){ box.innerHTML='<div class="empty">暂无品牌数据。</div>'; return; }
+  box.innerHTML='';
+  bgs.forEach(function(bg){
+    var d=document.createElement('div'); d.className='part-card';
+    d.innerHTML='<div class="pc-main"><div class="pc-name">'+esc(bg.brand)+
+      '<span class="badge b-opt">原厂</span>'+
+      '<span class="badge" style="background:#22333f;color:#8fa3b8">'+esc(bg.gearboxType||'')+'</span>'+
+      (bg.priceRange?'<span class="badge" style="background:#22333f;color:#8fa3b8">¥'+esc(bg.priceRange)+'</span>':'')+
+      '</div>'+
+      '<div class="pc-desc">'+esc(bg.desc||'')+'</div>'+
+      '<div class="tiny" style="margin-top:4px"><b>代表产品：</b>'+esc((bg.products||[]).join('、'))+'</div>'+
+      '</div>';
+    box.appendChild(d);
+  });
+}
+function renderWsBaseNote(){
+  var box=document.getElementById('wsBaseNote'); if(!box) return;
+  var bg=baseGunId && (DB.baseguns||[]).find(function(b){return b.id===baseGunId;});
+  if(!bg){ box.style.display='none'; box.innerHTML=''; return; }
+  box.style.display='block';
+  box.innerHTML='<div class="card" style="border-color:#3a5226;background:#16201a">'+
+    '<h3 style="color:var(--ok)">🎯 当前基准：'+esc(bg.brand+' '+baseGunProduct)+'（原厂数据，默认带回膛）</h3>'+
+    '<div class="small muted">在该基准上做配件替换：替换后到「兼容检查」看适配结果；替换前重点核对：</div>'+
+    '<ol class="small" style="padding-left:18px;margin-top:6px">'+(bg.notes||[]).map(function(n){return '<li>'+esc(n)+'</li>';}).join('')+'</ol>'+
+    '<button class="btn ghost small" id="btnClearBase">清除基准（回到自由装配）</button>'+
+    '</div>';
+  document.getElementById('btnClearBase').addEventListener('click',function(){
+    baseGunId=''; baseGunProduct=''; saveBase(); saveBaseProduct(); render();
+  });
+}
+
+/* ---------- 手动添加零件（扩展合并） ---------- */
+function loadExt(){ try{ return JSON.parse(localStorage.getItem(LS_EXT)||'[]'); }catch(e){ return []; } }
+function saveExt(list){ try{ localStorage.setItem(LS_EXT, JSON.stringify(list)); }catch(e){} }
+function applyExtParts(){
+  var ext=loadExt();
+  ext.forEach(function(p){
+    if(DB.parts.some(function(x){return x.id===p.id;})) return;
+    if(!DB.groups.some(function(g){return g.id===p.group;})){
+      DB.groups.push({id:p.group,name:p.group,seq:95,mandatory:false,desc:'自定义装组'});
+    }
+    DB.parts.push(p);
+  });
+}
+function renderMaGroupSelect(){
+  var selEl=document.getElementById('maGroup'); if(!selEl) return;
+  var cur=selEl.value;
+  selEl.innerHTML=DB.groups.slice().sort(function(a,b){return a.seq-b.seq;}).map(function(g){return '<option value="'+esc(g.id)+'">'+esc(g.name)+'</option>';}).join('');
+  if(cur) selEl.value=cur;
+}
+function renderMaList(){
+  var box=document.getElementById('maList'); var ext=loadExt();
+  document.getElementById('maCount').textContent=ext.length;
+  if(!ext.length){ box.innerHTML='<span class="muted">还没有自定义零件。</span>'; return; }
+  box.innerHTML=ext.map(function(p,i){
+    return '<div style="display:flex;gap:6px;align-items:center;padding:2px 0">'+
+      '<img src="img/parts/_generic.svg" width="22" height="22">'+
+      '<span style="flex:1">'+esc(p.name)+' <span class="muted">['+esc(p.group)+']</span></span>'+
+      '<button class="btn danger ghost small" data-ma-del="'+i+'">删除</button></div>';
+  }).join('');
+  box.querySelectorAll('[data-ma-del]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var ext2=loadExt(); ext2.splice(parseInt(b.dataset.maDel,10),1); saveExt(ext2); applyExtParts(); render();
+    });
+  });
+}
+function addPartHandler(){
+  var name=document.getElementById('maName').value.trim();
+  var group=document.getElementById('maGroup').value;
+  var qty=Math.max(1,parseInt(document.getElementById('maQty').value,10)||1);
+  var optional=document.getElementById('maOpt').value==='true';
+  var brand=document.getElementById('maBrand').value.trim();
+  var product=document.getElementById('maProduct').value.trim();
+  var priceRaw=document.getElementById('maPrice').value.trim();
+  var desc=document.getElementById('maDesc').value.trim();
+  if(!name){ alert('零件名必填'); return; }
+  var price=priceRaw===''?null:(isNaN(parseFloat(priceRaw))?null:parseFloat(priceRaw));
+  var p={id:'u_'+Date.now(),name:name,group:group,qty:qty,optional:optional,desc:desc,attrs:{},defaults:{},brands:[]};
+  if(brand&&product) p.brands.push({brand:brand,product:product,price:price==null?null:price,note:''});
+  var ext=loadExt(); ext.push(p); saveExt(ext); applyExtParts(); render();
+  document.getElementById('maName').value=''; document.getElementById('maBrand').value='';
+  document.getElementById('maProduct').value=''; document.getElementById('maPrice').value='';
+  document.getElementById('maDesc').value='';
+}
+document.getElementById('btnAddPart').addEventListener('click',addPartHandler);
+
+/* ---------- 手动添加原厂发射器 ---------- */
+var LS_BGEXT='v2build_bgext_v1';
+function loadBgExt(){ try{ return JSON.parse(localStorage.getItem(LS_BGEXT)||'[]'); }catch(e){ return []; } }
+function saveBgExt(l){ try{ localStorage.setItem(LS_BGEXT, JSON.stringify(l)); }catch(e){} }
+function applyExtBaseguns(){
+  var ext=loadBgExt();
+  ext.forEach(function(bg){
+    if(DB.baseguns.some(function(b){return b.id===bg.id;})) return;
+    DB.baseguns.push(bg);
+  });
+}
+function renderBgExtList(){
+  var box=document.getElementById('bgExtList'); if(!box) return;
+  var ext=loadBgExt();
+  if(!ext.length){ box.innerHTML='<span class="muted">还没有自定义原厂发射器。</span>'; return; }
+  box.innerHTML=ext.map(function(bg,i){
+    return '<div style="display:flex;gap:6px;align-items:center;padding:2px 0">'+
+      '<span style="flex:1">'+esc(bg.brand)+' <span class="muted">['+esc(bg.gearboxType)+'] '+esc((bg.products||[]).join(','))+'</span></span>'+
+      '<button class="btn danger ghost small" data-bg-del="'+i+'">删除</button></div>';
+  }).join('');
+  box.querySelectorAll('[data-bg-del]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var ext2=loadBgExt(); ext2.splice(parseInt(b.dataset.bgDel,10),1); saveBgExt(ext2); applyExtBaseguns(); render();
+    });
+  });
+}
+function addBgHandler(){
+  var brand=document.getElementById('bgBrand').value.trim();
+  var gtype=document.getElementById('bgType').value;
+  var prods=document.getElementById('bgProducts').value.trim().split(/[,，]/).map(function(s){return s.trim();}).filter(Boolean);
+  var price=document.getElementById('bgPrice').value.trim();
+  var desc=document.getElementById('bgDesc').value.trim();
+  if(!brand){ alert('品牌名必填'); return; }
+  var bg={id:'ubg_'+Date.now(),brand:brand,gearboxType:gtype,tier:0,products:prods,priceRange:price,desc:desc,
+    notes:['自定义原厂发射器（用户添加），配件数据为通用模板。'],
+    preset:{p_shell:{brand:brand+'原厂',product:brand+'原厂波壳',attrs:{走线:'内走',结构:'一体',材质:'尼龙',波箱:gtype}}}};
+  var ext=loadBgExt(); ext.push(bg); saveBgExt(ext); applyExtBaseguns(); render();
+  document.getElementById('bgBrand').value=''; document.getElementById('bgProducts').value='';
+  document.getElementById('bgPrice').value=''; document.getElementById('bgDesc').value='';
+}
+document.getElementById('btnAddBg').addEventListener('click',addBgHandler);
+applyExtBaseguns();
+
+/* ---------- master render ---------- */
+function render(){
+  renderHeaderStats();
+  renderGroupChips();
+  renderLibrary();
+  renderBasegun();
+  renderVendor();
+  renderWorkspace();
+  renderMissingCheck();
+  renderWsBaseNote();
+  renderTodo();
+  renderChecks();
+  renderTuning();
+  renderPresetMenu();
+  renderMaGroupSelect();
+  renderMaList();
+  renderBgExtList();
+}
+document.getElementById('libSearch').addEventListener('input',function(){ curFilter.search=this.value; render(); });
+document.getElementById('libReset').addEventListener('click',function(){ curFilter.search=''; document.getElementById('libSearch').value=''; render(); });
+document.querySelectorAll('#brandCatChips .chip').forEach(function(c){
+  c.addEventListener('click',function(){ brandCatFilter=c.dataset.cat; render(); });
+});
+['bgFilterV2','bgFilterV3','bgFilterOther'].forEach(function(id){
+  var el=document.getElementById(id);
+  if(el) el.addEventListener('change',function(){ render(); });
+});
+var bgSearchEl=document.getElementById('bgSearch');
+if(bgSearchEl){
+  bgSearchEl.value=basegunSearch;
+  bgSearchEl.addEventListener('input',function(){ basegunSearch=this.value; render(); });
+}
+document.getElementById('btV2').addEventListener('click',function(){ buildType='2号波'; saveBuildType(); render(); });
+document.getElementById('btV3').addEventListener('click',function(){ buildType='3号波'; saveBuildType(); render(); });
+
+render();
+setSaveFlag();
+})();
+</script>
+</body>
+</html>
+

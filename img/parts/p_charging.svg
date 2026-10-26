@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>拉机柄</title>
+<line x1="16" y1="60" x2="74" y2="60" stroke="#f78c6c" stroke-width="4" stroke-linecap="round"/><circle cx="74" cy="60" r="4" fill="#f78c6c"/><path d="M 72,52 A 12 12 0 1 1 96,52" fill="none" stroke="#f78c6c" stroke-width="2.4"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">拉机柄</text>
+</svg>

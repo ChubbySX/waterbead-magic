@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>弹匣</title>
+<path d="M 34.0,28.0 L 86.0,28.0 L 90.0,86.0 L 84.0,92.0 L 36.0,92.0 L 30.0,86.0 Z" fill="none" stroke="#f78c6c" stroke-width="2.4"/><line x1="54" y1="30" x2="54" y2="88" stroke="#f78c6c" stroke-width="1.3" stroke-dasharray="3 3"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">弹匣</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>天梯齿（sector）</title>
+<path d="M 92.0,60.0 L 85.7,65.1 L 89.6,72.2 L 81.8,74.6 L 82.6,82.6 L 74.6,81.8 L 72.2,89.6 L 65.1,85.7 L 60.0,92.0 L 54.9,85.7 L 47.8,89.6 L 45.4,81.8 L 37.4,82.6 L 38.2,74.6 L 30.4,72.2 L 34.3,65.1 Z" fill="none" stroke="#7aa2f7" stroke-width="2.2"/><circle cx="60" cy="60" r="17.6" fill="none" stroke="#7aa2f7" stroke-width="2.2"/><line x1="60" y1="28" x2="60" y2="92" stroke="#7aa2f7" stroke-width="1.4" stroke-dasharray="4 3"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">天梯齿（sector）</text>
+</svg>

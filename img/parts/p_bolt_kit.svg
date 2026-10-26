@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>空挂回趟套件</title>
+<rect x="14" y="34" width="92" height="52" rx="2" fill="none" stroke="#c792ea" stroke-width="2.2"/><rect x="30" y="46" width="30" height="12" fill="none" stroke="#c792ea" stroke-width="1.4"/><line x1="30" y1="86" x2="78" y2="86" stroke="#c792ea" stroke-width="4" stroke-linecap="round"/><circle cx="78" cy="86" r="4" fill="#c792ea"/><rect x="66" y="40" width="34" height="12" fill="none" stroke="#c792ea" stroke-width="1.6"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">空挂回趟套件</text>
+</svg>

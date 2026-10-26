@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>波壳</title>
+<rect x="14" y="22" width="92" height="66" rx="4" fill="none" stroke="#ffcc4d" stroke-width="2.4"/><line x1="14" y1="55.0" x2="106" y2="55.0" stroke="#ffcc4d" stroke-width="1.3" stroke-dasharray="4 3"/><circle cx="21" cy="29" r="1.6" fill="#ffcc4d"/><circle cx="99" cy="29" r="1.6" fill="#ffcc4d"/><circle cx="21" cy="81" r="1.6" fill="#ffcc4d"/><circle cx="99" cy="81" r="1.6" fill="#ffcc4d"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">波壳</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>延时器</title>
+<circle cx="60" cy="60" r="26" fill="none" stroke="#7aa2f7" stroke-width="2.4"/><circle cx="60" cy="60" r="10.4" fill="none" stroke="#7aa2f7" stroke-width="2"/><circle cx="77.2" cy="67.3" r="1.8" fill="#7aa2f7"/><circle cx="45.1" cy="71.3" r="1.8" fill="#7aa2f7"/><circle cx="57.7" cy="41.4" r="1.8" fill="#7aa2f7"/><circle cx="60" cy="60" r="9" fill="none" stroke="#7aa2f7" stroke-width="1.5"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">延时器</text>
+</svg>

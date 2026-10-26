@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>通用件</title>
+<rect x="18" y="22" width="84" height="64" rx="6" fill="none" stroke="#dfe6ee" stroke-width="2.4" stroke-dasharray="6 4"/><circle cx="60" cy="54" r="14" fill="none" stroke="#dfe6ee" stroke-width="2"/><text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">自定义件</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>火控·光控</title>
+<rect x="27.0" y="40.0" width="66" height="40" rx="3" fill="none" stroke="#7aa2f7" stroke-width="2.2"/><rect x="39.0" y="52" width="9" height="16" fill="none" stroke="#7aa2f7" stroke-width="1.4"/><rect x="53.0" y="52" width="9" height="16" fill="none" stroke="#7aa2f7" stroke-width="1.4"/><rect x="67.0" y="52" width="9" height="16" fill="none" stroke="#7aa2f7" stroke-width="1.4"/><line x1="33.0" y1="76.0" x2="87.0" y2="76.0" stroke="#7aa2f7" stroke-width="1.2"/><circle cx="87.0" cy="48.0" r="2.4" fill="#7aa2f7"/><circle cx="60" cy="44" r="6" fill="none" stroke="#7aa2f7" stroke-width="1.8"/><circle cx="60" cy="44" r="2.4" fill="#7aa2f7"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">火控·光控</text>
+</svg>

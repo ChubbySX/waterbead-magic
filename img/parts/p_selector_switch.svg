@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>快慢机（功能钮）</title>
+<circle cx="60" cy="56" r="7" fill="none" stroke="#f78c6c" stroke-width="2.4"/><rect x="58.5" y="49" width="3" height="16" fill="#f78c6c"/><circle cx="69.1" cy="62.2" r="2" fill="#f78c6c"/><circle cx="56.4" cy="66.4" r="2" fill="#f78c6c"/><circle cx="49.0" cy="55.4" r="2" fill="#f78c6c"/><rect x="40" y="80" width="40" height="8" rx="4" fill="none" stroke="#f78c6c" stroke-width="1.6"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">快慢机（功能钮）</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>供蛋电机</title>
+<circle cx="52" cy="40" r="14" fill="none" stroke="#f78c6c" stroke-width="2.4"/><circle cx="52" cy="40" r="5.6" fill="none" stroke="#f78c6c" stroke-width="2"/><rect x="52" y="40" width="24" height="16" rx="3" fill="none" stroke="#f78c6c" stroke-width="2.4"/><line x1="57" y1="48.0" x2="71" y2="48.0" stroke="#f78c6c" stroke-width="1.6" stroke-dasharray="3 3"/><circle cx="88" cy="48" r="4" fill="none" stroke="#f78c6c" stroke-width="1.6"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">供蛋电机</text>
+</svg>

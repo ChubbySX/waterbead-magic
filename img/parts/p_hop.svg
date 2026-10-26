@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>蛋道（hop-up 座）</title>
+<rect x="14" y="30" width="92" height="52" rx="4" fill="none" stroke="#ffb454" stroke-width="2.4"/><circle cx="21" cy="37" r="1.6" fill="#ffb454"/><circle cx="99" cy="37" r="1.6" fill="#ffb454"/><circle cx="21" cy="75" r="1.6" fill="#ffb454"/><circle cx="99" cy="75" r="1.6" fill="#ffb454"/><circle cx="84" cy="56" r="12" fill="none" stroke="#ffb454" stroke-width="2.4"/><circle cx="84" cy="56" r="6.6" fill="none" stroke="#ffb454" stroke-width="2"/><rect x="22" y="40" width="30" height="12" fill="none" stroke="#ffb454" stroke-width="1.5"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">蛋道（hop-up 座）</text>
+</svg>

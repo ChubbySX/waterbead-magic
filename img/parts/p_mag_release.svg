@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<title>弹匣释放钮</title>
+<circle cx="60" cy="42" r="13" fill="none" stroke="#f78c6c" stroke-width="2.4"/><line x1="22" y1="66" x2="54" y2="50" stroke="#f78c6c" stroke-width="4" stroke-linecap="round"/><circle cx="54" cy="50" r="3" fill="#f78c6c"/>
+<text x="60" y="104" font-size="9.5" fill="#9aa7b4" text-anchor="middle" font-family="Microsoft YaHei,sans-serif">弹匣释放钮</text>
+</svg>
