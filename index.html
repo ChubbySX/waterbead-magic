@@ -445,9 +445,31 @@ function partImgKey(p){
 function baseModelName(product){
   return (product||'').replace(/[-–]\d+\.?\d*$/, '');
 }
+/* 静态产品图片（随仓库分发，不依赖 localStorage）
+   新增图片：把图片放到 img/products/，命名为 bgId_基础型号.jpg，
+   然后在此添加一行 'bgId_基础型号': 'img/products/bgId_基础型号.jpg' */
+var STATIC_BG_IMAGES={
+  'bg_cy_蓝水晶': 'img/products/bg_cy_蓝水晶.jpg',
+  'bg_cy_星星之火': 'img/products/bg_cy_星星之火.jpg',
+  'bg_sj_MK18': 'img/products/bg_sj_MK18.jpg',
+  'bg_sj_MP5-A3': 'img/products/bg_sj_MP5-A3.jpg',
+  'bg_sj_MPX': 'img/products/bg_sj_MPX.jpg',
+  'bg_sj_TTI TR1': 'img/products/bg_sj_TTI TR1.jpg',
+  'bg_sj_M4A1': 'img/products/bg_sj_M4A1.jpg',
+  'bg_sj_DDM4-PDW': 'img/products/bg_sj_DDM4-PDW.jpg',
+  'bg_sj_M16A2': 'img/products/bg_sj_M16A2.jpg',
+  'bg_sj_M16A4': 'img/products/bg_sj_M16A4.jpg',
+  'bg_sj_MP5K': 'img/products/bg_sj_MP5K.jpg',
+  'bg_sj_MP5手电版': 'img/products/bg_sj_MP5手电版.jpg',
+  'bg_sj_XM7': 'img/products/bg_sj_XM7.jpg',
+  'bg_xyl_SQB': 'img/products/bg_xyl_SQB.jpg'
+};
 function getBgImage(bgId, product){
   var key=bgId+'_'+baseModelName(product);
+  /* 优先用用户上传（localStorage） */
   if(userBgImages[key]) return userBgImages[key];
+  /* 其次用静态图片（仓库内置） */
+  if(STATIC_BG_IMAGES[key]) return STATIC_BG_IMAGES[key];
   /* 兼容旧格式（per-product） */
   return userBgImages[bgId+'_'+product]||'';
 }
