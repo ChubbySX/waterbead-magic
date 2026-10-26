@@ -81,7 +81,7 @@
   .pc-img img{width:84px;height:84px;object-fit:contain;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:2px}
   .pc-price{color:var(--accent2);font-size:13px;font-weight:700;margin-top:4px}
   .pc-price .sub{color:var(--tx3);font-weight:400;font-size:11px}
-  .ws-thumb img{width:44px;height:44px;object-fit:contain;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:1px;display:block}
+  .ws-thumb img{width:44px;height:44px;object-fit:contain;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:1px;display:block;cursor:pointer}
   .numcell{color:var(--accent2);font-weight:700;white-space:nowrap}
   .numcell .muted{color:var(--tx3);font-weight:400;font-size:11px}
   /* workspace */
@@ -173,6 +173,13 @@
   .ld-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;animation:ldFill 1.2s ease .8s forwards}
   @keyframes ldFade{to{opacity:1}}
   @keyframes ldFill{to{width:100%}}
+  /* ===== 图片预览弹窗 ===== */
+  #imgModal{position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s ease}
+  #imgModal.show{opacity:1;pointer-events:auto}
+  #imgModal img{max-width:90vw;max-height:85vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.5);object-fit:contain}
+  #imgModal .close-btn{position:absolute;top:16px;right:24px;font-size:32px;color:#fff;cursor:pointer;line-height:1;user-select:none;opacity:.7;transition:opacity .2s}
+  #imgModal .close-btn:hover{opacity:1}
+  #imgModal .img-cap{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:#8b949e;font-size:13px;max-width:80vw;text-align:center}
 </style>
 </head>
 <body>
@@ -216,6 +223,12 @@
   <div class="ld-title">水弹的魔法</div>
   <div class="ld-sub">Magic of Water Bead</div>
   <div class="ld-bar"><i></i></div>
+</div>
+<!-- 图片预览弹窗 -->
+<div id="imgModal" onclick="closeImageModal()">
+  <span class="close-btn" onclick="closeImageModal()">✕</span>
+  <img id="imgModalImg" src="" alt="" onclick="event.stopPropagation()">
+  <div class="img-cap" id="imgModalCap"></div>
 </div>
 <div class="wrap">
   <header>
@@ -824,12 +837,28 @@ function brandOptions(p, s){
 /* 图片加载：失败回退通用兜底图 */
 function attachImg(im, p){
   im.src=resolveImg(p); im.alt=p.name;
+  im.style.cursor='pointer';
+  im.addEventListener('click',function(e){ e.stopPropagation(); openImageModal(im.src, p.name+' — '+p.id); });
   var once=false;
   im.addEventListener('error',function(){
     if(once){ im.style.display='none'; return; }
     once=true; im.src='img/parts/_generic.svg';
+    im.style.cursor='default';
   });
 }
+/* 图片预览弹窗 */
+function openImageModal(src, caption){
+  var m=document.getElementById('imgModal');
+  var im=document.getElementById('imgModalImg');
+  var cap=document.getElementById('imgModalCap');
+  im.src=src;
+  cap.textContent=caption||'';
+  m.classList.add('show');
+}
+function closeImageModal(){
+  document.getElementById('imgModal').classList.remove('show');
+}
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeImageModal(); });
 function partCard(p){
   var s=sel[p.id];
   var card=document.createElement('div'); card.className='part-card'; card.dataset.p=p.id;
@@ -933,7 +962,7 @@ function renderWorkspace(){
       var unitTxt='<input type="number" class="wsPrice" data-p="'+p.id+'" value="'+(unit>0?unit:'')+'" min="0" placeholder="单价" style="width:64px;text-align:center">';
       var totalTxt=unit>0?'¥'+(unit*(s.qty||1)):'¥0';
       html+='<tr>'+
-        '<td class="ws-thumb"><img src="'+esc(resolveImg(p))+'" alt="'+esc(p.name)+'" onerror="this.onerror=null;this.src=\'img/parts/_generic.svg\'"></td>'+
+        '<td class="ws-thumb"><img src="'+esc(resolveImg(p))+'" alt="'+esc(p.name)+'" onclick="openImageModal(this.src,\''+esc(p.name).replace(/'/g,"\\'")+' — '+p.id+'\')" onerror="this.onerror=null;this.src=\'img/parts/_generic.svg\';this.style.cursor=\'default\'"></td>'+
         '<td><b>'+esc(p.name)+'</b>'+(p.optional?'<span class="badge b-opt">选配</span>':'')+'</td>'+
         '<td class="small">'+esc(s.brand||'—')+(s.product?'<br>'+esc(s.product):'')+'</td>'+
         '<td class="small muted">'+esc(attrSummary(p))+'</td>'+
@@ -1195,7 +1224,7 @@ function renderBasegun(){
         var active=baseGunId===bg.id && baseGunProduct===prod;
         var bgImgKey=bg.id+'_'+prod;
         var hasBgImg=getBgImage(bg.id, prod);
-        var imgHtml=hasBgImg?'<img src="'+esc(hasBgImg)+'" style="width:48px;height:48px;object-fit:cover;border-radius:6px;border:1px solid var(--line)">':'<div style="width:48px;height:48px;border-radius:6px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:24px">🔫</div>';
+        var imgHtml=hasBgImg?'<img src="'+esc(hasBgImg)+'" alt="'+esc(bg.brand+' '+prod)+'" style="width:48px;height:48px;object-fit:cover;border-radius:6px;border:1px solid var(--line);cursor:pointer" onclick="openImageModal(this.src,\''+esc(bg.brand+' '+prod).replace(/'/g,"\\'")+'\')">':'<div style="width:48px;height:48px;border-radius:6px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:24px">🔫</div>';
         d.innerHTML='<div class="pc-main" style="min-width:auto">'+
           '<div style="display:flex;align-items:center;gap:8px">'+
           imgHtml+
