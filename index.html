@@ -169,8 +169,18 @@
   @keyframes ldSpin{to{transform:rotate(360deg)}}
   .ld-title{font-size:24px;font-weight:700;color:var(--accent);letter-spacing:2px;opacity:0;animation:ldFade .8s ease .3s forwards}
   .ld-sub{font-size:13px;color:var(--tx2);letter-spacing:1px;margin-top:6px;opacity:0;animation:ldFade .8s ease .6s forwards}
-  .ld-bar{width:160px;height:3px;background:var(--line);border-radius:2px;margin-top:24px;overflow:hidden;opacity:0;animation:ldFade .4s ease .8s forwards}
-  .ld-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;animation:ldFill 1.2s ease .8s forwards}
+  .ld-desc{font-size:13px;color:var(--tx3);line-height:1.8;text-align:center;margin-top:20px;max-width:420px;opacity:0;animation:ldFade .6s ease 1s forwards}
+  .ld-feats{display:flex;flex-direction:column;gap:6px;margin-top:14px;max-width:420px}
+  .ld-feat{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--tx2);opacity:0;transform:translateY(8px)}
+  .ld-feat .ico{font-size:18px;flex-shrink:0}
+  .ld-feat span{text-align:left}
+  .ld-feat:nth-child(1){animation:ldSlide .6s ease 1.3s forwards}
+  .ld-feat:nth-child(2){animation:ldSlide .6s ease 1.7s forwards}
+  .ld-feat:nth-child(3){animation:ldSlide .6s ease 2.1s forwards}
+  .ld-feat:nth-child(4){animation:ldSlide .6s ease 2.5s forwards}
+  @keyframes ldSlide{to{opacity:1;transform:translateY(0)}}
+  .ld-bar{width:200px;height:3px;background:var(--line);border-radius:2px;margin-top:24px;overflow:hidden;opacity:0;animation:ldFade .4s ease 2.8s forwards}
+  .ld-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;animation:ldFill 3s ease 2.8s forwards}
   @keyframes ldFade{to{opacity:1}}
   @keyframes ldFill{to{width:100%}}
   /* ===== 图片预览弹窗 ===== */
@@ -222,6 +232,13 @@
   </div>
   <div class="ld-title">水弹的魔法</div>
   <div class="ld-sub">Magic of Water Bead</div>
+  <div class="ld-desc">水弹发射器 2 号波 / 3 号波 / 异形波虚拟选配工具</div>
+  <div class="ld-feats">
+    <div class="ld-feat"><span class="ico">🔧</span><span>零件库：浏览 59 种零件，了解材质、规格与搭配关系</span></div>
+    <div class="ld-feat"><span class="ico">🔫</span><span>原厂发射器：25 个品牌 177 款产品，一键载入原厂配置</span></div>
+    <div class="ld-feat"><span class="ico">⚙️</span><span>组装工作台：虚拟装配、缺件检查、21 条装配规则自动校验</span></div>
+    <div class="ld-feat"><span class="ico">📋</span><span>无推销无报价：仅用于自组参考，费用手动填写</span></div>
+  </div>
   <div class="ld-bar"><i></i></div>
 </div>
 <!-- 图片预览弹窗 -->
@@ -1451,7 +1468,7 @@ document.getElementById('btV3').addEventListener('click',function(){ buildType='
 render();
 setSaveFlag();
 /* 隐藏开场加载动画 */
-setTimeout(function(){ var ld=document.getElementById('loader'); if(ld){ ld.classList.add('hide'); setTimeout(function(){ if(ld.parentNode) ld.parentNode.removeChild(ld); },700); } },1400);
+ setTimeout(function(){ var ld=document.getElementById('loader'); if(ld){ ld.classList.add('hide'); setTimeout(function(){ if(ld.parentNode) ld.parentNode.removeChild(ld); },700); } },6000);
 })();
 </script>
 </body>
