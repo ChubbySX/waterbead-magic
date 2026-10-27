@@ -187,9 +187,9 @@
   /* ===== 图片预览弹窗 ===== */
   #imgModal{position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s ease}
   #imgModal.show{opacity:1;pointer-events:auto}
-  #imgModal img{max-width:90vw;max-height:85vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.5);object-fit:contain}
-  #imgModal .close-btn{position:absolute;top:16px;right:24px;font-size:32px;color:#fff;cursor:pointer;line-height:1;user-select:none;opacity:.7;transition:opacity .2s;z-index:10}
-  #imgModal .close-btn:hover{opacity:1}
+  #imgModal img{max-width:90vw;max-height:85vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.5);object-fit:contain;position:relative;z-index:1}
+  #imgModal .close-btn{position:absolute;top:16px;right:24px;font-size:32px;color:#fff;cursor:pointer;line-height:1;user-select:none;opacity:.8;transition:opacity .2s;z-index:9999;padding:8px 12px;background:rgba(0,0,0,.5);border-radius:8px}
+  #imgModal .close-btn:hover{opacity:1;background:rgba(0,0,0,.7)}
   #imgModal .img-cap{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:#8b949e;font-size:13px;max-width:80vw;text-align:center}
 </style>
 </head>
@@ -245,7 +245,7 @@
 </div>
 <!-- 图片预览弹窗 -->
 <div id="imgModal" onclick="closeImageModal()">
-  <span class="close-btn" onclick="closeImageModal()">✕</span>
+  <span class="close-btn" onclick="event.stopPropagation();closeImageModal()">✕</span>
   <img id="imgModalImg" src="" alt="" onclick="event.stopPropagation()">
   <div class="img-cap" id="imgModalCap"></div>
 </div>
@@ -878,6 +878,13 @@ function closeImageModal(){
   document.getElementById('imgModal').classList.remove('show');
 }
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeImageModal(); });
+/* 关闭按钮 JS 兜底监听（防止 inline onclick 被遮挡失效） */
+document.addEventListener('DOMContentLoaded',function(){
+  var cb=document.querySelector('#imgModal .close-btn');
+  if(cb){ cb.addEventListener('click',function(e){ e.stopPropagation(); e.preventDefault(); closeImageModal(); }); }
+  var modal=document.getElementById('imgModal');
+  if(modal){ modal.addEventListener('click',function(e){ if(e.target===modal) closeImageModal(); }); }
+});
 function partCard(p){
   var s=sel[p.id];
   var card=document.createElement('div'); card.className='part-card'; card.dataset.p=p.id;
