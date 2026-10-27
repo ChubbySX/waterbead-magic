@@ -179,8 +179,9 @@
   .ld-feat:nth-child(3){animation:ldSlide .6s ease 2.1s forwards}
   .ld-feat:nth-child(4){animation:ldSlide .6s ease 2.5s forwards}
   @keyframes ldSlide{to{opacity:1;transform:translateY(0)}}
-  .ld-bar{width:200px;height:3px;background:var(--line);border-radius:2px;margin-top:24px;overflow:hidden;opacity:0;animation:ldFade .4s ease 2.8s forwards}
-  .ld-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;animation:ldFill 3s ease 2.8s forwards}
+  .ld-manifesto{font-size:14px;color:var(--accent2);line-height:1.9;text-align:center;margin-top:18px;max-width:440px;padding:10px 16px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);opacity:0;animation:ldFade .8s ease 3.3s forwards}
+  .ld-bar{width:200px;height:3px;background:var(--line);border-radius:2px;margin-top:24px;overflow:hidden;opacity:0;animation:ldFade .4s ease 3.8s forwards}
+  .ld-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:2px;animation:ldFill 7.5s ease 3.8s forwards}
   @keyframes ldFade{to{opacity:1}}
   @keyframes ldFill{to{width:100%}}
   /* ===== 图片预览弹窗 ===== */
@@ -239,6 +240,7 @@
     <div class="ld-feat"><span class="ico">⚙️</span><span>组装工作台：虚拟装配、缺件检查、21 条装配规则自动校验</span></div>
     <div class="ld-feat"><span class="ico">📋</span><span>无推销无报价：仅用于自组参考，费用手动填写</span></div>
   </div>
+  <div class="ld-manifesto">这是为了让玩家脱离"玩具仅仅是玩具"这个观念的网站，从基础零件上理解一个玩具的总成</div>
   <div class="ld-bar"><i></i></div>
 </div>
 <!-- 图片预览弹窗 -->
@@ -1468,7 +1470,7 @@ document.getElementById('btV3').addEventListener('click',function(){ buildType='
 render();
 setSaveFlag();
 /* 隐藏开场加载动画 */
- setTimeout(function(){ var ld=document.getElementById('loader'); if(ld){ ld.classList.add('hide'); setTimeout(function(){ if(ld.parentNode) ld.parentNode.removeChild(ld); },700); } },6000);
+ setTimeout(function(){ var ld=document.getElementById('loader'); if(ld){ ld.classList.add('hide'); setTimeout(function(){ if(ld.parentNode) ld.parentNode.removeChild(ld); },700); } },12000);
 })();
 </script>
 </body>
