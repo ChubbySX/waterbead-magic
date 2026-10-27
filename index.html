@@ -322,7 +322,7 @@
       <h3>选择一支原厂发射器作为基准</h3>
       <p class="muted small">以原厂整枪配件数据为预设载入 → 再到「零件库/组装工作台」做<b class="hl">配件替换</b> → 「兼容检查」自动校验适配性。</p>
       <div style="margin:8px 0;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-        <input id="bgSearch" placeholder="搜索型号或品牌（如 HK416 / 司马）" value="" style="flex:1;min-width:200px;background:#1c232d;border:1px solid #2a313c;border-radius:8px;padding:6px 12px;color:#e6edf3;font-size:13px">
+        <input id="bgSearch" placeholder="搜索型号或品牌（如 HK416 / 司马）" value="" style="flex:1;min-width:200px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 12px;color:var(--tx);font-size:13px;box-shadow:var(--shadow)">
         <span class="tiny">波箱筛选：</span>
         <label style="font-size:13px;cursor:pointer"><input type="checkbox" id="bgFilterV2" checked style="vertical-align:middle"> 2号波</label>
         <label style="font-size:13px;cursor:pointer"><input type="checkbox" id="bgFilterV3" checked style="vertical-align:middle"> 3号波</label>
@@ -1234,7 +1234,7 @@ function renderBasegun(){
     if(!items.length) return;
     var isOpen=basegunSectionOpen[gt] || !!q;
     var sec=document.createElement('div'); sec.style.cssText='margin-bottom:16px';
-    var hdr=document.createElement('div'); hdr.style.cssText='color:var(--accent);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin-bottom:8px;cursor:pointer;display:flex;align-items:center;background:#161b22';
+    var hdr=document.createElement('div'); hdr.style.cssText='color:var(--accent);border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin-bottom:8px;cursor:pointer;display:flex;align-items:center;background:var(--panel);box-shadow:var(--shadow)';
     hdr.innerHTML='<span style="font-weight:bold;flex:1;font-size:16px">'+gt+'（'+items.length+' 款）</span><span class="tiny">'+(isOpen?'▼ 点击折叠':'▶ 点击展开')+'</span>';
     hdr.addEventListener('click',function(){ basegunSectionOpen[gt]=!basegunSectionOpen[gt]; render(); });
     sec.appendChild(hdr);
@@ -1323,7 +1323,7 @@ function renderWsBaseNote(){
   var bg=baseGunId && (DB.baseguns||[]).find(function(b){return b.id===baseGunId;});
   if(!bg){ box.style.display='none'; box.innerHTML=''; return; }
   box.style.display='block';
-  box.innerHTML='<div class="card" style="border-color:#3a5226;background:#16201a">'+
+  box.innerHTML='<div class="card" style="border-color:#a7f3d0;background:#f0fdf4">'+
     '<h3 style="color:var(--ok)">🎯 当前基准：'+esc(bg.brand+' '+baseGunProduct)+'（原厂数据，默认带回膛）</h3>'+
     '<div class="small muted">在该基准上做配件替换：替换后到「兼容检查」看适配结果；替换前重点核对：</div>'+
     '<ol class="small" style="padding-left:18px;margin-top:6px">'+(bg.notes||[]).map(function(n){return '<li>'+esc(n)+'</li>';}).join('')+'</ol>'+
