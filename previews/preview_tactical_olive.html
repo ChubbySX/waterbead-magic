@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>③ 军绿战术</title>
+<style>
+  :root{
+    --bg:#1a1d14; --panel:#25291c; --panel2:#2d3320; --line:#3d4428;
+    --tx:#e8e4d0; --tx2:#a8a288; --tx3:#787060;
+    --accent:#d4a02e; --accent2:#8b9e4a;
+    --ok:#6b8e23; --warn:#d4a02e; --bad:#c0392b;
+    --radius:6px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--tx);font-family:"Segoe UI","Microsoft YaHei","Courier New",system-ui,sans-serif;font-size:14px;line-height:1.6}
+  .wrap{max-width:960px;margin:0 auto;padding:20px}
+  header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 18px;background:linear-gradient(135deg,#2d3320,#1a1d14);border:1px solid var(--line);border-radius:var(--radius);border-left:3px solid var(--accent)}
+  .logo{display:flex;align-items:center;gap:10px}
+  .logo .ico{font-size:26px}
+  .logo h1{font-size:19px;font-weight:800;letter-spacing:.5px;text-transform:uppercase}
+  .logo .sub{color:var(--tx2);font-size:12px;letter-spacing:1px}
+  .stat{display:flex;gap:14px;color:var(--tx2);font-size:12px;flex-wrap:wrap}
+  .stat b{color:var(--accent);font-weight:700}
+  nav.tabs{display:flex;gap:4px;margin:14px 0}
+  .tab{padding:8px 14px;background:var(--panel);border:1px solid var(--line);border-radius:4px;cursor:pointer;color:var(--tx2);text-transform:uppercase;font-size:12px;letter-spacing:.5px}
+  .tab.active{background:var(--accent);color:#1a1d14;font-weight:700;border-color:var(--accent)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;margin-bottom:12px;border-left:3px solid var(--accent2)}
+  .card h3{font-size:15px;margin-bottom:8px;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+  .sumrow{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .sumcard{background:var(--panel2);border:1px solid var(--line);border-radius:var(--radius);padding:8px 14px}
+  .sumcard .num{font-size:22px;font-weight:800;color:var(--accent)}
+  .sumcard .lab{font-size:12px;color:var(--tx2);text-transform:uppercase;letter-spacing:.5px}
+  .part-card{display:flex;gap:12px;padding:10px;border:1px solid var(--line);border-radius:4px;margin-bottom:8px;flex-wrap:wrap}
+  .part-card .pc-main{flex:1}
+  .pc-name{font-weight:700;font-size:14px}
+  .pc-desc{color:var(--tx2);font-size:12px;margin-top:2px}
+  .pc-side{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+  .btn{display:inline-block;padding:6px 14px;border-radius:4px;border:1px solid var(--line);background:var(--panel2);color:var(--tx);cursor:pointer;font-size:13px;text-transform:uppercase;letter-spacing:.5px}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#1a1d14;font-weight:700}
+  .btn.danger{border-color:#5c1f1f;color:var(--bad)}
+  select,input{background:var(--panel2);border:1px solid var(--line);color:var(--tx);border-radius:4px;padding:5px 8px}
+  .badge{display:inline-block;padding:1px 8px;border-radius:4px;font-size:11px;font-weight:600;text-transform:uppercase}
+  .b-mand{background:#3d3514;color:var(--accent)}
+  .wstable{width:100%;border-collapse:collapse}
+  .wstable th{text-align:left;color:var(--tx3);font-size:12px;padding:6px;border-bottom:1px solid var(--line);text-transform:uppercase;letter-spacing:.5px}
+  .wstable td{padding:7px;border-bottom:1px solid #2a2e1a}
+  .numcell{color:var(--accent);font-weight:700}
+  .chk-item{display:flex;gap:10px;padding:10px;border:1px solid var(--line);border-radius:4px;margin-bottom:8px}
+  .chk-item .tag{font-weight:800;min-width:24px;height:24px;line-height:24px;text-align:center;border-radius:4px;font-size:12px}
+  .chk-item.ok .tag{background:#2d4a1a;color:var(--ok)}
+  .chk-item.warn .tag{background:#3d3514;color:var(--warn)}
+  .chk-name{font-weight:700}
+  .chk-msg{color:var(--tx2);font-size:13px}
+  .ws-thumb img{width:40px;height:40px;border-radius:4px}
+  .pc-img img{width:80px;height:80px;border-radius:4px}
+</style></head><body>
+<div style="text-align:center;padding:20px 0 4px;font-size:22px;font-weight:800;color:var(--accent)">③ 军绿战术</div>
+<div style="text-align:center;padding:0 0 16px;font-size:13px;color:var(--tx2)">战术风：橄榄绿底、琥珀强调、田野质感</div>
+
+<div class="wrap">
+  <header>
+    <div class="logo"><span class="ico">💧</span><div><h1>水弹的魔法</h1><div class="sub">Magic of Water Bead</div></div></div>
+    <div class="stat">零件总量<b>3565</b> 零件种类<b>59</b> 装配规则<b>21</b> 原厂发射器<b>178</b></div>
+  </header>
+  <nav class="tabs">
+    <span class="tab active">📦 零件库</span>
+    <span class="tab">🔫 原厂发射器</span>
+    <span class="tab">🔧 组装工作台</span>
+    <span class="tab">✅ 兼容检查</span>
+    <span class="tab">📋 调试指南</span>
+  </nav>
+  <div class="sumrow">
+    <div class="sumcard"><div class="num">3</div><div class="lab">已选零件</div></div>
+    <div class="sumcard"><div class="num">0</div><div class="lab">警告</div></div>
+    <div class="sumcard"><div class="num">¥0</div><div class="lab">合计</div></div>
+  </div>
+  <div class="card">
+    <h3>波壳</h3>
+    <div class="part-card">
+      <div class="pc-img"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%23303030' rx='8'/%3E%3Ctext x='40' y='45' fill='%23888' font-size='10' text-anchor='middle'%3E波壳%3C/text%3E%3C/svg%3E" /></div>
+      <div class="pc-main">
+        <div class="pc-name">波壳 <span class="badge b-mand">必装</span></div>
+        <div class="pc-desc">齿轮箱外壳，分一体/分体两种结构</div>
+        <div class="attrrow"><label>材质:</label><select><option>尼龙</option><option>锌合金</option></select></div>
+        <div class="pc-side">
+          <div class="row2"><select><option>司俊原厂</option><option>TZB</option></select><select><option>原厂波壳</option></select></div>
+          <span class="price">无标价 · 工作台手动填写</span>
+          <button class="btn primary">加入装配</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>组装工作台</h3>
+    <table class="wstable">
+      <thead><tr><th>图片</th><th>零件</th><th>品牌/产品</th><th>单价</th><th>数量</th><th>总价</th><th>移除</th></tr></thead>
+      <tbody>
+        <tr><td class="ws-thumb"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='40' height='40' fill='%23303030' rx='4'/%3E%3C/svg%3E" /></td><td>波壳 <span class="badge b-mand">必装</span></td><td>司俊原厂 / 原厂波壳</td><td class="numcell"><input type="number" value="0" style="width:60px"></td><td>1</td><td class="numcell">¥0</td><td><button class="btn danger" style="padding:2px 8px">✕</button></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card">
+    <h3>兼容检查</h3>
+    <div class="chk-item ok"><span class="tag">✓</span><div><div class="chk-name">波壳类型匹配</div><div class="chk-msg">当前选择 2号波波壳，与组装目标一致。</div></div></div>
+    <div class="chk-item warn"><span class="tag">!</span><div><div class="chk-name">轴承未选</div><div class="chk-msg">建议选择 8mm 或 9mm 轴承。</div></div></div>
+  </div>
+</div>
+
+</body></html>
