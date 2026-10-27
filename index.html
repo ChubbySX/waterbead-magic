@@ -177,7 +177,7 @@
   #imgModal{position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s ease}
   #imgModal.show{opacity:1;pointer-events:auto}
   #imgModal img{max-width:90vw;max-height:85vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.5);object-fit:contain}
-  #imgModal .close-btn{position:absolute;top:16px;right:24px;font-size:32px;color:#fff;cursor:pointer;line-height:1;user-select:none;opacity:.7;transition:opacity .2s}
+  #imgModal .close-btn{position:absolute;top:16px;right:24px;font-size:32px;color:#fff;cursor:pointer;line-height:1;user-select:none;opacity:.7;transition:opacity .2s;z-index:10}
   #imgModal .close-btn:hover{opacity:1}
   #imgModal .img-cap{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:#8b949e;font-size:13px;max-width:80vw;text-align:center}
 </style>
@@ -962,7 +962,7 @@ function renderWorkspace(){
       var unitTxt='<input type="number" class="wsPrice" data-p="'+p.id+'" value="'+(unit>0?unit:'')+'" min="0" placeholder="单价" style="width:64px;text-align:center">';
       var totalTxt=unit>0?'¥'+(unit*(s.qty||1)):'¥0';
       html+='<tr>'+
-        '<td class="ws-thumb"><img src="'+esc(resolveImg(p))+'" alt="'+esc(p.name)+'" onclick="openImageModal(this.src,\''+esc(p.name).replace(/'/g,"\\'")+' — '+p.id+'\')" onerror="this.onerror=null;this.src=\'img/parts/_generic.svg\';this.style.cursor=\'default\'"></td>'+
+        '<td class="ws-thumb"><img src="'+esc(resolveImg(p))+'" alt="'+esc(p.name)+' — '+p.id+'" class="ws-preview" onerror="this.onerror=null;this.src=\'img/parts/_generic.svg\';this.style.cursor=\'default\'"></td>'+
         '<td><b>'+esc(p.name)+'</b>'+(p.optional?'<span class="badge b-opt">选配</span>':'')+'</td>'+
         '<td class="small">'+esc(s.brand||'—')+(s.product?'<br>'+esc(s.product):'')+'</td>'+
         '<td class="small muted">'+esc(attrSummary(p))+'</td>'+
@@ -977,6 +977,9 @@ function renderWorkspace(){
   box.innerHTML=html;
   box.querySelectorAll('.wsNote').forEach(function(inp){
     inp.addEventListener('change',function(){ sel[inp.dataset.p].notes=inp.value; saveSel(); });
+  });
+  box.querySelectorAll('.ws-preview').forEach(function(im){
+    im.addEventListener('click',function(e){ e.stopPropagation(); openImageModal(im.src, im.alt); });
   });
   box.querySelectorAll('.wsQty').forEach(function(inp){
     inp.addEventListener('change',function(){
@@ -1224,7 +1227,7 @@ function renderBasegun(){
         var active=baseGunId===bg.id && baseGunProduct===prod;
         var bgImgKey=bg.id+'_'+prod;
         var hasBgImg=getBgImage(bg.id, prod);
-        var imgHtml=hasBgImg?'<img src="'+esc(hasBgImg)+'" alt="'+esc(bg.brand+' '+prod)+'" style="width:48px;height:48px;object-fit:cover;border-radius:6px;border:1px solid var(--line);cursor:pointer" onclick="openImageModal(this.src,\''+esc(bg.brand+' '+prod).replace(/'/g,"\\'")+'\')">':'<div style="width:48px;height:48px;border-radius:6px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:24px">🔫</div>';
+        var imgHtml=hasBgImg?'<img src="'+esc(hasBgImg)+'" alt="'+esc(bg.brand+' '+prod)+'" class="bg-preview" style="width:48px;height:48px;object-fit:cover;border-radius:6px;border:1px solid var(--line);cursor:pointer">':'<div style="width:48px;height:48px;border-radius:6px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:24px">🔫</div>';
         d.innerHTML='<div class="pc-main" style="min-width:auto">'+
           '<div style="display:flex;align-items:center;gap:8px">'+
           imgHtml+
@@ -1262,6 +1265,13 @@ function renderBasegun(){
         setBgImage(bgId, prod, url); render();
       });
       inp.value='';
+    });
+  });
+  /* 发射器图片点击预览 */
+  box.querySelectorAll('.bg-preview').forEach(function(im){
+    im.addEventListener('click',function(e){
+      e.stopPropagation();
+      openImageModal(im.src, im.alt);
     });
   });
   box.querySelectorAll('[data-bg-del]').forEach(function(b){
